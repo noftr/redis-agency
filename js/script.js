@@ -15,7 +15,7 @@ var path_tween = gsap.to(".lottie-wrapper", {
 
 animation_lottie = lottie.loadAnimation({
     container: lottie_target,
-    renderer: "html",
+    renderer: 'canvas',
     loop: true,
     autoplay: true,
     progressiveLoad: true,
@@ -98,6 +98,7 @@ if (window.screen.width < 480) {
 } else {
     window.addEventListener('wheel', onWheel);
     function onWheel(event) {
+// отключил потому что не знаю что строчка делает и консоль много ругается
 //        event.preventDefault();
         var normalized;
         var delta = event.wheelDelta;
