@@ -18,7 +18,6 @@ animation_lottie = lottie.loadAnimation({
     renderer: 'canvas',
     loop: true,
     autoplay: true,
-    progressiveLoad: true,
     path: "https://uploads-ssl.webflow.com/6266eeaffe48d61a4d9852b0/627e433282a7882f8b0ff2c4_redis-actual.json"
 });
 
@@ -193,10 +192,12 @@ function check_device() {
   document.location.reload();
 };
 // тесты загрузки страницы
-document.addEventListener("DOMContentLoaded", function() {
-  console.log("браузер полностью загрузил HTML, было построено DOM-дерево, но внешние ресурсы, такие как картинки <img> и стили, могут быть ещё не загружены.");
-});
 
 window.onload = function() {
   console.log("браузер загрузил HTML и внешние ресурсы (картинки, стили и т.д.).");
 };
+
+animation_lottie.addEventListener('complete',lottie_load);
+function lottie_load(){
+    console.log ('загрузилась твоя лотти епта');
+}
