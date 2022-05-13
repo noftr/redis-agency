@@ -184,9 +184,10 @@ function check_device() {
   document.location.reload();
 };
 // тесты загрузки страницы
-document.addEventListener("DOMContentLoaded", function(event) {
+document.addEventListener("DOMContentLoaded", function() {
   console.log("браузер полностью загрузил HTML, было построено DOM-дерево, но внешние ресурсы, такие как картинки <img> и стили, могут быть ещё не загружены.");
 });
-document.addEventListener("load", function(event) {
+
+window.onload = function() {
   console.log("браузер загрузил HTML и внешние ресурсы (картинки, стили и т.д.).");
-});
+};
