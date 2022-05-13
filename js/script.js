@@ -193,11 +193,12 @@ function check_device() {
 };
 // тесты загрузки страницы
 
-window.onload = function() {
-  console.log("браузер загрузил HTML и внешние ресурсы (картинки, стили и т.д.).");
-};
-
-animation_lottie.addEventListener('complete',lottie_load);
+lottie_load();
 function lottie_load(){
-    console.log ('загрузилась твоя лотти епта');
+    if (animation_lottie.isLoaded == false) {
+        window.requestAnimationFrame(lottie_load);
+        console.log(animation_lottie.isLoaded);
+    } else {
+        console.log('ну все, епта. загрузилась твоя лотти');
+    }
 }
