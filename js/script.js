@@ -6,18 +6,22 @@ let rotate_direction = 1;
 let path_even_loop = false;
 let path_loop = false;
 let path_loop_once = true;
+
 gsap.registerPlugin(MotionPathPlugin);
 var path_tween = gsap.to(".lottie-wrapper", {
     ease: "power1.inOut",
     motionPath: { path: "#path", align: "#path", alignOrigin: [0.5, 0.5] }
 });
+
 animation_lottie = lottie.loadAnimation({
     container: lottie_target,
     renderer: "svg",
     loop: true,
     autoplay: true,
+    progressiveLoad: true,
     path: "https://uploads-ssl.webflow.com/6266eeaffe48d61a4d9852b0/627e433282a7882f8b0ff2c4_redis-actual.json"
 });
+
 let scroll_wrapper_1 = document.getElementsByClassName("global-wrapper")[0];
 let scroll_wrapper_2 = document.getElementsByClassName("image__container")[0];
 let scroll_wrapper_3 = document.getElementsByClassName("image__container")[0];
