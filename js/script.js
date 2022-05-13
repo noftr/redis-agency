@@ -16,7 +16,7 @@ animation_lottie = lottie.loadAnimation({
     renderer: "svg",
     loop: true,
     autoplay: true,
-    path: "https://uploads-ssl.webflow.com/6266eeaffe48d61a4d9852b0/627e36e24683b1305095f2a9_data.json"
+    path: "https://uploads-ssl.webflow.com/6266eeaffe48d61a4d9852b0/627e433282a7882f8b0ff2c4_redis-actual.json"
 });
 let scroll_wrapper_1 = document.getElementsByClassName("global-wrapper")[0];
 let scroll_wrapper_2 = document.getElementsByClassName("image__container")[0];
