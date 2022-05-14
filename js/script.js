@@ -225,12 +225,10 @@ function lottie_load(){
 
         setTimeout(() => {
             redis_img.style.transform = "translate(0vh) rotate(0deg)";
+            window.addEventListener('touchstart', point_down);
+            window.addEventListener('touchend', point_cancel);
+            window.addEventListener('touchmove', pointer_move);
+            window.addEventListener('wheel', onWheel);
         }, 700);
-
-        window.addEventListener('touchstart', point_down);
-        window.addEventListener('touchend', point_cancel);
-        window.addEventListener('touchmove', pointer_move);
-        window.addEventListener('wheel', onWheel);
-
     }
 }
