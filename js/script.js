@@ -204,7 +204,7 @@ function lottie_load(){
         console.log('ну все, епта. загрузилась твоя лотти');
         let progress_bar = document.querySelector(".preloader-line");
 
-        let logo_bar = document.querySelector(".nav__logo");
+        let logo_bar = document.querySelector(".logo-bar");
         let bt_bar_1 = document.querySelector(".bt_bar_1");
         let bt_bar_2 = document.querySelector(".bt_bar_2");
         let bt_bar_3 = document.querySelector(".bt_bar_3");
@@ -224,9 +224,9 @@ function lottie_load(){
             right_herb.style.transform = "translate(0vh) rotate(0deg)";
         }, 400);
         setTimeout(() => {
-            bt_bar_1.style.opacity = "0";
-            bt_bar_1.style.opacity = "0";
-            bt_bar_1.style.opacity = "0";
+            bt_bar_1.style.opacity = "100";
+            bt_bar_2.style.opacity = "100";
+            bt_bar_3.style.opacity = "100";
         }, 500);
         setTimeout(() => {
             redis_img.style.transform = "translate(0vh) rotate(0deg)";
