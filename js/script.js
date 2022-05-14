@@ -186,7 +186,7 @@ bt_anchor_2.addEventListener('click', function (event) {
     scroller_3.y = 1936;
     scroller_4.y = 1936;
 });
-// обновляю при ресайзе , надо еще поправить
+// обновляю при ресайзе, надо сделать менее примитивно
 window.addEventListener('resize', check_device);
 function check_device() {
   document.location.reload();
@@ -196,9 +196,41 @@ function check_device() {
 lottie_load();
 function lottie_load(){
     if (animation_lottie.isLoaded == false) {
-        window.requestAnimationFrame(lottie_load);
-        console.log(animation_lottie.isLoaded);
+//        window.requestAnimationFrame(lottie_load);
+        setTimeout(() => {
+            lottie_load();
+        }, 100)
     } else {
         console.log('ну все, епта. загрузилась твоя лотти');
+        let progress_bar = querySelector(".preloader-line");
+
+        let logo_bar = querySelector(".preloader-line");
+        let bt_bar_1 = querySelector(".bt_bar_1");
+        let bt_bar_2 = querySelector(".bt_bar_2");
+        let bt_bar_3 = querySelector(".bt_bar_3");
+
+        let header_text = querySelector(".animate-header-text");
+        let left_herb = querySelector(".animate-left-herb");
+        let right_herb = querySelector(".animate-right-herb");
+        let redis_img = querySelector(".lottie-container");
+
+        progress_bar.style.width = 100+"%";
+        progress_bar.style.height = 0+"px";
+        header_text.style.transform = "translate(0vh)";
+        logo_bar.style.transform = "translate(0vh) scale(1)";
+
+        setTimeout(() => {
+            left_herb.style.transform = "translate(0vh) rotate(0deg)";
+            right_herb.style.transform = "translate(0vh) rotate(0deg)";
+        }, 400);
+        setTimeout(() => {
+            bt_bar_1.style.opacity = "0";
+            bt_bar_1.style.opacity = "0";
+            bt_bar_1.style.opacity = "0";
+        }, 500);
+        setTimeout(() => {
+            redis_img.style.transform = "translate(0vh) rotate(0deg)";
+        }, 700);
+
     }
 }
