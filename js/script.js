@@ -202,17 +202,17 @@ function lottie_load(){
         }, 100)
     } else {
         console.log('ну все, епта. загрузилась твоя лотти');
-        let progress_bar = querySelector(".preloader-line");
+        let progress_bar = document.querySelector(".preloader-line");
 
-        let logo_bar = querySelector(".nav__logo");
-        let bt_bar_1 = querySelector(".bt_bar_1");
-        let bt_bar_2 = querySelector(".bt_bar_2");
-        let bt_bar_3 = querySelector(".bt_bar_3");
+        let logo_bar = document.querySelector(".nav__logo");
+        let bt_bar_1 = document.querySelector(".bt_bar_1");
+        let bt_bar_2 = document.querySelector(".bt_bar_2");
+        let bt_bar_3 = document.querySelector(".bt_bar_3");
 
-        let header_text = querySelector(".animate-header-text");
-        let left_herb = querySelector(".animate-left-herb");
-        let right_herb = querySelector(".animate-right-herb");
-        let redis_img = querySelector(".lottie-container");
+        let header_text = document.querySelector(".animate-header-text");
+        let left_herb = document.querySelector(".animate-left-herb");
+        let right_herb = document.querySelector(".animate-right-herb");
+        let redis_img = document.querySelector(".lottie-container");
 
         progress_bar.style.width = 100+"%";
         progress_bar.style.height = 0+"px";
