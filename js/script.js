@@ -204,7 +204,7 @@ function lottie_load(){
         console.log('ну все, епта. загрузилась твоя лотти');
         let progress_bar = querySelector(".preloader-line");
 
-        let logo_bar = querySelector(".preloader-line");
+        let logo_bar = querySelector(".nav__logo");
         let bt_bar_1 = querySelector(".bt_bar_1");
         let bt_bar_2 = querySelector(".bt_bar_2");
         let bt_bar_3 = querySelector(".bt_bar_3");
