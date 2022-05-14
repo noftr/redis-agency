@@ -186,34 +186,31 @@ bt_anchor_2.addEventListener('click', function (event) {
     scroller_3.y = 1936;
     scroller_4.y = 1936;
 });
+
 // обновляю при ресайзе, надо сделать менее примитивно
 window.addEventListener('resize', check_device);
 function check_device() {
   document.location.reload();
 };
-// тесты загрузки страницы
 
+let progress_bar = document.querySelector(".preloader-line");
+let logo_bar = document.querySelector(".logo-bar");
+let bt_bar_1 = document.querySelector(".bt_bar_1");
+let bt_bar_2 = document.querySelector(".bt_bar_2");
+let bt_bar_3 = document.querySelector(".bt_bar_3");
+let header_text = document.querySelector(".animate-header-text");
+let left_herb = document.querySelector(".animate-left-herb");
+let right_herb = document.querySelector(".animate-right-herb");
+let redis_img = document.querySelector(".lottie-container");
+
+progress_bar.style.width = 70+"%";
 lottie_load();
 function lottie_load(){
     if (animation_lottie.isLoaded == false) {
-//        window.requestAnimationFrame(lottie_load);
         setTimeout(() => {
             lottie_load();
         }, 100)
     } else {
-        console.log('ну все, епта. загрузилась твоя лотти');
-        let progress_bar = document.querySelector(".preloader-line");
-
-        let logo_bar = document.querySelector(".logo-bar");
-        let bt_bar_1 = document.querySelector(".bt_bar_1");
-        let bt_bar_2 = document.querySelector(".bt_bar_2");
-        let bt_bar_3 = document.querySelector(".bt_bar_3");
-
-        let header_text = document.querySelector(".animate-header-text");
-        let left_herb = document.querySelector(".animate-left-herb");
-        let right_herb = document.querySelector(".animate-right-herb");
-        let redis_img = document.querySelector(".lottie-container");
-
         progress_bar.style.width = 100+"%";
         progress_bar.style.height = 0+"px";
         header_text.style.transform = "translate(0vh)";
@@ -223,11 +220,13 @@ function lottie_load(){
             left_herb.style.transform = "translate(0vh) rotate(0deg)";
             right_herb.style.transform = "translate(0vh) rotate(0deg)";
         }, 400);
+
         setTimeout(() => {
             bt_bar_1.style.opacity = "100";
             bt_bar_2.style.opacity = "100";
             bt_bar_3.style.opacity = "100";
         }, 500);
+
         setTimeout(() => {
             redis_img.style.transform = "translate(0vh) rotate(0deg)";
         }, 700);
