@@ -200,6 +200,7 @@ let left_herb = document.querySelector(".animate-left-herb");
 let right_herb = document.querySelector(".animate-right-herb");
 let redis_img = document.querySelector(".lottie-container");
 
+
 progress_bar.style.width = 70+"%";
 lottie_load();
 function lottie_load(){
@@ -208,6 +209,7 @@ function lottie_load(){
             lottie_load();
         }, 100)
     } else {
+        progress_bar.setAttribute("style", "transition-durations: 300ms, 300ms !important;")
         progress_bar.style.width = 100+"%";
         progress_bar.style.height = 0+"px";
         header_text.style.transform = "translate(0vh)";
