@@ -2,7 +2,7 @@ let lottie_target = document.querySelector("#target-lottie");
 let lottie_wrapper = document.querySelector(".redis-lottie");
 let lottie_sensivity = 14000;
 let lottie_play = {
-  speed: 1,
+  speed: 2,
 };
 let rotate_lottie = 0;
 let rotate_direction = 1;
@@ -239,9 +239,9 @@ function lottie_load(){
             redis_img.style.transform = "translate(0vh) rotate(0deg)";
 
             gsap.to( lottie_play, {
-                duration: 0.4,
+                duration: 0.5,
                 speed: 0,
-//                ease: power3.out,
+                ease: Power3.easeOut,
                 delay: 0.9,
             } );
 
