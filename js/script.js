@@ -238,6 +238,13 @@ function lottie_load(){
         setTimeout(() => {
             redis_img.style.transform = "translate(0vh) rotate(0deg)";
 
+            gsap.to( lottie_play, {
+                duration: 0.8,
+                speed: 1,
+            //                ease: power3.out,
+            } );
+
+
             window.addEventListener('touchstart', point_down);
             window.addEventListener('touchend', point_cancel);
             window.addEventListener('touchmove', pointer_move);
@@ -246,11 +253,6 @@ function lottie_load(){
     }
 }
 
-gsap.to( lottie_play, {
-    duration: 0.8,
-    speed: 1,
-//                ease: power3.out,
-} );
 
 // gsap.to( lottie_play, {
 //     duration: 0.8,
