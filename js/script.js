@@ -241,7 +241,7 @@ function lottie_load(){
             gsap.to( lottie_play, {
                 duration: 0.8,
                 speed: 1,
-                ease: power3.out,
+//                ease: power3.out,
             } );
 
             // gsap.to( lottie_play, {
