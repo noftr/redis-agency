@@ -241,8 +241,8 @@ function lottie_load(){
             gsap.to( lottie_play, {
                 duration: 1,
                 speed: 0,
-                ease: Power1.easeOut,
-                delay: .7,
+//                ease: Power1.easeOut,
+                delay: .75,
             } );
 
             window.addEventListener('touchstart', point_down);
