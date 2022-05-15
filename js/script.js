@@ -244,12 +244,12 @@ function lottie_load(){
                 ease: power3.out,
             } );
 
-            gsap.to( lottie_play, {
-                duration: 0.8,
-                speed: 0,
-                ease: power3.out,
-                delay: 0.8,
-            } );
+            // gsap.to( lottie_play, {
+            //     duration: 0.8,
+            //     speed: 0,
+            //     ease: power3.out,
+            //     delay: 0.8,
+            // } );
 
             window.addEventListener('touchstart', point_down);
             window.addEventListener('touchend', point_cancel);
