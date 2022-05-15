@@ -236,7 +236,7 @@ function lottie_load(){
         }, 500);
 
         setTimeout(() => {
-            redis_img.style.transform = "translate(0vh) rotate(0deg)";
+            redis_img.style.transform = "translate(0vh) rotate(-33deg)";
 
             gsap.to( lottie_play, {
                 duration: 1,
