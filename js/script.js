@@ -239,10 +239,10 @@ function lottie_load(){
             redis_img.style.transform = "translate(0vh) rotate(0deg)";
 
             gsap.to( lottie_play, {
-                duration: 1,
+                duration: .3,
                 speed: 0,
                 ease: Power1.easeOut,
-                delay: 0.6,
+                delay: .6,
             } );
 
             window.addEventListener('touchstart', point_down);
