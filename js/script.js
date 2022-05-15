@@ -242,7 +242,7 @@ function lottie_load(){
                 duration: 1,
                 speed: 0,
 //                ease: Power1.easeOut,
-                delay: .75,
+                delay: .85,
             } );
 
             window.addEventListener('touchstart', point_down);
