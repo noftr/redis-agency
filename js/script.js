@@ -205,6 +205,7 @@ let redis_img = document.querySelector(".lottie-container");
 
 
 progress_bar.style.width = 70+"%";
+
 lottie_load();
 function lottie_load(){
     if (animation_lottie.isLoaded == false) {
@@ -236,6 +237,20 @@ function lottie_load(){
 
         setTimeout(() => {
             redis_img.style.transform = "translate(0vh) rotate(0deg)";
+
+            gsap.to( lottie_play, {
+                duration: 0.8,
+                speed: 1,
+                ease: power3.out,
+            } );
+
+            gsap.to( lottie_play, {
+                duration: 0.8,
+                speed: 0,
+                ease: power3.out,
+                delay: 0.8,
+            } );
+
             window.addEventListener('touchstart', point_down);
             window.addEventListener('touchend', point_cancel);
             window.addEventListener('touchmove', pointer_move);
@@ -248,10 +263,6 @@ function lottie_load(){
 
 
 
-gsap.to( lottie_play, {
-    duration: 10,
-    speed: 1
-} );
 
 // gsap.to(cube.rotation, {duration: 10, y: Math.PI * 2, repeat: -1, ease: "none"});
 // gsap.to(cube.scale, {duration: .7, x: 2, y:2, z: 2});
