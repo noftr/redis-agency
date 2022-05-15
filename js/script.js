@@ -2,7 +2,7 @@ let lottie_target = document.querySelector("#target-lottie");
 let lottie_wrapper = document.querySelector(".redis-lottie");
 let lottie_sensivity = 14000;
 let lottie_play = {
-  speed: 2,
+  speed: -3,
 };
 let rotate_lottie = 0;
 let rotate_direction = 1;
