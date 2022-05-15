@@ -1,6 +1,9 @@
 let lottie_target = document.querySelector("#target-lottie");
 let lottie_wrapper = document.querySelector(".redis-lottie");
 let lottie_sensivity = 14000;
+let lottie_play = {
+  speed: 0,
+};
 let rotate_lottie = 0;
 let rotate_direction = 1;
 let path_even_loop = false;
@@ -52,7 +55,6 @@ let touch_down = 0;
 let touch_path = 0;
 let touch_speed = 0.05;
 let touch_inertia = 0;
-// let touch_inertia_lerp = 0;
 let point_click = false;
 let first_click = false;
 
@@ -160,7 +162,7 @@ function onFrame() {
         TweenLite.set(target_4, { rotate: 0.01, y: scroll_4, force3D: true });
         scroll_4 = scroller_4.y;
     };
-    lottie.setSpeed(scroller_1.speed * 0.3);
+    lottie.setSpeed(lottie_play.speed+(scroller_1.speed * 0.3));
     let progress_path = Math.abs(scroller_1.y % lottie_sensivity / lottie_sensivity);
     path_tween.progress(progress_path);
     let cos_scroller = Math.cos(scroller_1.y*0.0005);
@@ -189,6 +191,7 @@ function check_device() {
   document.location.reload();
 };
 
+//анимация появления
 let progress_bar = document.querySelector(".preloader-line");
 let logo_bar = document.querySelector(".logo-bar");
 let logo_bar_mob = document.querySelector(".logo-bar-mob");
@@ -240,3 +243,42 @@ function lottie_load(){
         }, 700);
     }
 }
+
+
+
+
+
+gsap.to( lottie_play, {
+    duration: 10,
+    speed: 1
+} );
+
+// gsap.to(cube.rotation, {duration: 10, y: Math.PI * 2, repeat: -1, ease: "none"});
+// gsap.to(cube.scale, {duration: .7, x: 2, y:2, z: 2});
+//
+//
+//
+//
+// TweenLite.to("#myID", 2, {backgroundColor:"#ff0000", width:"50%", top:"100px", ease:Power2.easeInOut});
+//
+//
+// TweenLite.set(target_2, { rotate: 0.01, y: scroll_2, force3D: true });
+// var tween = TweenLite.to(
+//   , 2, {width:200, height:150});
+//
+// gsap.to(".box", {
+//   delay: 2,
+//   duration: 2,
+//   ease: Quad.easeIn,
+//   }
+// })
+//
+// let start_lottie = TweenLite()
+//     .to({width:200, height:150});
+
+
+// modelHoverOutOpacity = new TWEEN.Tween(params)
+//                 .to({opacity: 0,}, 200)
+//                 .easing(TWEEN.Easing.Cubic.Out)
+//                 .delay(300)
+//                 .start();
