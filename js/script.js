@@ -1,9 +1,7 @@
 let lottie_target = document.querySelector("#target-lottie");
 let lottie_wrapper = document.querySelector(".redis-lottie");
 let lottie_sensivity = 14000;
-let lottie_play = {
-  speed: -4,
-};
+let lottie_play = { speed: -4, };
 let rotate_lottie = 0;
 let rotate_direction = 1;
 let path_even_loop = false;
@@ -49,7 +47,6 @@ if (window.screen.width > 479) {
     var scroller_3 = { wheelMultiplier: getLineHeight(), ease: 0.05, speed: 0, y: 0 };
     var scroller_4 = { wheelMultiplier: getLineHeight(), ease: 0.055, speed: 0, y: 0 };
 }
-
 let touch_up = 0;
 let touch_down = 0;
 let touch_path = 0;
@@ -203,7 +200,6 @@ let left_herb = document.querySelector(".animate-left-herb");
 let right_herb = document.querySelector(".animate-right-herb");
 let redis_img = document.querySelector(".lottie-container");
 
-
 progress_bar.style.width = 70+"%";
 
 lottie_load();
@@ -252,44 +248,3 @@ function lottie_load(){
         }, 700);
     }
 }
-
-
-// gsap.to( lottie_play, {
-//     duration: 0.8,
-//     speed: 0,
-//     ease: power3.out,
-//     delay: 0.8,
-// } );
-
-
-
-
-// gsap.to(cube.rotation, {duration: 10, y: Math.PI * 2, repeat: -1, ease: "none"});
-// gsap.to(cube.scale, {duration: .7, x: 2, y:2, z: 2});
-//
-//
-//
-//
-// TweenLite.to("#myID", 2, {backgroundColor:"#ff0000", width:"50%", top:"100px", ease:Power2.easeInOut});
-//
-//
-// TweenLite.set(target_2, { rotate: 0.01, y: scroll_2, force3D: true });
-// var tween = TweenLite.to(
-//   , 2, {width:200, height:150});
-//
-// gsap.to(".box", {
-//   delay: 2,
-//   duration: 2,
-//   ease: Quad.easeIn,
-//   }
-// })
-//
-// let start_lottie = TweenLite()
-//     .to({width:200, height:150});
-
-
-// modelHoverOutOpacity = new TWEEN.Tween(params)
-//                 .to({opacity: 0,}, 200)
-//                 .easing(TWEEN.Easing.Cubic.Out)
-//                 .delay(300)
-//                 .start();
