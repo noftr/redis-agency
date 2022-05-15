@@ -244,7 +244,6 @@ function lottie_load(){
                 ease: power3.out,
             } );
 
-
             window.addEventListener('touchstart', point_down);
             window.addEventListener('touchend', point_cancel);
             window.addEventListener('touchmove', pointer_move);
