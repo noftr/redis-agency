@@ -191,6 +191,7 @@ function check_device() {
 
 let progress_bar = document.querySelector(".preloader-line");
 let logo_bar = document.querySelector(".logo-bar");
+let logo_bar_mob = document.querySelector(".logo-bar-mob");
 let bt_bar_1 = document.querySelector(".bt_bar_1");
 let bt_bar_2 = document.querySelector(".bt_bar_2");
 let bt_bar_3 = document.querySelector(".bt_bar_3");
@@ -210,7 +211,12 @@ function lottie_load(){
         progress_bar.style.width = 100+"%";
         progress_bar.style.height = 0+"px";
         header_text.style.transform = "translate(0vh)";
-        logo_bar.style.transform = "translate(0vh) scale(1)";
+
+        if (window.screen.width > 479) {
+            logo_bar.style.transform = "translate(0vh) scale(1)";
+        } else {
+            logo_bar_mob.style.transform = "translate(0vh) scale(1)";
+        }
 
         setTimeout(() => {
             left_herb.style.transform = "translate(0vh) rotate(0deg)";
