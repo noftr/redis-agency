@@ -172,9 +172,9 @@ bt_anchor_2 = document.querySelector(".bt-anchor-2");
 bt_anchor_1.addEventListener('click', function (event) {
     target_1.style.transform = 'translate3d(0px, -1142.05px, 0px) rotate(0.01deg)';
     // scroller_1.y = 2876;
-    scroller_2.y = 2876;
-    scroller_3.y = 2876;
-    scroller_4.y = 2876;
+    // scroller_2.y = 2876;
+    // scroller_3.y = 2876;
+    // scroller_4.y = 2876;
 });
 bt_anchor_2.addEventListener('click', function (event) {
     scroller_1.y = 1936;
