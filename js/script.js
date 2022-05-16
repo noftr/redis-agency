@@ -281,8 +281,8 @@ let summBlocks = sizeAbout + sizeHero + sizeContact;
 
 bt_anchor_1.addEventListener('click', function (event) {
     document.querySelector('.scroll')
-    scroller_1.y = windowHeight_1-summBlocks;
-    scroller_2.y = 2876;
-    scroller_3.y = 2876;
-    scroller_4.y = 2876;
+    scroller_1.y = sizeHero - windowHeight_1;
+    scroller_2.y = sizeHero - windowHeight_1;
+    scroller_3.y = sizeHero - windowHeight_1;
+    scroller_4.y = sizeHero - windowHeight_1;
 });
