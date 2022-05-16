@@ -281,8 +281,12 @@ let summBlocks = sizeAbout + sizeHero + sizeContact;
 
 bt_anchor_1.addEventListener('click', function (event) {
     document.querySelector('.scroll')
-    scroller_1.y = sizeHero - windowHeight_1;
-    scroller_2.y = sizeHero - windowHeight_1;
-    scroller_3.y = sizeHero - windowHeight_1;
-    scroller_4.y = sizeHero - windowHeight_1;
+    // scroller_1.y = sizeHero - windowHeight_1;
+    // scroller_2.y = sizeHero - windowHeight_1;
+    // scroller_3.y = sizeHero - windowHeight_1;
+    // scroller_4.y = sizeHero - windowHeight_1;
+    scroller_1.y = innerWidth * -0.85;
+    scroller_2.y = innerWidth * -0.85;
+    scroller_3.y = innerWidth * -0.85;
+    scroller_4.y = innerWidth * -0.85;
 });
