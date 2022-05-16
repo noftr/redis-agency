@@ -171,7 +171,7 @@ bt_anchor_1 = document.querySelector(".bt-anchor-1");
 bt_anchor_2 = document.querySelector(".bt-anchor-2");
 bt_anchor_1.addEventListener('click', function (event) {
     document.querySelector('.scroll')
-    scroller_1.y = -950;
+    scroller_1.y = windowHeight_1-500;
     scroller_2.y = 2876;
     scroller_3.y = 2876;
     scroller_4.y = 2876;
@@ -265,5 +265,9 @@ function lottie_load(){
 //         console.log(tx, ty, tz);
 //     }, 500)
 // };
+
+
+
+
 
 
