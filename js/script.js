@@ -260,7 +260,7 @@ function ifinityTest() {
     setTimeout(() => {
         ifinityTest();
 
-        let transform = document.querySelector('.scroll-container').style.transform;
+        let transform = document.querySelector('.transform3d-checker').style.transform;
         let [tx, ty, tz] = transform.match(/-*\d+(?=px)/g);
         console.log(tx, ty, tz);
     }, 500)
