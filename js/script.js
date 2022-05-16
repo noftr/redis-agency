@@ -266,29 +266,7 @@ function lottie_load(){
 //     }, 50)
 // };
 
-let getStyle = (st, sel, name) => {
-   
-            const rules = st.sheet.cssRules
-   
-            for (let i=0; i<rules.length; i++) {
-    
-                    if (sel == rules[i].selectorText) {
-    
-                            return rules[i].style.getPropertyValue(name)
-    
-                    }
-    
-            }
-    
-    }
-    
-     
-    
-    let st = document.getElementById('target')
-    
-    let [tx, ty, tz] = getStyle(st, '.cl', 'transform').match(/-*\d+(?=px)/g);
-    
-    console.log(tx, ty, tz);
-    
-    alert(tx);
-    
+let transform = target_1.style.transform;
+let [tx, ty, tz] = transform.match(/-*\d+(?=px)/g);
+console.log(tx, ty, tz);
+alert(tx);
