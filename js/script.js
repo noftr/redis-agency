@@ -174,7 +174,7 @@ bt_anchor_1.addEventListener('click', function (event) {
     // target_1.classList.add('transform-1140');
     // TweenLite.set(target_1, { rotate: 0.01, y: target_1Btn, force3D: true });
     // scroll_1 = scroller_1.y + target_1Btn;
-    scroller_1.y = -950;
+    scroller_1.y = scroll_1 - windowHeight_1;
     scroller_2.y = 2876;
     scroller_3.y = 2876;
     scroller_4.y = 2876;
