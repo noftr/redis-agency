@@ -253,20 +253,17 @@ function lottie_load(){
 
 
 
-// ifinityTest();
-// function ifinityTest() {
+ifinityTest();
+function ifinityTest() {
 
     
-//     if (  0 ) {
-// console.log
-//     };
+    // if (  0 ) {
+        let transform = target_1.style.transform;
+        let [tx, ty, tz] = transform.match(/-*\d+(?=px)/g);
+        console.log(tx, ty, tz);
+    // };
 
-//     setTimeout(() => {
-//         ifinityTest();
-//     }, 50)
-// };
-
-let transform = target_1.style.transform;
-let [tx, ty, tz] = transform.match(/-*\d+(?=px)/g);
-console.log(tx, ty, tz);
-alert(tx);
+    setTimeout(() => {
+        ifinityTest();
+    }, 50)
+};
