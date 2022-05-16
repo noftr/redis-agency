@@ -247,4 +247,6 @@ function lottie_load(){
             window.addEventListener('wheel', onWheel);
         }, 700);
     }
-}
+};
+
+console.log("лох");
