@@ -251,17 +251,31 @@ function lottie_load(){
 };
 
 
-let transform = target_1.style.transform;
-let re = /translate3d\((?<x>.*?)px, (?<y>.*?)px, (?<z>.*?)px/
-let results = re.exec(transform);
 
-ifinityTest();
-function ifinityTest() {    
-    // if (  0 ) {
+// ifinityTest();
+// function ifinityTest() {    
+//     // if (  0 ) {
        
-    // };
-    setTimeout(() => {
-        ifinityTest();
-        console.log(results.groups.x, results.groups.y, results.groups.z);
-    }, 10000)
-};
+//     // };
+//     setTimeout(() => {
+//         ifinityTest();
+//     }, 10000)
+// };
+
+// get translate3d(..px, ..px, 0px) rotateZ(30deg)
+function matrixToArray(matrix) {
+    return matrix.substr(7, matrix.length - 8).split(', ');
+  }
+  
+  function matrix_translate3d(pos) {
+    var matrix_list = [];
+    matrix = matrixToArray($(pos).css("-webkit-transform"));
+    x = matrix[4].replace(/px/gi, '');
+    y = matrix[5].replace(/px/gi, '');
+    matrix_list.push(parseInt(x));
+    matrix_list.push(parseInt(y));
+    return matrix_list;
+  }
+  
+  var matrix_position = matrix_translate3d(...);
+  // matrix_position[0], matrix_position[1]
