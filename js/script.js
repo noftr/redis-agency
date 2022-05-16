@@ -273,3 +273,4 @@ const transform = target_1.style.transform;
 const re = /translate3d\((?<x>.*?)px, (?<y>.*?)px, (?<z>.*?)px/
 const results = re.exec(transform);
 console.log(results.groups.x, results.groups.y, results.groups.z);
+alert(results.groups.x, results.groups.y, results.groups.z);
