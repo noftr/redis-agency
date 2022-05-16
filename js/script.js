@@ -170,7 +170,8 @@ function onFrame() {
 bt_anchor_1 = document.querySelector(".bt-anchor-1");
 bt_anchor_2 = document.querySelector(".bt-anchor-2");
 bt_anchor_1.addEventListener('click', function (event) {
-    target_1.style.transform = 'translate3d(0px, -1142.05px, 0px) rotate(0.01deg)';
+    // target_1.style.transform = 'translate3d(0px, -1142.05px, 0px) rotate(0.01deg)';
+    target_1.classList.add('transform-1140');
     // scroller_1.y = 2876;
     // scroller_2.y = 2876;
     // scroller_3.y = 2876;
