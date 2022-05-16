@@ -258,10 +258,10 @@ function ifinityTest() {
 
     
     // if (  0 ) {
-        const transform = target_1.style.transform;
-        const re = /translate3d\((?<x>.*?)px, (?<y>.*?)px, (?<z>.*?)px/
-        const results = re.exec(transform);
-        console.log(results.x, results.y, results.z);
+        let transform = target_1.style.transform;
+        let re = /translate3d\((?<x>.*?)px, (?<y>.*?)px, (?<z>.*?)px/
+        let results = re.exec(transform);
+        console.log(results.groups.x, results.groups.y, results.groups.z);
     // };
 
     setTimeout(() => {
