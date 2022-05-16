@@ -22,6 +22,8 @@ animation_lottie = lottie.loadAnimation({
     path: "https://uploads-ssl.webflow.com/6266eeaffe48d61a4d9852b0/627e433282a7882f8b0ff2c4_redis-actual.json"
 });
 
+
+
 let scroll_wrapper_1 = document.getElementsByClassName("global-wrapper")[0];
 let scroll_wrapper_2 = document.getElementsByClassName("image__container")[0];
 let scroll_wrapper_3 = document.getElementsByClassName("image__container")[0];
@@ -266,8 +268,10 @@ function lottie_load(){
 //     }, 500)
 // };
 
+let heroHeight = document.querySelector('.hero');
+let aboutSectionHeight = document.querySelector('.about-section');
+let contactSectionHeight = document.querySelector('.contacts-section');
 
-
-
-
-
+let sizeHero = heroHeight.clientHeight;
+let sizeAbout = aboutSectionHeight.clientHeight;
+let sizeContact = contactSectionHeight.clientHeight;
