@@ -251,22 +251,17 @@ function lottie_load(){
 };
 
 
-
+let transform = target_1.style.transform;
+let re = /translate3d\((?<x>.*?)px, (?<y>.*?)px, (?<z>.*?)px/
+let results = re.exec(transform);
 
 ifinityTest();
-function ifinityTest() {
-
-    
+function ifinityTest() {    
     // if (  0 ) {
-        let transform = target_1.style.transform;
-        let re = /translate3d\((?<x>.*?)px, (?<y>.*?)px, (?<z>.*?)px/
-        let results = re.exec(transform);
-        console.log(results.groups.x, results.groups.y, results.groups.z);
+       
     // };
-
     setTimeout(() => {
         ifinityTest();
+        console.log(results.groups.x, results.groups.y, results.groups.z);
     }, 50)
 };
-
-
