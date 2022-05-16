@@ -10,7 +10,8 @@ let path_loop_once = true;
 
 gsap.registerPlugin(MotionPathPlugin);
 var path_tween = gsap.to(".lottie-wrapper", {
-    ease: "power1.inOut",
+//    ease: "power1.inOut",
+    ease: linear,
     motionPath: { path: "#path", align: "#path", alignOrigin: [0.5, 0.5] }
 });
 
