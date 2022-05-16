@@ -253,17 +253,20 @@ function lottie_load(){
 
 
 
-ifinityTest();
-function ifinityTest() {
+// ifinityTest();
+// function ifinityTest() {
 
     
-    // if (  0 ) {
-        let transform = target_1.style.transform;
-        let [tx, ty, tz] = transform.match(/-*\d+(?=px)/g);
-        console.log(tx, ty, tz);
-    // };
+//     // if (  0 ) {
+//         let transform = target_1.style.transform;
+//         let [tx, ty, tz] = transform.match(/-*\d+(?=px)/g);
+//         console.log(tx, ty, tz);
+//     // };
 
-    setTimeout(() => {
-        ifinityTest();
-    }, 50)
-};
+//     setTimeout(() => {
+//         ifinityTest();
+//     }, 50)
+// };
+
+
+$(target_1).css('-webkit-transform').match(/matrix(?:(3d)\(-{0,1}\d+(?:, -{0,1}\d+)*(?:, (-{0,1}\d+))(?:, (-{0,1}\d+))(?:, (-{0,1}\d+)), -{0,1}\d+\)|\(-{0,1}\d+(?:, -{0,1}\d+)*(?:, (-{0,1}\d+))(?:, (-{0,1}\d+))\))/)
