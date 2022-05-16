@@ -250,20 +250,20 @@ function lottie_load(){
     }
 };
 
+// Получаем значения трансформ 3д, но они не совпадают
 
-
-ifinityTest();
-function ifinityTest() {    
-    // if (  0 ) {
+// ifinityTest();
+// function ifinityTest() {    
+//     // if (  0 ) {
        
-    // };
-    setTimeout(() => {
-        ifinityTest();
+//     // };
+//     setTimeout(() => {
+//         ifinityTest();
 
-        let transform = document.querySelector('.transform3d-checker').style.transform;
-        let [tx, ty, tz] = transform.match(/\d+(?=px)/g);
-        console.log(tx, ty, tz);
-    }, 500)
-};
+//         let transform = target_1.style.transform;
+//         let [tx, ty, tz] = transform.match(/-*\d+(?=px)/g);
+//         console.log(tx, ty, tz);
+//     }, 500)
+// };
 
 
