@@ -253,24 +253,20 @@ function lottie_load(){
 
 
 
-// ifinityTest();
-// function ifinityTest() {
+ifinityTest();
+function ifinityTest() {
 
     
-//     // if (  0 ) {
-//         let transform = target_1.style.transform;
-//         let [tx, ty, tz] = transform.match(/-*\d+(?=px)/g);
-//         console.log(tx, ty, tz);
-//     // };
+    // if (  0 ) {
+        const transform = target_1.style.transform;
+        const re = /translate3d\((?<x>.*?)px, (?<y>.*?)px, (?<z>.*?)px/
+        const results = re.exec(transform);
+        console.log(results.groups.x, results.groups.y, results.groups.z);
+    // };
 
-//     setTimeout(() => {
-//         ifinityTest();
-//     }, 50)
-// };
+    setTimeout(() => {
+        ifinityTest();
+    }, 50)
+};
 
 
-const transform = target_1.style.transform;
-const re = /translate3d\((?<x>.*?)px, (?<y>.*?)px, (?<z>.*?)px/
-const results = re.exec(transform);
-console.log(results.groups.x, results.groups.y, results.groups.z);
-alert(results.groups.x, results.groups.y, results.groups.z);
