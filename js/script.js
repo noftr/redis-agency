@@ -263,5 +263,5 @@ function ifinityTest() {
     setTimeout(() => {
         ifinityTest();
         console.log(results.groups.x, results.groups.y, results.groups.z);
-    }, 50)
+    }, 10000)
 };
