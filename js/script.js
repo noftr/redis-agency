@@ -269,4 +269,7 @@ function lottie_load(){
 // };
 
 
-$(target_1).css('-webkit-transform').match(/matrix(?:(3d)\(-{0,1}\d+(?:, -{0,1}\d+)*(?:, (-{0,1}\d+))(?:, (-{0,1}\d+))(?:, (-{0,1}\d+)), -{0,1}\d+\)|\(-{0,1}\d+(?:, -{0,1}\d+)*(?:, (-{0,1}\d+))(?:, (-{0,1}\d+))\))/)
+const transform = target_1.style.transform;
+const re = /translate3d\((?<x>.*?)px, (?<y>.*?)px, (?<z>.*?)px/
+const results = re.exec(transform);
+console.log(results.groups.x, results.groups.y, results.groups.z);
