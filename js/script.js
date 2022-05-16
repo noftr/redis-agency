@@ -261,7 +261,7 @@ function ifinityTest() {
         ifinityTest();
 
         let transform = document.getElementById('target').style.transform;
-        let [tx, ty, tz] = transform.match(/-*\d+(?=px)/g);
+        let [tx, ty, tz] = transform.match.abs(/-*\d+(?=px)/g);
         console.log(tx, ty, tz);
     }, 500)
 };
