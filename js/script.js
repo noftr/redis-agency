@@ -248,14 +248,14 @@ bt_anchor_1.addEventListener('click', function (event) {
             scroller_2.y = innerWidth * -0.729;
             scroller_3.y = innerWidth * -0.729;
             scroller_4.y = innerWidth * 99.4;
-        }, 300);
+        }, 400);
     } else {
         setTimeout(() => {
             scroller_1.y = innerWidth * -1.4;
             scroller_2.y = innerWidth * -1.2;
             scroller_3.y = innerWidth * -1.4;
             scroller_4.y = innerWidth * 51;
-        }, 300);
+        }, 400);
     };
     setTimeout(() => {
         scroll_wrapper_1.style.opacity = "100";
@@ -269,7 +269,7 @@ bt_anchor_1.addEventListener('click', function (event) {
             ease: Power1.easeOut,
             delay: 0,
         } );
-    }, 300);
+    }, 400);
 });
 
 bt_anchor_2.addEventListener('click', function (event) {
@@ -286,14 +286,14 @@ bt_anchor_2.addEventListener('click', function (event) {
             scroller_2.y = innerWidth * -1.345;
             scroller_3.y = innerWidth * -1.345;
             scroller_4.y = innerWidth * 99.4;
-        }, 300);
+        }, 400);
     } else {
         setTimeout(() => {
             scroller_1.y = innerWidth * -3.3;
             scroller_2.y = innerWidth * -3.3;
             scroller_3.y = innerWidth * -3.3;
             scroller_4.y = innerWidth * 51;
-        }, 300);
+        }, 400);
     }
     setTimeout(() => {
         scroll_wrapper_1.style.opacity = "100";
@@ -307,7 +307,7 @@ bt_anchor_2.addEventListener('click', function (event) {
             ease: Power1.easeOut,
             delay: 0,
         } );
-    }, 300);
+    }, 400);
 });
 
 // обновляю при ресайзе, надо сделать менее примитивно
