@@ -94,8 +94,6 @@ function point_cancel() {
 };
 
 function onWheel(event) {
-// отключил потому что не знаю что строчка делает и консоль много ругается
-//        event.preventDefault();
     var normalized;
     var delta = event.wheelDelta;
     if (delta) {
@@ -145,7 +143,6 @@ function onFrame() {
     if (scroll_4 > 0) {
         scroll_4 = scroll_4 - windowHeight_4;
     };
-//    console.log(scroll_1, scroll_2, scroll_3, scroll_4);
     if (scroll_1 !== newScrollY) {
         TweenLite.set(target_1, { rotate: 0.01, y: scroll_1, force3D: true });
         scroll_1 = scroller_1.y;
@@ -170,7 +167,6 @@ function onFrame() {
     window.requestAnimationFrame(onFrame);
 };
 
-//анимация появления
 let progress_bar = document.querySelector(".preloader-line");
 let logo_bar = document.querySelector(".logo-bar");
 let logo_bar_mob = document.querySelector(".logo-bar-mob");
@@ -231,7 +227,6 @@ function lottie_load(){
     }
 };
 
-// якорные ссылки
 bt_anchor_1 = document.querySelector(".bt-anchor-1");
 bt_anchor_2 = document.querySelector(".bt-anchor-2");
 
@@ -311,13 +306,11 @@ bt_anchor_2.addEventListener('click', function (event) {
     }, 400);
 });
 
-// обновляю при ресайзе, надо сделать менее примитивно
 window.addEventListener('resize', check_device);
 function check_device() {
   document.location.reload();
 };
 
-// тесты рандома
 // let random_start = 1; // От какого генерировать
 // let random_end = 40; // До какого генерировать
 //
