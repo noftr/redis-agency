@@ -168,29 +168,6 @@ function onFrame() {
     lottie_target.style.transform = 'rotate(' + cos_scroller*30 + 'deg)';
     window.requestAnimationFrame(onFrame);
 };
-// якорные ссылки
-bt_anchor_1 = document.querySelector(".bt-anchor-1");
-bt_anchor_2 = document.querySelector(".bt-anchor-2");
-
-bt_anchor_1.addEventListener('click', function (event) {
-    scroller_1.y = innerWidth * -0.85;
-    scroller_2.y = innerWidth * -0.85;
-    scroller_3.y = innerWidth * -0.85;
-    scroller_4.y = innerWidth * -0.85;
-});
-
-bt_anchor_2.addEventListener('click', function (event) {
-    scroller_1.y = innerWidth * -0.85;
-    scroller_2.y = innerWidth * -0.85;
-    scroller_3.y = innerWidth * -0.85;
-    scroller_4.y = innerWidth * -0.85;
-});
-
-// обновляю при ресайзе, надо сделать менее примитивно
-window.addEventListener('resize', check_device);
-function check_device() {
-  document.location.reload();
-};
 
 //анимация появления
 let progress_bar = document.querySelector(".preloader-line");
@@ -251,4 +228,28 @@ function lottie_load(){
             window.addEventListener('wheel', onWheel);
         }, 700);
     }
+};
+
+// якорные ссылки
+bt_anchor_1 = document.querySelector(".bt-anchor-1");
+bt_anchor_2 = document.querySelector(".bt-anchor-2");
+
+bt_anchor_1.addEventListener('click', function (event) {
+    scroller_1.y = innerWidth * -0.71;
+    scroller_2.y = innerWidth * -0.71;
+    scroller_3.y = innerWidth * -0.71;
+    scroller_4.y = innerWidth * -0.71;
+});
+
+bt_anchor_2.addEventListener('click', function (event) {
+    scroller_1.y = innerWidth * -1.355;
+    scroller_2.y = innerWidth * -1.355;
+    scroller_3.y = innerWidth * -1.355;
+    scroller_4.y = innerWidth * -1.355;
+});
+
+// обновляю при ресайзе, надо сделать менее примитивно
+window.addEventListener('resize', check_device);
+function check_device() {
+  document.location.reload();
 };
