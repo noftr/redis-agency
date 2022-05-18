@@ -294,7 +294,7 @@ bt_anchor_2.addEventListener('click', function (event) {
             scroller_2.y = innerWidth * -3.3;
             scroller_3.y = innerWidth * -3.3;
             scroller_4.y = innerWidth * -1.975;
-        }, 400);ы
+        }, 400);
     }
     setTimeout(() => {
         scroll_wrapper_1.style.opacity = "100";
