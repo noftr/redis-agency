@@ -145,6 +145,7 @@ function onFrame() {
     if (scroll_4 > 0) {
         scroll_4 = scroll_4 - windowHeight_4;
     };
+    console.log(scroll_1, scroll_2, scroll_3, scroll_4);    
     if (scroll_1 !== newScrollY) {
         TweenLite.set(target_1, { rotate: 0.01, y: scroll_1, force3D: true });
         scroll_1 = scroller_1.y;
