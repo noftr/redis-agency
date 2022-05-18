@@ -273,17 +273,41 @@ bt_anchor_1.addEventListener('click', function (event) {
 });
 
 bt_anchor_2.addEventListener('click', function (event) {
+    scroll_wrapper_1.style.opacity = "0";
+    scroll_wrapper_2.style.opacity = "0";
+    scroll_wrapper_3.style.opacity = "0";
+    scroll_wrapper_4.style.opacity = "0";
+    lottie_wrapper.style.opacity = "0";
+    lottie_play = { speed: -4, };
+
     if (window.screen.width > 479) {
-        scroller_1.y = innerWidth * -1.345;
-        scroller_2.y = innerWidth * -1.345;
-        scroller_3.y = innerWidth * -1.345;
-        scroller_4.y = innerWidth * 99.4;
+        setTimeout(() => {
+            scroller_1.y = innerWidth * -1.345;
+            scroller_2.y = innerWidth * -1.345;
+            scroller_3.y = innerWidth * -1.345;
+            scroller_4.y = innerWidth * 99.4;
+        }, 300);
     } else {
-        scroller_1.y = innerWidth * -3.3;
-        scroller_2.y = innerWidth * -3.3;
-        scroller_3.y = innerWidth * -3.3;
-        scroller_4.y = innerWidth * 51;
+        setTimeout(() => {
+            scroller_1.y = innerWidth * -3.3;
+            scroller_2.y = innerWidth * -3.3;
+            scroller_3.y = innerWidth * -3.3;
+            scroller_4.y = innerWidth * 51;
+        }, 300);
     }
+    setTimeout(() => {
+        scroll_wrapper_1.style.opacity = "100";
+        scroll_wrapper_2.style.opacity = "100";
+        scroll_wrapper_3.style.opacity = "100";
+        scroll_wrapper_4.style.opacity = "100";
+        lottie_wrapper.style.opacity = "100";
+        gsap.to( lottie_play, {
+            duration: 1,
+            speed: 0,
+            ease: Power1.easeOut,
+            delay: 0,
+        } );
+    }, 300);
 });
 
 // обновляю при ресайзе, надо сделать менее примитивно
