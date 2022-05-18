@@ -145,7 +145,7 @@ function onFrame() {
     if (scroll_4 > 0) {
         scroll_4 = scroll_4 - windowHeight_4;
     };
-    console.log(scroll_1, scroll_2, scroll_3, scroll_4);
+//    console.log(scroll_1, scroll_2, scroll_3, scroll_4);
     if (scroll_1 !== newScrollY) {
         TweenLite.set(target_1, { rotate: 0.01, y: scroll_1, force3D: true });
         scroll_1 = scroller_1.y;
@@ -318,18 +318,17 @@ function check_device() {
 };
 
 // тесты рандома
-
-var random_start = 1; // От какого генерировать
-var random_end = 40; // До какого генерировать
+let random_start = 1; // От какого генерировать
+let random_end = 40; // До какого генерировать
 
 allСycles = 10;
 
-var array= []
+let array= []
 
-for(i=random_start;i<=random_end;i++){
+let(i=random_start;i<=random_end;i++){
    array.push(i)
 }
 
-for(countCycles=1;countCycles<=allСycles;countCycles++){
+let(countCycles=1;countCycles<=allСycles;countCycles++){
     console.log(array.splice(Math.random()*array.length,1)[0])
 }
