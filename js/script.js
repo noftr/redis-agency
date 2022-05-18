@@ -162,9 +162,9 @@ function onFrame() {
         scroll_4 = scroller_4.y;
     };
     lottie.setSpeed(lottie_play.speed+(scroller_1.speed * 0.3));
-    let progress_path = Math.abs(scroller_1.y % lottie_sensivity / lottie_sensivity);
+    let progress_path = Math.abs(scroller_4.y % lottie_sensivity / lottie_sensivity);
     path_tween.progress(progress_path);
-    let cos_scroller = Math.cos(scroller_1.y*0.0005);
+    let cos_scroller = Math.cos(scroller_4.y*0.0005);
     lottie_target.style.transform = 'rotate(' + cos_scroller*30 + 'deg)';
     window.requestAnimationFrame(onFrame);
 };
@@ -238,14 +238,14 @@ bt_anchor_1.addEventListener('click', function (event) {
     scroller_1.y = innerWidth * -0.71;
     scroller_2.y = innerWidth * -0.71;
     scroller_3.y = innerWidth * -0.71;
-    scroller_4.y = innerWidth * -0.71;
+//    scroller_4.y = innerWidth * -0.71;
 });
 
 bt_anchor_2.addEventListener('click', function (event) {
-    scroller_1.y = innerWidth * -1.355;
-    scroller_2.y = innerWidth * -1.355;
-    scroller_3.y = innerWidth * -1.355;
-    scroller_4.y = innerWidth * -1.355;
+    scroller_1.y = innerWidth * -1.345;
+    scroller_2.y = innerWidth * -1.345;
+    scroller_3.y = innerWidth * -1.345;
+//    scroller_4.y = innerWidth * -1.345;
 });
 
 // обновляю при ресайзе, надо сделать менее примитивно
