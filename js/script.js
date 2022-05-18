@@ -252,10 +252,10 @@ bt_anchor_1.addEventListener('click', function (event) {
         }, 400);
     } else {
         setTimeout(() => {
-            scroller_1.y = innerWidth * -1.4;
-            scroller_2.y = innerWidth * -1.2;
-            scroller_3.y = innerWidth * -1.4;
-            scroller_4.y = innerWidth * 51;
+            scroller_1.y = innerWidth * -2.2;
+            scroller_2.y = innerWidth * -2.0;
+            scroller_3.y = innerWidth * -2.2;
+            scroller_4.y = innerWidth * -1.325;
         }, 400);
     };
     setTimeout(() => {
@@ -293,7 +293,7 @@ bt_anchor_2.addEventListener('click', function (event) {
             scroller_1.y = innerWidth * -3.3;
             scroller_2.y = innerWidth * -3.3;
             scroller_3.y = innerWidth * -3.3;
-            scroller_4.y = innerWidth * 51;
+            scroller_4.y = innerWidth * -1.975;
         }, 400);ы
     }
     setTimeout(() => {
