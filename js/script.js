@@ -318,17 +318,17 @@ function check_device() {
 };
 
 // тесты рандома
-let random_start = 1; // От какого генерировать
-let random_end = 40; // До какого генерировать
-
-allСycles = 10;
-
-let array= []
-
-let(i=random_start;i<=random_end;i++){
-   array.push(i)
-}
-
-let(countCycles=1;countCycles<=allСycles;countCycles++){
-    console.log(array.splice(Math.random()*array.length,1)[0])
-}
+// let random_start = 1; // От какого генерировать
+// let random_end = 40; // До какого генерировать
+//
+// allСycles = 10;
+//
+// let array= []
+//
+// let(i=random_start;i<=random_end;i++){
+//    array.push(i)
+// }
+//
+// let(countCycles=1;countCycles<=allСycles;countCycles++){
+//     console.log(array.splice(Math.random()*array.length,1)[0])
+// }
