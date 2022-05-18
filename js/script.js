@@ -248,7 +248,7 @@ bt_anchor_1.addEventListener('click', function (event) {
             scroller_1.y = innerWidth * -0.95;
             scroller_2.y = innerWidth * -0.95;
             scroller_3.y = innerWidth * -0.95;
-            scroller_4.y = innerWidth * 99.4;
+            scroller_4.y = innerWidth * 96.6;
         }, 400);
     } else {
         setTimeout(() => {
