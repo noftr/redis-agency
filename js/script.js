@@ -22,8 +22,6 @@ animation_lottie = lottie.loadAnimation({
     path: "https://uploads-ssl.webflow.com/6266eeaffe48d61a4d9852b0/627e433282a7882f8b0ff2c4_redis-actual.json"
 });
 
-
-
 let scroll_wrapper_1 = document.getElementsByClassName("global-wrapper")[0];
 let scroll_wrapper_2 = document.getElementsByClassName("image__container")[0];
 let scroll_wrapper_3 = document.getElementsByClassName("image__container")[0];
@@ -38,6 +36,7 @@ let windowHeight_3 = scroll_wrapper_3.clientHeight;
 let windowHeight_4 = scroll_wrapper_4.clientHeight;
 let windowInnerHeight = window.innerHeight;
 let newScrollY = 0;
+
 if (window.screen.width > 479) {
     var scroller_1 = { wheelMultiplier: getLineHeight(), ease: 0.15, speed: 0, y: 0 };
     var scroller_2 = { wheelMultiplier: getLineHeight(), ease: 0.12, speed: 0, y: 0 };
@@ -49,6 +48,7 @@ if (window.screen.width > 479) {
     var scroller_3 = { wheelMultiplier: getLineHeight(), ease: 0.05, speed: 0, y: 0 };
     var scroller_4 = { wheelMultiplier: getLineHeight(), ease: 0.055, speed: 0, y: 0 };
 }
+
 let touch_up = 0;
 let touch_down = 0;
 let touch_path = 0;
