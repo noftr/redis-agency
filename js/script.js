@@ -171,18 +171,19 @@ function onFrame() {
 // якорные ссылки
 bt_anchor_1 = document.querySelector(".bt-anchor-1");
 bt_anchor_2 = document.querySelector(".bt-anchor-2");
-// bt_anchor_1.addEventListener('click', function (event) {
-//     document.querySelector('.scroll')
-//     scroller_1.y = windowHeight_1-500;
-//     scroller_2.y = 2876;
-//     scroller_3.y = 2876;
-//     scroller_4.y = 2876;
-// });
+
+bt_anchor_1.addEventListener('click', function (event) {
+    scroller_1.y = innerWidth * -0.85;
+    scroller_2.y = innerWidth * -0.85;
+    scroller_3.y = innerWidth * -0.85;
+    scroller_4.y = innerWidth * -0.85;
+});
+
 bt_anchor_2.addEventListener('click', function (event) {
-    scroller_1.y = 1936;
-    scroller_2.y = 1936;
-    scroller_3.y = 1936;
-    scroller_4.y = 1936;
+    scroller_1.y = innerWidth * -0.85;
+    scroller_2.y = innerWidth * -0.85;
+    scroller_3.y = innerWidth * -0.85;
+    scroller_4.y = innerWidth * -0.85;
 });
 
 // обновляю при ресайзе, надо сделать менее примитивно
@@ -251,42 +252,3 @@ function lottie_load(){
         }, 700);
     }
 };
-
-// Получаем значения трансформ 3д, но они не совпадают
-
-// ifinityTest();
-// function ifinityTest() {    
-//     // if (  0 ) {
-       
-//     // };
-//     setTimeout(() => {
-//         ifinityTest();
-
-//         let transform = target_1.style.transform;
-//         let [tx, ty, tz] = transform.match(/-*\d+(?=px)/g);
-//         console.log(tx, ty, tz);
-//     }, 500)
-// };
-
-let heroHeight = document.querySelector('.hero');
-let aboutSectionHeight = document.querySelector('.about-section');
-let contactSectionHeight = document.querySelector('.contacts-section');
-
-let sizeHero = heroHeight.clientHeight;
-let sizeAbout = aboutSectionHeight.clientHeight;
-let sizeContact = contactSectionHeight.clientHeight;
-
-let summBlocks = sizeAbout + sizeHero + sizeContact;
-
-
-bt_anchor_1.addEventListener('click', function (event) {
-    document.querySelector('.scroll')
-    // scroller_1.y = sizeHero - windowHeight_1;
-    // scroller_2.y = sizeHero - windowHeight_1;
-    // scroller_3.y = sizeHero - windowHeight_1;
-    // scroller_4.y = sizeHero - windowHeight_1;
-    scroller_1.y = innerWidth * -0.85;
-    scroller_2.y = innerWidth * -0.85;
-    scroller_3.y = innerWidth * -0.85;
-    scroller_4.y = innerWidth * -0.85;
-});
