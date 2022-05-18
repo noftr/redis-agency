@@ -236,10 +236,10 @@ bt_anchor_2 = document.querySelector(".bt-anchor-2");
 
 bt_anchor_1.addEventListener('click', function (event) {
     if (window.screen.width > 479) {
-        scroller_1.y = innerWidth * -0.71;
-        scroller_2.y = innerWidth * -0.71;
-        scroller_3.y = innerWidth * -0.71;
-        scroller_4.y = innerWidth * 102;
+        scroller_1.y = innerWidth * -0.729;
+        scroller_2.y = innerWidth * -0.729;
+        scroller_3.y = innerWidth * -0.729;
+        scroller_4.y = innerWidth * 99.4;
     } else {
         scroller_1.y = innerWidth * -1.4;
         scroller_2.y = innerWidth * -1.2;
