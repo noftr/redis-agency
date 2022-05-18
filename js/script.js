@@ -244,7 +244,7 @@ bt_anchor_1.addEventListener('click', function (event) {
         scroller_1.y = innerWidth * -1.4;
         scroller_2.y = innerWidth * -1.2;
         scroller_3.y = innerWidth * -1.4;
-        scroller_4.y = innerWidth * 100;
+        scroller_4.y = innerWidth * 52;
     }
 });
 
@@ -253,12 +253,12 @@ bt_anchor_2.addEventListener('click', function (event) {
         scroller_1.y = innerWidth * -1.345;
         scroller_2.y = innerWidth * -1.345;
         scroller_3.y = innerWidth * -1.345;
-        scroller_4.y = innerWidth * 57;
+        scroller_4.y = innerWidth * 100;
     } else {
         scroller_1.y = innerWidth * -3.3;
         scroller_2.y = innerWidth * -3.3;
         scroller_3.y = innerWidth * -3.3;
-        scroller_4.y = innerWidth * 57;
+        scroller_4.y = innerWidth * 52;
     }
 });
 
