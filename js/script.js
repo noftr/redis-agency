@@ -240,6 +240,7 @@ bt_anchor_1.addEventListener('click', function (event) {
     scroll_wrapper_3.style.opacity = "0";
     scroll_wrapper_4.style.opacity = "0";
     lottie_wrapper.style.opacity = "0";
+    let lottie_play = { speed: -4, };
 
     if (window.screen.width > 479) {
         setTimeout(() => {
@@ -255,16 +256,20 @@ bt_anchor_1.addEventListener('click', function (event) {
             scroller_3.y = innerWidth * -1.4;
             scroller_4.y = innerWidth * 51;
         }, 300);
-    }
-
+    };
     setTimeout(() => {
-    scroll_wrapper_1.style.opacity = "100";
-    scroll_wrapper_2.style.opacity = "100";
-    scroll_wrapper_3.style.opacity = "100";
-    scroll_wrapper_4.style.opacity = "100";
-    lottie_wrapper.style.opacity = "100";
+        scroll_wrapper_1.style.opacity = "100";
+        scroll_wrapper_2.style.opacity = "100";
+        scroll_wrapper_3.style.opacity = "100";
+        scroll_wrapper_4.style.opacity = "100";
+        lottie_wrapper.style.opacity = "100";
+        gsap.to( lottie_play, {
+            duration: 0.6,
+            speed: 0,
+            ease: Power1.easeOut,
+            delay: 0,
+        } );
     }, 300);
-    
 });
 
 bt_anchor_2.addEventListener('click', function (event) {
