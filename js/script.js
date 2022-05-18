@@ -235,17 +235,27 @@ bt_anchor_1 = document.querySelector(".bt-anchor-1");
 bt_anchor_2 = document.querySelector(".bt-anchor-2");
 
 bt_anchor_1.addEventListener('click', function (event) {
-    scroller_1.y = innerWidth * -0.71;
-    scroller_2.y = innerWidth * -0.71;
-    scroller_3.y = innerWidth * -0.71;
-//    scroller_4.y = innerWidth * -0.71;
+    if (window.screen.width > 479) {
+        scroller_1.y = innerWidth * -0.71;
+        scroller_2.y = innerWidth * -0.71;
+        scroller_3.y = innerWidth * -0.71;
+    } else {
+        scroller_1.y = innerWidth * -1.4;
+        scroller_2.y = innerWidth * -1.2;
+        scroller_3.y = innerWidth * -1.4;
+    }
 });
 
 bt_anchor_2.addEventListener('click', function (event) {
-    scroller_1.y = innerWidth * -1.345;
-    scroller_2.y = innerWidth * -1.345;
-    scroller_3.y = innerWidth * -1.345;
-//    scroller_4.y = innerWidth * -1.345;
+    if (window.screen.width > 479) {
+        scroller_1.y = innerWidth * -1.345;
+        scroller_2.y = innerWidth * -1.345;
+        scroller_3.y = innerWidth * -1.345;
+    } else {
+        scroller_1.y = innerWidth * -3.3;
+        scroller_2.y = innerWidth * -3.3;
+        scroller_3.y = innerWidth * -3.3;
+    }
 });
 
 // обновляю при ресайзе, надо сделать менее примитивно
