@@ -11,6 +11,11 @@ a {
   text-decoration: underline;
 }
 
+.scroll-view
+{
+  transition: all .2 ease;
+}
+
 img {
   display: inline-block;
 }
