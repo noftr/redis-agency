@@ -311,6 +311,7 @@ function check_device() {
   document.location.reload();
 };
 
+console.log("хуй");
 // let random_start = 1; // От какого генерировать
 // let random_end = 40; // До какого генерировать
 //
