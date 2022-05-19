@@ -5,6 +5,11 @@ body {
   font-size: 1vw;
   font-weight: 400;
 }
+#target4
+{
+opacity: 0;
+transition: opacity .5s ease-out;
+}
 
 a {
   color: #fff;
