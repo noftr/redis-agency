@@ -191,7 +191,7 @@ let left_herb = document.querySelector(".animate-left-herb");
 let right_herb = document.querySelector(".animate-right-herb");
 let redis_img = document.querySelector(".lottie-container");
 let redisBG = document.getElementById("target4");
-let botvaDown = document.getElementsByClassName("conatcts__image-is2, about__image")
+let botvaDown = document.getElementsByClassName("conatcts__image-is2, about__image");
 
 progress_bar.style.width = 70+"%";
 botvaDown.style.opacity = "0";
