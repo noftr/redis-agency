@@ -11,6 +11,11 @@ a {
   text-decoration: underline;
 }
 
+.scroll-view
+{
+  transition: opacity .2s ease-out;
+}
+
 img {
   display: inline-block;
 }
@@ -471,6 +476,7 @@ img {
 }
 
 .redis-lottie {
+  transition: opacity .5s ease-out;
   position: fixed;
   left: 0%;
   top: 0%;
