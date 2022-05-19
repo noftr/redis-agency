@@ -191,8 +191,10 @@ let left_herb = document.querySelector(".animate-left-herb");
 let right_herb = document.querySelector(".animate-right-herb");
 let redis_img = document.querySelector(".lottie-container");
 let redisBG = document.getElementById("target4");
+let botvaDown = document.getElementsByClassName("conatcts__image-is2, about__image")
 
 progress_bar.style.width = 70+"%";
+botvaDown.style.opacity = "0";
 redisBG.style.opacity = "0";
 lottie_load();
 function lottie_load(){
@@ -205,6 +207,7 @@ function lottie_load(){
         progress_bar.style.width = 100+"%";
         progress_bar.style.height = 0+"px";
         redisBG.style.opacity = "100";
+        botvaDown.style.opacity = "100";
         header_text.style.transform = "translate(0vh)";
 
         if (window.screen.width > 479) {

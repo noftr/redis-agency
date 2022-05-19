@@ -11,6 +11,10 @@ opacity: 0;
 transition: opacity .5s ease-out;
 }
 
+.about__image, .conatcts__image-is2{
+  transition: opacity .5s ease-out;
+}
+
 a {
   color: #fff;
   text-decoration: underline;
