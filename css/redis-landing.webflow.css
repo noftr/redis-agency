@@ -476,6 +476,7 @@ img {
 }
 
 .redis-lottie {
+  transition: opacity .5s ease-out;
   position: fixed;
   left: 0%;
   top: 0%;
