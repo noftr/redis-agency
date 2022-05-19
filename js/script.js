@@ -222,7 +222,7 @@ function lottie_load(){
 
         setTimeout(() => {
             left_herb.style.transform = "translate(0vh) rotate(0deg)";
-            right_herb.style.transform = "translate(0vh) rotate(0deg)";
+            right_herb.style.transform = "translate(0vh) rotateX(-180deg) rotateY(-180deg) rotateZ(0deg)";
         }, 400);
 
         setTimeout(() => {
