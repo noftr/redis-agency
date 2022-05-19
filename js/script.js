@@ -230,7 +230,7 @@ function lottie_load(){
 bt_anchor_1 = document.querySelector(".bt-anchor-1");
 bt_anchor_2 = document.querySelector(".bt-anchor-2");
 
-var pageTransition = document.getElementsByClassName('scroll-wrapper');
+pageTransition = document.querySelector(".scroll-wrapper");
 
 bt_anchor_1.addEventListener('click', function (event) {
     // scroll_wrapper_1.style.opacity = "0";
