@@ -12,6 +12,7 @@ transition: opacity .5s ease-out;
 }
 
 .about__image, .conatcts__image-is2{
+  transition-delay: 4s;
   transition: opacity .5s ease-out;
 }
 
