@@ -13,7 +13,7 @@ a {
 
 .scroll-view
 {
-  transition: all .2 ease;
+  transition: opacity 0.5 ease-out;
 }
 
 img {
