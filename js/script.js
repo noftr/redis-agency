@@ -7,7 +7,18 @@ let rotate_direction = 1;
 let path_even_loop = false;
 let path_loop = false;
 let path_loop_once = true;
-let scroll_loop_once = false;
+let scroll_loop_once = true;
+
+let rndm_img = [
+'images/redis-command__1.jpg',
+'images/redis-command__2.jpg',
+'images/redis-command__3.jpg',
+'images/redis-command__4.jpg',
+'images/redis-command__5.jpg',
+'images/redis-command__6.jpg',
+];
+
+console.log(rndm_img.[1]);
 
 gsap.registerPlugin(MotionPathPlugin);
 var path_tween = gsap.to(".lottie-wrapper", {
@@ -147,12 +158,41 @@ function onFrame() {
 
     if (Math.abs(scroll_1) < 100) {
         if (scroll_loop_once == true) {
-            console.log("произошел рандом");
             scroll_loop_once = false;
+
+
+
+            let random_start = 1;
+            let random_end = 6;
+            let allСycles = 3;
+
+            let array = [];
+
+            for(i=random_start;i<=random_end;i++){
+               array.push(i);
+            };
+
+            for(countCycles=1;countCycles<=allСycles;countCycles++){
+                console.log("цикл по счету "+countCycles);
+                console.log(array.splice(Math.random()*array.length,1)[0]);
+            };
+
+
+            // делаем массив или псевдо массив со значениями фоток
+            // заполняем контейнеры по порядку значением фоток
+
+
+
+
+
+
+
+
+
         }
     } else {
         scroll_loop_once = true;
-    }
+    };
 
     if (scroll_1 !== newScrollY) {
         TweenLite.set(target_1, { rotate: 0.01, y: scroll_1, force3D: true });
@@ -323,23 +363,3 @@ window.addEventListener('resize', check_device);
 function check_device() {
   document.location.reload();
 };
-
-let random_start = 1;
-let random_end = 6;
-let allСycles = 3;
-
-let array = [];
-
-for(i=random_start;i<=random_end;i++){
-   array.push(i);
-};
-
-for(countCycles=1;countCycles<=allСycles;countCycles++){
-    console.log("цикл по счету "+countCycles);
-    console.log(array.splice(Math.random()*array.length,1)[0]);
-};
-
-// определяем прошел ли цикл скролла
-// определяем случайные числа
-// делаем массив или псевдо массив со значениями фоток
-// заполняем контейнеры по порядку значением фоток
