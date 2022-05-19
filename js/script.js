@@ -7,6 +7,7 @@ let rotate_direction = 1;
 let path_even_loop = false;
 let path_loop = false;
 let path_loop_once = true;
+let scroll_loop_once = false;
 
 gsap.registerPlugin(MotionPathPlugin);
 var path_tween = gsap.to(".lottie-wrapper", {
@@ -143,6 +144,16 @@ function onFrame() {
     if (scroll_4 > 0) {
         scroll_4 = scroll_4 - windowHeight_4;
     };
+
+    if (Math.abs(scroll_1) < 100) {
+        if (scroll_loop_once == true) {
+            console.log("произошел рандом");
+            scroll_loop_once = false;
+        }
+    } else {
+        scroll_loop_once = true;
+    }
+
     if (scroll_1 !== newScrollY) {
         TweenLite.set(target_1, { rotate: 0.01, y: scroll_1, force3D: true });
         scroll_1 = scroller_1.y;
@@ -159,6 +170,8 @@ function onFrame() {
         TweenLite.set(target_4, { rotate: 0.01, y: scroll_4, force3D: true });
         scroll_4 = scroller_4.y;
     };
+
+
     lottie.setSpeed(lottie_play.speed+(scroller_1.speed * 0.3));
     let progress_path = Math.abs(scroller_4.y % lottie_sensivity / lottie_sensivity);
     path_tween.progress(progress_path);
@@ -317,17 +330,22 @@ function check_device() {
   document.location.reload();
 };
 
-// let random_start = 1; // От какого генерировать
-// let random_end = 40; // До какого генерировать
-//
-// allСycles = 10;
-//
-// let array= []
-//
-// let(i=random_start;i<=random_end;i++){
-//    array.push(i)
-// }
-//
-// let(countCycles=1;countCycles<=allСycles;countCycles++){
-//     console.log(array.splice(Math.random()*array.length,1)[0])
-// }
+let random_start = 1;
+let random_end = 6;
+let allСycles = 3;
+
+let array = [];
+
+for(i=random_start;i<=random_end;i++){
+   array.push(i);
+};
+
+for(countCycles=1;countCycles<=allСycles;countCycles++){
+    console.log("цикл по счету "+countCycles);
+    console.log(array.splice(Math.random()*array.length,1)[0]);
+};
+
+// определяем прошел ли цикл скролла
+// определяем случайные числа
+// делаем массив или псевдо массив со значениями фоток
+// заполняем контейнеры по порядку значением фоток
