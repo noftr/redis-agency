@@ -1,14 +1,16 @@
 <!DOCTYPE html><!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Fri May 13 2022 06:59:25 GMT+0000 (Coordinated Universal Time)  -->
-<html data-wf-page="62729111393e4e2de0e27a40" data-wf-site="6266eeaffe48d61a4d9852b0">
+<!--  Last Published: Thu May 19 2022 10:33:46 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="62729111393e4e2de0e27a40" data-wf-site="6266eeaffe48d61a4d9852b0" lang="en">
 <head>
   <meta charset="utf-8">
   <title>Redis Product Design &amp; Development</title>
   <meta content="We bring freshness, meaning and emotion to corporate solutions, services and startups" name="description">
   <meta content="Redis Product Design &amp; Development" property="og:title">
   <meta content="We bring freshness, meaning and emotion to corporate solutions, services and startups" property="og:description">
+  <meta content="https://uploads-ssl.webflow.com/6266eeaffe48d61a4d9852b0/62822bce2b41942b8c1d3b46_Frame%206898.png" property="og:image">
   <meta content="Redis Product Design &amp; Development" property="twitter:title">
   <meta content="We bring freshness, meaning and emotion to corporate solutions, services and startups" property="twitter:description">
+  <meta content="https://uploads-ssl.webflow.com/6266eeaffe48d61a4d9852b0/62822bce2b41942b8c1d3b46_Frame%206898.png" property="twitter:image">
   <meta property="og:type" content="website">
   <meta content="summary_large_image" name="twitter:card">
   <meta content="width=device-width, initial-scale=1" name="viewport">
@@ -18,7 +20,7 @@
   <link href="css/redis-landing.webflow.css" rel="stylesheet" type="text/css">
   <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
   <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
-  <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
   <link href="images/webclip.png" rel="apple-touch-icon">
   <style>
 html {
@@ -29,29 +31,37 @@ html {
   <html lang="en">
   <style>
 body {
-overflow: hidden;
+  overflow: hidden;
 }
-.redis-lottie, .hero__heading, .scroll-container.no-e-pointers {
-pointer-events: none;
+.redis-lottie, .hero__heading, .scroll-container.no-e-pointers, .nav {
+	pointer-events: none;
+}
+.bt_bar_1, .bt_bar_2, .bt_bar_3 {
+	pointer-events: auto;
 }
 ::selection {
-background: rgba(208, 10, 70, 0.6);
+  background: rgba(208, 10, 70, 0.6);
 }
 a {
-color: inherit;
+  color: inherit;
 }
 </style>
 </html></head>
 <body>
+  <div data-w-id="b158344f-a62d-d167-d5e0-63b0bde3e652" class="preloader-line"></div>
   <div class="redis-lottie">
     <div class="lottie-wrapper">
-      <div id="target-lottie" class="target-lottie"></div>
+      <div class="lottie-container">
+        <div id="target-lottie" class="target-lottie"></div>
+      </div>
     </div>
   </div>
   <nav class="nav">
-    <div class="nav__menu">
-      <a href="#" class="p-normal none-decor bt-anchor-1">About us</a>
-      <div class="nav__logo mob">
+    <div data-w-id="6015e1a2-0e0e-7b48-212c-687f821cfbac" class="nav__menu">
+      <div class="bt_bar_1">
+        <a href="#" class="p-normal none-decor bt-anchor-1">Services</a>
+      </div>
+      <div class="nav__logo logo-bar-mob">
         <div class="logo__image w-embed"><svg width="100%" fill="none" viewbox="0 0 60 70">
             <path fill="currentcolor" d="M30 64c-5.2-10.6-19.8-11.3-20-22.5 0-4.5 2.8-10.4 9.2-10.4h21.6c6.4 0 9.2 5.9 9.2 10.4-.2 11.2-14.8 11.9-20 22.5Z"></path>
             <path fill="currentcolor" fill-rule="evenodd" d="m30 64-.4-.8c-2.4-4.3-6.4-6.9-10-9.3-5-3.2-9.5-6.2-9.6-12.4 0-4.5 2.8-10.4 9.2-10.4h21.6c6.4 0 9.2 5.9 9.2 10.4 0 6.2-4.6 9.2-9.5 12.4a27 27 0 0 0-10 9.3l-.5.8Z" clip-rule="evenodd"></path>
@@ -59,17 +69,21 @@ color: inherit;
             <path fill="currentcolor" fill-rule="evenodd" d="M26.2 10.6C22 6.4 16 6 10.5 6h-.4v1.4c0 1.5 0 3.8.3 6.2a15 15 0 0 0 4.1 8.6c4.2 4 10.3 4.3 15.8 4.3h.4v-1.4c0-3.4.2-10-4.5-14.5Z" clip-rule="evenodd"></path>
           </svg></div>
       </div>
-      <a href="#" class="p-normal none-decor bt-anchor-2">Contact</a>
+      <div class="bt_bar_2">
+        <a href="#" class="p-normal none-decor bt-anchor-2">Contact</a>
+      </div>
     </div>
-    <div class="nav__logo">
-      <div class="logo__image w-embed"><svg fill="none" viewbox="0 0 60 70">
+    <div data-w-id="da9bd84d-c8c1-ebb9-0224-178a68b4ccd2" class="nav__logo logo-bar">
+      <div class="logo__image w-embed"><svg class="pointer-event-none" fill="none" viewbox="0 0 60 70">
           <path fill="currentcolor" d="M30 64c-5.2-10.6-19.8-11.3-20-22.5 0-4.5 2.8-10.4 9.2-10.4h21.6c6.4 0 9.2 5.9 9.2 10.4-.2 11.2-14.8 11.9-20 22.5Z"></path>
           <path fill="currentcolor" fill-rule="evenodd" d="m30 64-.4-.8c-2.4-4.3-6.4-6.9-10-9.3-5-3.2-9.5-6.2-9.6-12.4 0-4.5 2.8-10.4 9.2-10.4h21.6c6.4 0 9.2 5.9 9.2 10.4 0 6.2-4.6 9.2-9.5 12.4a27 27 0 0 0-10 9.3l-.5.8Z" clip-rule="evenodd"></path>
           <path fill="currentcolor" d="m38.2 25.3-.2-.7c0-.4-.2-.7-.6-.7.4 0 .8-.4.8-.9 0-.6-.5-1-1.3-1h-1.6v3.3h.8v-1.1h.7c.3 0 .5 0 .5.5 0 .3 0 .6.2.6h.7Zm-2.1-1.7v-1h.7c.4 0 .6.2.6.5s-.2.5-.6.5H36Zm3.8.1c0-1.9-1.5-3.2-3.2-3.2a3.1 3.1 0 0 0-3.2 3.2c0 1.9 1.4 3.2 3.2 3.2 1.7 0 3.2-1.3 3.2-3.2Zm-.6 0c0 1.6-1.2 2.7-2.6 2.7a2.6 2.6 0 0 1-2.6-2.7c0-1.5 1.1-2.7 2.6-2.7 1.4 0 2.6 1.2 2.6 2.7Z"></path>
           <path fill="currentcolor" fill-rule="evenodd" d="M26.2 10.6C22 6.4 16 6 10.5 6h-.4v1.4c0 1.5 0 3.8.3 6.2a15 15 0 0 0 4.1 8.6c4.2 4 10.3 4.3 15.8 4.3h.4v-1.4c0-3.4.2-10-4.5-14.5Z" clip-rule="evenodd"></path>
         </svg></div>
     </div>
-    <a href="#" class="p-normal nav-btn w-button">Let’s touch</a>
+    <div class="bt_bar_3">
+      <a data-w-id="99da64b8-8480-04ae-d2f6-c2d97a6f7251" href="mailto:hello@redis.agency?subject=Redis%20Agency" class="p-normal nav-btn w-button">Let’s touch</a>
+    </div>
   </nav>
   <div class="path-container w-embed">
     <!-- <svg width="1099" height="346" viewBox="0 0 1099 346" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -94,74 +108,71 @@ color: inherit;
   </div>
   <div class="scroll-view">
     <div class="scroll-wrapper">
-      <div id="target" class="scroll-container">
-        <div class="global-wrapper">
-          <header class="hero">
+      <div id="target" class="scroll-container transform3d-checker">
+        <div class="global-wrapper animate-header-text">
+          <header data-w-id="3139540a-78e9-7975-fbd8-44b6d77626d8" class="hero">
             <div class="hero__heading">
-              <h1 class="heading-big-hero">Redis<br></h1>
+              <h1 class="heading-big-hero mob">Redis<br></h1>
               <div class="heading-big-hero">Agency</div>
             </div>
           </header>
           <section class="about-section">
             <div class="about__image-container">
-              <div class="about__image-qr w-embed"><svg fill="none" viewbox="0 0 210 80">
-                  <path fill="currentcolor" fill-rule="evenodd" d="M15.06 73V0h1.88v73h-1.88Zm5 0V0h1.88v73h-1.88Zm7.07 0V0h3.74v73h-3.75Zm4.93 0V0h1.88v73h-1.88Zm6.07-11V0h3.74v62h-3.74Zm6.93 0V0h1.88v62h-1.88Zm6 0V0h1.88v62h-1.88Zm6.07 0V0h3.74v62h-3.74Zm5.12 0V0h7.5v62h-7.5Zm8.81 0V0h1.88v62h-1.88Zm5 0V0h1.88v62h-1.88Zm7.07 0V0h3.74v62h-3.75Zm6 0V0h3.74v62h-3.75Zm8.93 0V0h1.88v62h-1.88Zm3 11V0h1.88v73h-1.88Zm5 0V0h1.88v73h-1.88Zm3-11V0h1.88v62h-1.88Zm4 0V0h1.88v62h-1.88Zm9 0V0h1.88v62h-1.88Zm8 0V0h1.88v62h-1.88Zm6 0V0h1.88v62h-1.88Zm5 0V0h1.88v62h-1.88Zm8.13 0V0h5.62v62h-5.62Zm6.87 0V0h1.88v62h-1.88Zm5.13 0V0h5.62v62h-5.62Zm9.87 0V0h1.88v62h-1.88Zm4 11V0h1.88v73h-1.88Zm5.13 0V0h5.62v73h-5.62Zm6.87 0V0h1.88v73h-1.88Zm5 0V0h1.88v73h-1.88Z" clip-rule="evenodd"></path>
-                  <path fill="currentcolor" d="M2.38 74.62c0-1.35.89-2.28 2.2-2.28s2.21.93 2.21 2.28c0 1.37-.91 2.27-2.22 2.27-1.33 0-2.19-.89-2.19-2.27Zm2.33-5.83c1.03 0 1.72.48 1.89 1.38l1.38-.02c-.21-1.26-1.14-2.47-3.12-2.47C1.93 67.68.9 70.36.9 73.2c0 3.07 1.16 4.8 3.68 4.8a3.4 3.4 0 0 0 3.55-3.44c0-1.99-1.38-3.37-3.25-3.37-1.34 0-2.2.6-2.67 1.38.07-2.31.93-3.78 2.49-3.78ZM49.03 78c2.69 0 3.95-2.06 3.95-5.2s-1.26-5.12-3.95-5.12c-2.68 0-3.93 1.98-3.93 5.11 0 3.15 1.25 5.21 3.93 5.21Zm0-1.11c-1.59 0-2.58-1.34-2.58-4.1s1-4 2.58-4c1.6 0 2.6 1.24 2.6 4s-1 4.1-2.6 4.1ZM58.26 78c2.69 0 3.95-2.06 3.95-5.2s-1.26-5.12-3.95-5.12c-2.68 0-3.93 1.98-3.93 5.11 0 3.15 1.25 5.21 3.93 5.21Zm0-1.11c-1.59 0-2.58-1.34-2.58-4.1s.99-4 2.58-4 2.6 1.24 2.6 4-1.01 4.1-2.6 4.1ZM67.49 78c2.68 0 3.94-2.06 3.94-5.2s-1.26-5.12-3.94-5.12c-2.69 0-3.93 1.98-3.93 5.11 0 3.15 1.24 5.21 3.93 5.21Zm0-1.11c-1.6 0-2.58-1.34-2.58-4.1s.99-4 2.58-4 2.6 1.24 2.6 4-1.01 4.1-2.6 4.1ZM76.72 78c2.68 0 3.94-2.06 3.94-5.2s-1.26-5.12-3.94-5.12c-2.69 0-3.93 1.98-3.93 5.11 0 3.15 1.24 5.21 3.93 5.21Zm0-1.11c-1.6 0-2.58-1.34-2.58-4.1s.99-4 2.58-4 2.6 1.24 2.6 4-1.01 4.1-2.6 4.1ZM85.95 78c2.68 0 3.94-2.06 3.94-5.2s-1.26-5.12-3.94-5.12c-2.69 0-3.93 1.98-3.93 5.11 0 3.15 1.24 5.21 3.93 5.21Zm0-1.11c-1.6 0-2.58-1.34-2.58-4.1s.99-4 2.58-4 2.6 1.24 2.6 4-1.01 4.1-2.6 4.1ZM123.03 78c2.69 0 3.95-2.06 3.95-5.2s-1.26-5.12-3.95-5.12c-2.68 0-3.93 1.98-3.93 5.11 0 3.15 1.25 5.21 3.93 5.21Zm0-1.11c-1.59 0-2.58-1.34-2.58-4.1s1-4 2.58-4c1.6 0 2.6 1.24 2.6 4s-1 4.1-2.6 4.1Zm9.23 1.11c2.69 0 3.95-2.06 3.95-5.2s-1.27-5.12-3.95-5.12c-2.69 0-3.93 1.98-3.93 5.11 0 3.15 1.24 5.21 3.93 5.21Zm0-1.11c-1.59 0-2.58-1.34-2.58-4.1s.99-4 2.58-4 2.6 1.24 2.6 4-1.01 4.1-2.6 4.1Zm9.23 1.11c2.68 0 3.94-2.06 3.94-5.2s-1.26-5.12-3.94-5.12c-2.69 0-3.93 1.98-3.93 5.11 0 3.15 1.24 5.21 3.93 5.21Zm0-1.11c-1.6 0-2.58-1.34-2.58-4.1s.99-4 2.58-4 2.6 1.24 2.6 4-1.01 4.1-2.6 4.1Zm9.23 1.11c2.68 0 3.94-2.06 3.94-5.2s-1.26-5.12-3.94-5.12c-2.69 0-3.93 1.98-3.93 5.11 0 3.15 1.24 5.21 3.93 5.21Zm0-1.11c-1.6 0-2.58-1.34-2.58-4.1s.99-4 2.58-4 2.6 1.24 2.6 4-1.01 4.1-2.6 4.1Zm9.23 1.11c2.68 0 3.94-2.06 3.94-5.2s-1.26-5.12-3.94-5.12c-2.69 0-3.93 1.98-3.93 5.11 0 3.15 1.24 5.21 3.93 5.21Zm0-1.11c-1.6 0-2.58-1.34-2.58-4.1s.99-4 2.58-4 2.6 1.24 2.6 4-1.01 4.1-2.6 4.1Zm46.87-5.84c0 1.35-.88 2.28-2.2 2.28-1.3 0-2.2-.93-2.2-2.28 0-1.36.9-2.26 2.21-2.26 1.34 0 2.2.88 2.2 2.26Zm-2.32 5.84c-1.04 0-1.73-.48-1.9-1.38l-1.37.01c.2 1.26 1.17 2.48 3.15 2.48 2.92 0 3.91-2.69 3.91-5.52 0-3.08-1.15-4.8-3.67-4.8a3.4 3.4 0 0 0-3.56 3.43c0 2 1.38 3.38 3.26 3.38 1.33 0 2.2-.6 2.67-1.38-.08 2.31-.93 3.78-2.5 3.78Z"></path>
+              <div class="about__image-qr w-embed"><svg fill="none" viewbox="0 0 145 63">
+                  <path fill="#fff" fill-rule="evenodd" d="M10.09 53.84V1h1.31v52.84h-1.3Zm1.96 0V1h1.31v52.84h-1.3Zm5.23 0V1h2.63v52.84h-2.63Zm4.58 0V1h1.32v52.84h-1.32Zm3.27-4.89V1h2.63v47.95h-2.63Zm5.57 0V1H32v47.95h-1.3Zm3.92 0V1h1.31v47.95h-1.31Zm4.25 0V1h2.62v47.95h-2.62Zm3.59 0V1h5.25v47.95h-5.25Zm6.88 0V1h1.31v47.95h-1.31Zm1.96 0V1h1.31v47.95H51.3Zm5.23 0V1h2.63v47.95h-2.63Zm3.92 0V1h2.63v47.95h-2.63Zm6.55 0V1h1.31v47.95H67Zm2.94 4.89V1h1.31v52.84h-1.3Zm2.95 0V1h1.3v52.84h-1.3Zm2.94-4.89V1h1.31v47.95h-1.31Zm1.97 0V1h1.3v47.95h-1.3Zm6.86 0V1h1.31v47.95h-1.31Zm4.91 0V1h1.3v47.95h-1.3Zm3.92 0V1h1.31v47.95h-1.3Zm3.92 0V1h1.32v47.95H97.4Zm5.56 0V1h3.94v47.95h-3.94Zm5.23 0V1h1.32v47.95h-1.31Zm3.6 0V1h3.94v47.95h-3.94Zm7.2 0V1h1.31v47.95h-1.3Zm1.96 4.89V1h1.32v52.84h-1.32Zm4.58 0V1h3.94v52.84h-3.94Zm5.24 0V1h1.3v52.84h-1.3Zm1.96 0V1h1.31v52.84h-1.31Z" clip-rule="evenodd"></path>
+                  <path fill="#fff" d="M5.43 55.67h1a2.28 2.28 0 0 0-.7-1.57 2.41 2.41 0 0 0-1.66-.55c-.6 0-1.09.12-1.48.37-.4.25-.7.58-.94 1-.24.41-.4.9-.5 1.43a9.49 9.49 0 0 0-.06 3.02c.07.47.21.9.42 1.3.2.38.5.7.87.95s.87.38 1.5.38a3 3 0 0 0 1.31-.26 2.5 2.5 0 0 0 1.33-1.57 3.45 3.45 0 0 0-.03-2.02 2.53 2.53 0 0 0-.51-.86 2.12 2.12 0 0 0-.8-.56 2.6 2.6 0 0 0-1.07-.21c-.46 0-.86.08-1.21.25a2.2 2.2 0 0 0-.88.84L2 57.58a6.5 6.5 0 0 1 .39-2.05c.15-.32.35-.58.61-.79.26-.2.6-.31 1.03-.31.4 0 .72.11.96.34.24.22.39.53.44.9ZM3.92 57.4a1.53 1.53 0 0 1 1.58 1.16 2.44 2.44 0 0 1-.01 1.43c-.07.22-.18.42-.32.59a1.53 1.53 0 0 1-1.25.55c-.27 0-.52-.05-.74-.14-.21-.1-.4-.23-.54-.4A1.78 1.78 0 0 1 2.3 60a2.44 2.44 0 0 1-.01-1.46 1.66 1.66 0 0 1 1.62-1.14Zm25.91.37v-.67a7.64 7.64 0 0 1 .21-1.46 2 2 0 0 1 .3-.61 1.46 1.46 0 0 1 1.21-.6c.28 0 .52.05.72.16.2.11.36.26.48.44.14.17.23.37.3.6.07.24.12.48.15.73a20.68 20.68 0 0 1 .04 2.47c-.02.38-.08.75-.2 1.1-.1.33-.26.61-.5.85-.23.23-.56.35-.99.35-.42 0-.75-.12-.99-.35-.23-.24-.4-.52-.52-.86-.1-.34-.16-.7-.18-1.09l-.03-1.06Zm-1.06.01.03.96a6.46 6.46 0 0 0 .39 1.85 2.21 2.21 0 0 0 1.25 1.23c.3.12.68.18 1.11.18.44 0 .81-.06 1.12-.18a2.21 2.21 0 0 0 1.25-1.23 6.46 6.46 0 0 0 .39-1.86 19.96 19.96 0 0 0 0-1.9 6.46 6.46 0 0 0-.4-1.85 2.19 2.19 0 0 0-1.26-1.24c-.3-.13-.67-.2-1.1-.2-.43 0-.8.07-1.12.2a2.2 2.2 0 0 0-1.24 1.24 4.98 4.98 0 0 0-.39 1.85l-.03.95Zm7.61-.01v-.67a7.64 7.64 0 0 1 .2-1.46 2 2 0 0 1 .3-.61c.14-.18.3-.33.5-.44.2-.1.43-.16.71-.16.29 0 .53.05.72.16a1.7 1.7 0 0 1 .78 1.05c.07.23.12.47.15.72a20.68 20.68 0 0 1 .04 2.47c-.02.38-.08.75-.19 1.1-.1.33-.27.61-.5.85-.24.23-.57.35-1 .35-.42 0-.75-.12-.98-.35a2.1 2.1 0 0 1-.52-.86c-.1-.34-.17-.7-.2-1.09l-.01-1.06Zm-1.06.01c0 .31 0 .63.02.96a6.46 6.46 0 0 0 .39 1.85 2.21 2.21 0 0 0 1.25 1.23c.31.12.68.18 1.11.18.44 0 .82-.06 1.12-.18a2.21 2.21 0 0 0 1.25-1.23 6.46 6.46 0 0 0 .39-1.86 19.96 19.96 0 0 0 0-1.9 6.46 6.46 0 0 0-.39-1.85 2.19 2.19 0 0 0-1.26-1.24c-.3-.13-.67-.2-1.1-.2-.44 0-.81.07-1.12.2a2.2 2.2 0 0 0-1.25 1.24 6.46 6.46 0 0 0-.39 1.86c-.02.32-.02.64-.02.94Zm7.6-.01v-.67a7.64 7.64 0 0 1 .21-1.46 2 2 0 0 1 .3-.61c.13-.18.3-.33.49-.44.2-.1.43-.16.72-.16.28 0 .52.05.72.16a1.88 1.88 0 0 1 .78 1.04c.06.24.11.48.15.73a20.68 20.68 0 0 1 .04 2.47c-.03.38-.09.75-.2 1.1-.1.33-.27.61-.5.85-.24.23-.57.35-1 .35-.42 0-.75-.12-.98-.35a2.1 2.1 0 0 1-.52-.86c-.1-.34-.16-.7-.19-1.09l-.02-1.06Zm-1.06.01c0 .31 0 .63.02.96a6.46 6.46 0 0 0 .39 1.85 2.21 2.21 0 0 0 1.25 1.23c.31.12.69.18 1.12.18.44 0 .8-.06 1.12-.18A2.21 2.21 0 0 0 47 60.6a6.46 6.46 0 0 0 .39-1.86 19.96 19.96 0 0 0 0-1.9 6.46 6.46 0 0 0-.39-1.85 2.19 2.19 0 0 0-1.26-1.24c-.3-.13-.67-.2-1.1-.2-.43 0-.8.07-1.12.2a2.2 2.2 0 0 0-1.25 1.24 6.46 6.46 0 0 0-.39 1.86l-.02.94Zm7.6-.01v-.67a7.6 7.6 0 0 1 .21-1.46c.07-.24.17-.44.3-.61a1.45 1.45 0 0 1 1.21-.6c.28 0 .52.05.72.16a1.88 1.88 0 0 1 .78 1.04c.07.24.12.48.15.73a20.96 20.96 0 0 1 .04 2.47c-.02.38-.09.75-.2 1.1-.1.33-.27.61-.5.85-.24.23-.57.35-1 .35-.41 0-.74-.12-.98-.35-.23-.24-.4-.52-.52-.86-.1-.34-.16-.7-.19-1.09l-.02-1.06Zm-1.06.01c0 .31 0 .63.02.96a6.46 6.46 0 0 0 .4 1.85 2.21 2.21 0 0 0 1.25 1.23c.3.12.68.18 1.1.18.45 0 .82-.06 1.13-.18a2.21 2.21 0 0 0 1.25-1.23 6.46 6.46 0 0 0 .39-1.86 19.96 19.96 0 0 0 0-1.9 6.46 6.46 0 0 0-.4-1.85 2.19 2.19 0 0 0-1.26-1.24c-.3-.13-.67-.2-1.1-.2-.43 0-.8.07-1.12.2a2.2 2.2 0 0 0-1.25 1.24 6.46 6.46 0 0 0-.39 1.86l-.02.94Zm7.6-.01v-.67a7.6 7.6 0 0 1 .21-1.46 2 2 0 0 1 .3-.61 1.45 1.45 0 0 1 1.21-.6c.28 0 .52.05.72.16.2.11.36.26.48.44.14.17.23.37.3.6.07.24.12.48.15.73a20.96 20.96 0 0 1 .04 2.47c-.02.38-.08.75-.2 1.1-.1.33-.26.61-.5.85-.23.23-.56.35-.99.35-.42 0-.75-.12-.99-.35-.23-.24-.4-.52-.52-.86a4.9 4.9 0 0 1-.18-1.09L56 57.77Zm-1.06.01.03.96a6.46 6.46 0 0 0 .39 1.85 2.21 2.21 0 0 0 1.25 1.23c.3.12.68.18 1.11.18.44 0 .81-.06 1.12-.18a2.21 2.21 0 0 0 1.25-1.23 6.46 6.46 0 0 0 .39-1.86 19.96 19.96 0 0 0 0-1.9 6.46 6.46 0 0 0-.4-1.85 2.19 2.19 0 0 0-1.26-1.24c-.3-.13-.67-.2-1.1-.2-.43 0-.8.07-1.12.2a2.2 2.2 0 0 0-1.24 1.24 4.98 4.98 0 0 0-.39 1.85l-.03.95Zm28.52-.01v-.67a7.64 7.64 0 0 1 .21-1.46c.07-.24.17-.44.3-.61a1.45 1.45 0 0 1 1.21-.6c.28 0 .52.05.72.16a1.88 1.88 0 0 1 .78 1.04c.07.24.12.48.15.73a20.68 20.68 0 0 1 .04 2.47c-.02.38-.08.75-.2 1.1-.1.33-.27.61-.5.85-.24.23-.57.35-.99.35-.42 0-.75-.12-.99-.35-.23-.24-.4-.52-.52-.86-.1-.34-.16-.7-.19-1.09l-.02-1.06Zm-1.06.01c0 .31 0 .63.02.96a6.46 6.46 0 0 0 .4 1.85 2.21 2.21 0 0 0 1.25 1.23c.3.12.68.18 1.11.18.44 0 .81-.06 1.12-.18a2.21 2.21 0 0 0 1.25-1.23 6.46 6.46 0 0 0 .39-1.86 19.96 19.96 0 0 0 0-1.9 6.46 6.46 0 0 0-.4-1.85 2.19 2.19 0 0 0-1.26-1.24c-.3-.13-.67-.2-1.1-.2-.43 0-.8.07-1.12.2a2.2 2.2 0 0 0-1.25 1.24 6.46 6.46 0 0 0-.39 1.86l-.02.94Zm7.6-.01v-.67a7.64 7.64 0 0 1 .22-1.46 2 2 0 0 1 .29-.61 1.46 1.46 0 0 1 1.21-.6c.28 0 .52.05.72.16.2.11.36.26.48.44.14.17.23.37.3.6.07.24.12.48.15.73a20.68 20.68 0 0 1 .04 2.47c-.02.38-.08.75-.2 1.1-.1.33-.26.61-.5.85-.23.23-.56.35-.99.35-.42 0-.75-.12-.99-.35-.23-.24-.4-.52-.51-.86-.1-.34-.17-.7-.2-1.09L90 57.77Zm-1.06.01.03.96a6.46 6.46 0 0 0 .39 1.85 2.21 2.21 0 0 0 1.25 1.23c.3.12.68.18 1.11.18.44 0 .81-.06 1.12-.18a2.21 2.21 0 0 0 1.25-1.23 6.46 6.46 0 0 0 .39-1.86 19.96 19.96 0 0 0 0-1.9 6.46 6.46 0 0 0-.4-1.85 2.19 2.19 0 0 0-1.26-1.24c-.3-.13-.67-.2-1.1-.2-.43 0-.8.07-1.12.2a2.2 2.2 0 0 0-1.24 1.24 4.98 4.98 0 0 0-.39 1.85l-.03.95Zm7.61-.01v-.67a7.64 7.64 0 0 1 .2-1.46 2 2 0 0 1 .3-.61c.14-.18.3-.33.5-.44.2-.1.43-.16.71-.16.29 0 .53.05.72.16a1.7 1.7 0 0 1 .78 1.05c.07.23.12.47.15.72a20.68 20.68 0 0 1 .04 2.47c-.02.38-.08.75-.19 1.1-.1.33-.27.61-.5.85-.24.23-.57.35-1 .35-.42 0-.75-.12-.98-.35a2.1 2.1 0 0 1-.52-.86c-.1-.34-.17-.7-.2-1.09l-.01-1.06Zm-1.06.01c0 .31 0 .63.02.96a6.47 6.47 0 0 0 .39 1.85 2.21 2.21 0 0 0 1.25 1.23c.31.12.68.18 1.11.18.44 0 .82-.06 1.12-.18a2.21 2.21 0 0 0 1.25-1.23 6.47 6.47 0 0 0 .39-1.86 19.59 19.59 0 0 0 0-1.9 6.47 6.47 0 0 0-.39-1.85 2.2 2.2 0 0 0-1.26-1.24c-.3-.13-.67-.2-1.1-.2-.44 0-.81.07-1.12.2a2.2 2.2 0 0 0-1.25 1.24 6.47 6.47 0 0 0-.39 1.86c-.02.32-.02.64-.02.94Zm7.6-.01v-.67a7.8 7.8 0 0 1 .21-1.46 2 2 0 0 1 .3-.61c.13-.18.3-.33.49-.44.2-.1.44-.16.72-.16.28 0 .52.05.72.16a1.88 1.88 0 0 1 .78 1.04c.06.24.11.48.15.73.04.25.06.5.06.74a23.46 23.46 0 0 1-.03 1.73c-.02.38-.08.75-.19 1.1a2 2 0 0 1-.5.85c-.24.23-.57.35-1 .35-.42 0-.75-.12-.98-.35a2.1 2.1 0 0 1-.52-.86c-.1-.34-.16-.7-.19-1.09l-.02-1.06Zm-1.06.01c0 .31 0 .63.02.96a6.47 6.47 0 0 0 .4 1.85 2.21 2.21 0 0 0 1.25 1.23c.3.12.68.18 1.1.18.45 0 .82-.06 1.13-.18a2.21 2.21 0 0 0 1.24-1.23 6.47 6.47 0 0 0 .39-1.86 20.91 20.91 0 0 0 0-1.9 6.47 6.47 0 0 0-.39-1.85 2.19 2.19 0 0 0-1.26-1.24c-.3-.13-.67-.2-1.1-.2-.43 0-.8.07-1.12.2a2.2 2.2 0 0 0-1.25 1.24 6.47 6.47 0 0 0-.39 1.86l-.02.94Zm7.6-.01v-.67a7.48 7.48 0 0 1 .21-1.46 2 2 0 0 1 .3-.61 1.45 1.45 0 0 1 1.21-.6c.28 0 .52.05.72.16a1.88 1.88 0 0 1 .78 1.04c.07.24.12.48.15.73a20.43 20.43 0 0 1 .04 2.47c-.02.38-.09.75-.2 1.1-.1.33-.27.61-.5.85-.24.23-.57.35-.99.35-.42 0-.75-.12-.99-.35-.23-.24-.4-.52-.52-.86-.1-.34-.16-.7-.19-1.09l-.02-1.06Zm-1.06.01c0 .31 0 .63.03.96a6.47 6.47 0 0 0 .38 1.85 2.21 2.21 0 0 0 1.25 1.23c.31.12.69.18 1.12.18.44 0 .81-.06 1.12-.18a2.2 2.2 0 0 0 1.25-1.23 6.47 6.47 0 0 0 .39-1.86 19.59 19.59 0 0 0 0-1.9 6.47 6.47 0 0 0-.4-1.85 2.19 2.19 0 0 0-1.26-1.24c-.3-.13-.67-.2-1.1-.2-.43 0-.8.07-1.12.2a2.2 2.2 0 0 0-1.25 1.24 6.47 6.47 0 0 0-.39 1.86l-.02.94Zm31 2.08h-1c.06.72.33 1.26.8 1.61a2.8 2.8 0 0 0 1.73.53c1.02 0 1.75-.38 2.2-1.15.47-.78.7-1.88.7-3.32 0-.8-.08-1.44-.24-1.95a3.2 3.2 0 0 0-.6-1.22 2.3 2.3 0 0 0-.91-.63 3.23 3.23 0 0 0-2.22.02 2.54 2.54 0 0 0-1.43 1.42c-.14.32-.2.69-.2 1.09a2.8 2.8 0 0 0 .66 2.01c.23.24.51.43.84.57a3 3 0 0 0 1.13.2 2.19 2.19 0 0 0 1.93-1.15l.03.02a5.33 5.33 0 0 1-.5 2.43c-.31.53-.77.8-1.39.8-.4 0-.74-.12-1.03-.34a1.27 1.27 0 0 1-.5-.94Zm3.24-3.53a2.06 2.06 0 0 1-.46 1.29c-.15.16-.33.3-.54.4a1.72 1.72 0 0 1-1.38 0 1.84 1.84 0 0 1-.86-.96 1.86 1.86 0 0 1-.11-.66c0-.26.02-.5.08-.74s.16-.44.28-.62c.13-.2.3-.34.5-.45.22-.1.47-.16.77-.16.28 0 .53.05.74.15.21.1.4.24.53.42a2.2 2.2 0 0 1 .45 1.33Z"></path>
                 </svg></div>
             </div>
             <div class="about__text">
-              <p class="p-med">REDIS® AGENCY <span class="p-times">is a creative company rooted in narrative &amp; built on collaboration. We partner with modern brands &amp; individuals by developing holistic solutions through strategy, design &amp; direction.</span></p>
+              <p class="p-med">REDIS® AGENCY <span class="p-times">is about 12 years of design experience, concentrated in its people and divided into departments based on the value we bring to our clients. We add passion to brands and meaningfulness to bold products.</span></p>
             </div>
             <div class="about-wrapper">
               <div class="about__list-container">
                 <div id="w-node-a2994b06-6601-9b26-6f67-849c12e8a5d1-e0e27a40" class="p-normal">Services:</div>
                 <ul id="w-node-a2994b06-6601-9b26-6f67-849c12e8a5d3-e0e27a40" role="list" class="list-about__list w-list-unstyled">
                   <li>
-                    <div class="p-normal">Digital strategy</div>
-                  </li>
-                  <li>
                     <div class="p-normal">Branding</div>
                   </li>
                   <li>
-                    <div class="p-normal">Prototyping</div>
+                    <div class="p-normal">Marketing design</div>
                   </li>
                   <li>
-                    <div class="p-normal">UX / UI Design</div>
+                    <div class="p-normal">UX / UI</div>
                   </li>
                   <li>
-                    <div class="p-normal">Python</div>
+                    <a href="https://webflow.redis.agency/" target="_blank" class="p-normal link-hover">Webflow</a>
+                  </li>
+                  <li>
+                    <div class="p-normal">Development</div>
+                  </li>
+                  <li>
+                    <div class="p-normal">NFT</div>
+                  </li>
+                  <li>
+                    <div class="p-normal">Motion</div>
                   </li>
                 </ul>
               </div>
               <div class="about__list-container">
-                <div id="w-node-_640837c8-76f6-bd73-8976-63978cf8695e-e0e27a40" class="p-normal">Featured:</div>
+                <div id="w-node-_640837c8-76f6-bd73-8976-63978cf8695e-e0e27a40" class="p-normal about-headign">Featured:</div>
                 <ul id="w-node-_8b533f8d-30ae-30a3-27a6-72ac771964ba-e0e27a40" role="list" class="list-about__list w-list-unstyled">
                   <li>
-                    <a href="#" class="p-normal link-hover">Saharov Space</a>
+                    <a href="https://www.sakharov.space/en" target="_blank" class="p-normal link-hover">Saharov Space</a>
                   </li>
                   <li>
-                    <a href="#" class="p-normal link-hover">Redseed</a>
+                    <a href="https://www.behance.net/gallery/131471539/FITIL-APP" target="_blank" class="p-normal link-hover">Fitil App</a>
                   </li>
                   <li>
-                    <a href="#" class="p-normal link-hover">Fitil App</a>
+                    <a href="https://amway-fund-report-2021.webflow.io/" target="_blank" class="p-normal link-hover">Amway for Future</a>
                   </li>
                   <li>
-                    <a href="#" class="p-normal link-hover">Amway for Future</a>
+                    <p class="p-normal">xChange product</p>
                   </li>
                   <li>
-                    <a href="#" class="p-normal link-hover">Finhelp</a>
+                    <p class="p-normal">xChange identity</p>
                   </li>
                   <li>
-                    <a href="#" class="p-normal link-hover">Saharov Space</a>
-                  </li>
-                  <li>
-                    <a href="#" class="p-normal link-hover">Redseed</a>
-                  </li>
-                  <li>
-                    <a href="#" class="p-normal link-hover">Fitil App</a>
-                  </li>
-                  <li>
-                    <a href="#" class="p-normal link-hover">Finhelp</a>
+                    <a href="https://www.behance.net/gallery/70440759/Boris-Ignatovich-Innovator" target="_blank" class="p-normal link-hover">Boris Ignatovich</a>
                   </li>
                 </ul>
               </div>
@@ -171,27 +182,27 @@ color: inherit;
             <div class="contacts__link-mail">
               <a href="mailto:hello@redis.agency?subject=Hello%20Redis!" class="headign-med none-decor">hello@redis<br>.agency</a>
             </div>
-            <div class="about-wrapper">
+            <div class="about-wrapper down">
               <div class="about__list-container">
-                <div id="w-node-_205f7f9b-35a8-3e1b-c9d2-8f780e493a43-e0e27a40" class="p-normal">Follow us:</div>
+                <div id="w-node-_205f7f9b-35a8-3e1b-c9d2-8f780e493a43-e0e27a40" class="p-normal about-headign">Follow us:</div>
                 <ul id="w-node-_205f7f9b-35a8-3e1b-c9d2-8f780e493a45-e0e27a40" role="list" class="list-about__list w-list-unstyled">
-                  <li class="about__list mob">
-                    <a href="#" class="p-normal link-hover">Instagram</a>
+                  <li class="about__list">
+                    <a href="https://www.instagram.com/redis.agency/" target="_blank" class="p-normal link-hover">Instagram</a>
                   </li>
-                  <li class="about__list mob">
-                    <a href="#" class="p-normal link-hover">Behance</a>
+                  <li class="about__list">
+                    <a href="https://www.behance.net/Redis_CA" target="_blank" class="p-normal link-hover">Behance</a>
                   </li>
-                  <li class="about__list mob">
-                    <a href="#" class="p-normal link-hover">Dribbble</a>
+                  <li class="about__list">
+                    <a href="https://dribbble.com/redis_agency" target="_blank" class="p-normal link-hover">Dribbble</a>
                   </li>
-                  <li class="about__list mob">
-                    <a href="#" class="p-normal link-hover">Twitter</a>
+                  <li class="about__list">
+                    <a href="https://twitter.com/redis_agency" target="_blank" class="p-normal link-hover">Twitter</a>
                   </li>
-                  <li class="about__list mob">
-                    <a href="#" class="p-normal link-hover">Linkedin</a>
+                  <li class="about__list">
+                    <a href="https://www.linkedin.com/company/3358422/" target="_blank" class="p-normal link-hover">Linkedin</a>
                   </li>
-                  <li>
-                    <a href="#" class="p-normal link-hover">Facebook</a>
+                  <li class="about__list">
+                    <a href="https://www.facebook.com/redis.agency.ru/" target="_blank" class="p-normal link-hover">Facebook</a>
                   </li>
                 </ul>
               </div>
@@ -201,7 +212,7 @@ color: inherit;
                 <div class="p-normal m-mb5">Careers:</div>
                 <a href="mailto:join@redis.agency?subject=Hello%20Redis!" class="p-normal link-hover">join@redis.agency</a>
               </div>
-              <div class="contacts__inquiries">
+              <div id="w-node-_6b386472-fb26-55db-2b26-d1b00a5b30b2-e0e27a40" class="contacts__inquiries">
                 <div class="p-normal m-mb5">Inquiries:</div>
                 <a href="mailto:hello@redis.agency?subject=Hello%20Redis!" class="p-normal link-hover">hello@redis.agency</a>
               </div>
@@ -209,104 +220,108 @@ color: inherit;
           </section>
           <div class="footer">
             <div class="footer__image-comands">
-              <div id="w-node-_936aa4da-1809-b001-b545-3c27751f10fb-e0e27a40" class="comands__item hover"><img src="images/redis-portret__012.jpg" loading="lazy" width="193" alt="" class="comands__image"><img src="images/redis-portret__01_redis2.jpg" loading="lazy" width="193" alt="" class="comands__image redis"></div>
-              <div class="comands__item hover"><img src="images/redis-portret__082.jpg" loading="lazy" width="193" alt="" class="comands__image"><img src="images/redis-portret__08_redis2.jpg" loading="lazy" width="193" alt="" class="comands__image redis"></div>
+              <div id="w-node-_936aa4da-1809-b001-b545-3c27751f10fb-e0e27a40" class="comands__item hover"><img src="images/redis-command__032.jpg" loading="eager" width="193" alt="Elena Mosina" class="comands__image"><img src="images/redis-command__09-redis2.jpg" loading="eager" width="193" alt="" class="comands__image hover"></div>
+              <div class="comands__item hover"><img src="images/redis-command__082.jpg" loading="eager" width="193" alt="Aleksey Luppov" class="comands__image"><img src="images/redis-command__10-redis2.jpg" loading="eager" width="193" alt="" class="comands__image hover"></div>
             </div>
             <div class="footer__image-comands center">
-              <div class="comands__item hover"><img src="images/redis-portret__022.jpg" loading="lazy" width="193" alt="" class="comands__image"><img src="images/redis-portret__02_redis2.jpg" loading="lazy" width="193" alt="" class="comands__image redis"></div>
-              <div class="comands__item hover"><img src="images/redis-portret__032.jpg" loading="lazy" width="193" alt="" class="comands__image"><img src="images/redis-portret__03_redis2.jpg" loading="lazy" width="193" alt="" class="comands__image redis"></div>
+              <div class="comands__item hover"><img src="images/redis-command__042.jpg" loading="eager" width="193" alt="Pavel Dergachev" class="comands__image"><img src="images/redis-command__08-redis2.jpg" loading="eager" width="193" alt="" class="comands__image hover"></div>
+              <div class="comands__item hover"><img src="images/redis-command__052.jpg" loading="eager" width="193" alt="Aleksandr Balashov" class="comands__image"><img src="images/redis-command__01-redis2.jpg" loading="eager" width="193" alt="" class="comands__image hover"></div>
             </div>
             <div class="footer__image-comands">
-              <div class="comands__item hover"><img src="images/redis-portret__102.jpg" loading="lazy" width="193" alt="" class="comands__image"><img src="images/redis-portret__10_redis2.jpg" loading="lazy" width="193" alt="" class="comands__image redis"></div>
-              <div class="comands__item hover"><img src="images/redis-portret__112.jpg" loading="lazy" width="193" alt="" class="comands__image"><img src="images/redis-portret__11_redis2.jpg" loading="lazy" width="193" alt="" class="comands__image redis"></div>
-              <div class="comands__item hover"><img src="images/redis-portret__092.jpg" loading="lazy" width="193" alt="" class="comands__image"><img src="images/redis-portret__09_redis2.jpg" loading="lazy" width="193" alt="" class="comands__image redis"></div>
+              <div class="comands__item hover"><img src="images/redis-command__112.jpg" loading="eager" width="193" alt="Artem Hertz" class="comands__image"><img src="images/redis-command__07-redis2.jpg" loading="eager" width="193" alt="" class="comands__image hover"></div>
+              <div data-w-id="851256f4-0614-765e-4e4d-675608dabc24" class="comands__item"><img src="images/redis-command__072.jpg" loading="eager" width="193" alt="Cat Ruby" class="comands__image"><img src="images/ruby-hover-2.jpg" loading="eager" width="193" alt="" class="comands__image hover"></div>
+              <div class="comands__item hover"><img src="images/redis-command__102.jpg" loading="eager" width="193" alt="Vyacheslav Sheikin" class="comands__image"><img src="images/redis-command__03-redis2.jpg" loading="eager" width="193" alt="" class="comands__image hover"></div>
             </div>
             <div class="footer__image-comands center">
-              <div class="comands__item hover"><img src="images/redis-portret__052.jpg" loading="lazy" width="193" alt="" class="comands__image"><img src="images/redis-portret__05_redis2.jpg" loading="lazy" width="193" alt="" class="comands__image redis"></div>
-              <div class="comands__item hover"><img src="images/redis-portret__042.jpg" loading="lazy" width="193" alt="" class="comands__image"><img src="images/redis-portret__04_redis2.jpg" loading="lazy" width="193" alt="" class="comands__image redis"></div>
+              <div class="comands__item hover"><img src="images/redis-command__022.jpg" loading="eager" width="193" alt="Alexandr Rastegaev" class="comands__image"><img src="images/redis-command__05-redis2.jpg" loading="eager" width="193" alt="" class="comands__image hover"></div>
+              <div class="comands__item hover"><img src="images/redis-command__062.jpg" loading="eager" width="193" alt="Elena Romanova" class="comands__image"><img src="images/redis-command__04-redis2.jpg" loading="eager" width="193" alt="" class="comands__image hover"></div>
             </div>
             <div class="footer__image-comands">
-              <div class="comands__item hover"><img src="images/redis-portret__062.jpg" loading="lazy" width="193" alt="" class="comands__image"><img src="images/redis-portret__06_redis2.jpg" loading="lazy" width="193" alt="" class="comands__image redis"></div>
+              <div class="comands__item hover"><img src="images/redis-command__012.jpg" loading="eager" width="193" alt="Anna Senekerimyan" class="comands__image"><img src="images/redis-command__06-redis2.jpg" loading="eager" width="193" alt="" class="comands__image hover"></div>
               <div class="footer__year-txt">
                 <div class="footer__image_container">
-                  <div class="footer__image w-embed"><svg width="100%" fill="currentcolor" viewbox="0 0 110 64">
-                      <path fill="currentcolor" fill-rule="evenodd" d="M78.21.01 78.06 0h-.13C68.94 0 60.82 3.7 55 9.65A31.98 31.98 0 0 0 32.07 0 32.04 32.04 0 0 0 0 32c0 17.67 14.36 32 32.07 32 8.99 0 17.11-3.7 22.93-9.65A31.98 31.98 0 0 0 77.93 64 32.04 32.04 0 0 0 110 32 32.03 32.03 0 0 0 78.21.01ZM47.89 33h11.24c.09 4.61.76 8.98 1.9 12.9a18.86 18.86 0 0 0-6.14 5.38 29.89 29.89 0 0 1-7-18.28Zm7.1-20.38a18.97 18.97 0 0 0 6.04 5.23c-1.16 4-1.84 8.45-1.91 13.15H47.89c.23-7 2.86-13.39 7.1-18.38Zm23.94 31.24c5.24.19 9.95 1.47 13.61 3.45a34.69 34.69 0 0 1-2.64 5.89c-2.96 5.08-6.84 8.13-10.97 8.51V43.86Zm0-1.99V33H95c-.1 4.46-.74 8.65-1.83 12.39a33.68 33.68 0 0 0-14.24-3.52Zm0-10.87v-9.12a33.74 33.74 0 0 0 14.23-3.51A47.97 47.97 0 0 1 95 31H78.93Zm0-11.11V2.03c4.13.38 8.01 3.43 10.97 8.51a33.19 33.19 0 0 1 2.64 5.89 31.38 31.38 0 0 1-13.61 3.46Zm-1.99.02a32.21 32.21 0 0 1-13.51-3.04 33.32 33.32 0 0 1 2.8-6.32c2.9-4.98 6.68-8 10.72-8.47l-.01 17.83Zm0 1.99V31H61.12c.07-4.38.69-8.51 1.72-12.21a34.48 34.48 0 0 0 14.1 3.11ZM61.12 33h15.81v8.86a34.51 34.51 0 0 0-14.1 3.1A49.21 49.21 0 0 1 61.12 33Zm15.82 10.84v17.84c-4.04-.48-7.82-3.5-10.72-8.47-1.09-1.87-2.02-4-2.8-6.32a32.26 32.26 0 0 1 13.52-3.05Zm14.69 10.37a36.01 36.01 0 0 0 2.66-5.84 15.16 15.16 0 0 1 4.85 4.9 30.1 30.1 0 0 1-13.25 7.67 22.76 22.76 0 0 0 5.74-6.73Zm3.32-7.8A49.98 49.98 0 0 0 97 33h10.99c-.24 7.18-3 13.73-7.43 18.77a18.06 18.06 0 0 0-5.61-5.36ZM97 31c-.08-4.9-.8-9.54-2.05-13.66a17.97 17.97 0 0 0 5.51-5.22A29.87 29.87 0 0 1 107.99 31H97Zm2.04-20.37a15.45 15.45 0 0 1-4.75 4.75 35.63 35.63 0 0 0-2.66-5.84A23.34 23.34 0 0 0 86.4 3.2c4.83 1.42 9.15 4 12.64 7.43ZM69.87 3.09a23.06 23.06 0 0 0-5.38 6.45 35.77 35.77 0 0 0-2.85 6.37 16.37 16.37 0 0 1-5.27-4.81 30.14 30.14 0 0 1 13.5-8.01Zm-37.8 58.92A30.04 30.04 0 0 1 2 32 30.04 30.04 0 0 1 32.07 1.99a30 30 0 0 1 21.58 9.12 31.8 31.8 0 0 0-7.78 20.88c0 7.98 2.94 15.28 7.78 20.88a29.96 29.96 0 0 1-21.58 9.14Zm24.29-9.12.07-.07-.09-.08a16.23 16.23 0 0 1 5.32-4.89 35.07 35.07 0 0 0 2.85 6.37 22.56 22.56 0 0 0 5.88 6.84 30.1 30.1 0 0 1-14.03-8.17Z" clip-rule="evenodd"></path>
-                      <path fill="currentcolor" fill-rule="evenodd" d="M21.44 24.51h7.99v19.1h2.95v-19.1h7.86v-2.46h-18.8v2.46Z" clip-rule="evenodd"></path>
-                    </svg></div>
+                  <div class="footer__image w-embed">
+                    <!-- svg width="100%" fill="currentcolor" viewBox="0 0 110 64"><path fill="currentcolor" fill-rule="evenodd" d="M78.21.01 78.06 0h-.13C68.94 0 60.82 3.7 55 9.65A31.98 31.98 0 0 0 32.07 0 32.04 32.04 0 0 0 0 32c0 17.67 14.36 32 32.07 32 8.99 0 17.11-3.7 22.93-9.65A31.98 31.98 0 0 0 77.93 64 32.04 32.04 0 0 0 110 32 32.03 32.03 0 0 0 78.21.01ZM47.89 33h11.24c.09 4.61.76 8.98 1.9 12.9a18.86 18.86 0 0 0-6.14 5.38 29.89 29.89 0 0 1-7-18.28Zm7.1-20.38a18.97 18.97 0 0 0 6.04 5.23c-1.16 4-1.84 8.45-1.91 13.15H47.89c.23-7 2.86-13.39 7.1-18.38Zm23.94 31.24c5.24.19 9.95 1.47 13.61 3.45a34.69 34.69 0 0 1-2.64 5.89c-2.96 5.08-6.84 8.13-10.97 8.51V43.86Zm0-1.99V33H95c-.1 4.46-.74 8.65-1.83 12.39a33.68 33.68 0 0 0-14.24-3.52Zm0-10.87v-9.12a33.74 33.74 0 0 0 14.23-3.51A47.97 47.97 0 0 1 95 31H78.93Zm0-11.11V2.03c4.13.38 8.01 3.43 10.97 8.51a33.19 33.19 0 0 1 2.64 5.89 31.38 31.38 0 0 1-13.61 3.46Zm-1.99.02a32.21 32.21 0 0 1-13.51-3.04 33.32 33.32 0 0 1 2.8-6.32c2.9-4.98 6.68-8 10.72-8.47l-.01 17.83Zm0 1.99V31H61.12c.07-4.38.69-8.51 1.72-12.21a34.48 34.48 0 0 0 14.1 3.11ZM61.12 33h15.81v8.86a34.51 34.51 0 0 0-14.1 3.1A49.21 49.21 0 0 1 61.12 33Zm15.82 10.84v17.84c-4.04-.48-7.82-3.5-10.72-8.47-1.09-1.87-2.02-4-2.8-6.32a32.26 32.26 0 0 1 13.52-3.05Zm14.69 10.37a36.01 36.01 0 0 0 2.66-5.84 15.16 15.16 0 0 1 4.85 4.9 30.1 30.1 0 0 1-13.25 7.67 22.76 22.76 0 0 0 5.74-6.73Zm3.32-7.8A49.98 49.98 0 0 0 97 33h10.99c-.24 7.18-3 13.73-7.43 18.77a18.06 18.06 0 0 0-5.61-5.36ZM97 31c-.08-4.9-.8-9.54-2.05-13.66a17.97 17.97 0 0 0 5.51-5.22A29.87 29.87 0 0 1 107.99 31H97Zm2.04-20.37a15.45 15.45 0 0 1-4.75 4.75 35.63 35.63 0 0 0-2.66-5.84A23.34 23.34 0 0 0 86.4 3.2c4.83 1.42 9.15 4 12.64 7.43ZM69.87 3.09a23.06 23.06 0 0 0-5.38 6.45 35.77 35.77 0 0 0-2.85 6.37 16.37 16.37 0 0 1-5.27-4.81 30.14 30.14 0 0 1 13.5-8.01Zm-37.8 58.92A30.04 30.04 0 0 1 2 32 30.04 30.04 0 0 1 32.07 1.99a30 30 0 0 1 21.58 9.12 31.8 31.8 0 0 0-7.78 20.88c0 7.98 2.94 15.28 7.78 20.88a29.96 29.96 0 0 1-21.58 9.14Zm24.29-9.12.07-.07-.09-.08a16.23 16.23 0 0 1 5.32-4.89 35.07 35.07 0 0 0 2.85 6.37 22.56 22.56 0 0 0 5.88 6.84 30.1 30.1 0 0 1-14.03-8.17Z" clip-rule="evenodd"/><path fill="currentcolor" fill-rule="evenodd" d="M21.44 24.51h7.99v19.1h2.95v-19.1h7.86v-2.46h-18.8v2.46Z" clip-rule="evenodd"/></svg -->
+                    <svg fill="none" viewbox="0 0 94 56">
+                      <path fill="#fff" d="M27.34 38.33c-1.87-3.77-7.14-4-7.2-7.98 0-1.6 1-3.69 3.32-3.69h7.76c2.33 0 3.33 2.08 3.33 3.7-.06 3.96-5.34 4.2-7.2 7.97h-.01Z"></path>
+                      <path fill="#fff" fill-rule="evenodd" d="M27.35 38.33h-.01v-.01l-.16-.29c-.86-1.5-2.27-2.42-3.61-3.29-1.77-1.14-3.4-2.2-3.43-4.39 0-1.6 1-3.69 3.32-3.69h7.76c2.33 0 3.33 2.08 3.33 3.7-.04 2.19-1.67 3.24-3.43 4.38-1.34.87-2.76 1.79-3.62 3.3l-.15.28Z" clip-rule="evenodd"></path>
+                      <path fill="#fff" d="M30.3 24.61c-.04-.04-.05-.1-.06-.28-.01-.13-.09-.21-.23-.24a.29.29 0 0 0 .28-.3c0-.22-.16-.36-.46-.36h-.57v1.18h.27v-.42h.24c.14 0 .2.05.2.19.02.12.03.2.06.23h.28Zm-.77-.62v-.36h.24c.17 0 .24.07.24.18 0 .12-.07.18-.24.18h-.24Zm1.36.04c0-.66-.51-1.13-1.15-1.13-.63 0-1.14.47-1.14 1.13 0 .66.51 1.13 1.14 1.13.64 0 1.15-.47 1.15-1.13Zm-.2 0c0 .55-.42.94-.95.94a.92.92 0 0 1-.94-.94c0-.55.42-.94.94-.94.53 0 .94.4.94.94Z"></path>
+                      <path fill="#fff" fill-rule="evenodd" d="M25.99 19.37c-1.53-1.49-3.7-1.62-5.66-1.62h-.14v.48c-.02.56-.03 1.35.1 2.2a5.27 5.27 0 0 0 1.47 3.05c1.53 1.47 3.73 1.54 5.68 1.54h.14v-.49c.03-1.23.07-3.53-1.59-5.16Z" clip-rule="evenodd"></path>
+                      <path fill="#fff" fill-rule="evenodd" d="M47 9.91a26.17 26.17 0 1 1 0 36.51 26.17 26.17 0 1 1 0-36.51Zm7.8 36.44a18.24 18.24 0 0 0 4.94 5.7 24.6 24.6 0 0 1-11.7-6.76l.09-.1-.09-.07c1-1.52 2.5-2.9 4.4-4.03a29.22 29.22 0 0 0 2.35 5.26Zm-1-6a27.9 27.9 0 0 0 2.33 5.22c2.38 4.1 5.5 6.6 8.85 6.98V37.82a26.5 26.5 0 0 0-11.17 2.52Zm11.18-4.07c-4.32.06-8.34 1-11.63 2.57a39.8 39.8 0 0 1-1.41-9.9h13.04v7.33Zm1.54 1.56v14.73c3.41-.3 6.61-2.81 9.05-7a27.61 27.61 0 0 0 2.2-4.87 25.64 25.64 0 0 0-11.25-2.86Zm11.72 1.36a27.47 27.47 0 0 0-11.72-2.9v-7.35h13.23a39.6 39.6 0 0 1-1.51 10.25Zm.88 2.3a28.9 28.9 0 0 1-2.22 4.85 18.3 18.3 0 0 1-4.84 5.62 24.6 24.6 0 0 0 11.12-6.4l-.04.02a12.55 12.55 0 0 0-4.02-4.08Zm5.12 2.93a14.58 14.58 0 0 0-4.63-4.44 40.98 40.98 0 0 0 1.69-11.04h9.06a24.52 24.52 0 0 1-6.12 15.48Zm-32.28-4.85a15.36 15.36 0 0 0-5.05 4.45 24.5 24.5 0 0 1-5.78-15.08h9.26c.08 3.8.63 7.4 1.57 10.63Zm-1.57-12.17h-9.26A24.51 24.51 0 0 1 47 12.2a15.45 15.45 0 0 0 4.97 4.35A41.26 41.26 0 0 0 50.4 27.4Zm-2.34-16.37.07.1.01.01c1 1.47 2.47 2.8 4.3 3.9A29.21 29.21 0 0 1 54.8 9.8a18.64 18.64 0 0 1 4.57-5.42 24.61 24.61 0 0 0-11.3 6.65Zm3.88 16.37c.06-3.63.57-7.05 1.43-10.12a28.1 28.1 0 0 0 11.62 2.57v7.55H51.93Zm1.88-11.61a26.33 26.33 0 0 0 11.17 2.52V3.61c-3.35.37-6.47 2.87-8.85 6.97-.9 1.55-1.68 3.3-2.32 5.22Zm12.7 11.6v-7.55c4.4-.15 8.47-1.2 11.73-2.9a39.68 39.68 0 0 1 1.52 10.46H66.52Zm0-9.1a25.65 25.65 0 0 0 11.25-2.86 27.6 27.6 0 0 0-2.2-4.86c-2.43-4.18-5.63-6.7-9.04-7V18.3Zm14.8 9.1a41.05 41.05 0 0 0-1.7-11.25 14.67 14.67 0 0 0 4.56-4.32c3.7 4.17 6.01 9.6 6.2 15.58H81.3Zm-2.2-12.77a12.66 12.66 0 0 0 3.96-3.96 24.6 24.6 0 0 0-10.63-6.2c1.7 1.34 3.2 3.17 4.46 5.34a28.9 28.9 0 0 1 2.21 4.82Zm-33.16-3.58a24.62 24.62 0 1 0 0 34.23 26.06 26.06 0 0 1-6.37-17.11 26.1 26.1 0 0 1 6.37-17.12Z" clip-rule="evenodd"></path>
+                    </svg>
+                  </div>
                 </div>
-                <div class="p-normal">Redis® Agency <br>All Rights Reserved ©2022</div>
+                <div class="p-normal footer uppercase">Redis® Agency</div>
+                <div class="p-normal footer">All Rights Reserved ©2022</div>
               </div>
-              <div class="comands__item"><img src="images/redis-portret__072.jpg" loading="lazy" width="193" alt="" class="comands__image"></div>
+              <div class="comands__item hover"><img src="images/redis-command__092.jpg" loading="eager" width="193" alt="Yulia Orlova" class="comands__image"><img src="images/redis-command__02-redis2.jpg" loading="eager" width="193" alt="" class="comands__image hover"></div>
             </div>
           </div>
         </div>
         <div class="global-wrapper">
           <header class="hero">
             <div class="hero__heading">
-              <h1 class="heading-big-hero">Redis<br></h1>
+              <h1 class="heading-big-hero mob">Redis<br></h1>
               <div class="heading-big-hero">Agency</div>
             </div>
           </header>
           <section class="about-section">
             <div class="about__image-container">
-              <div class="about__image-qr w-embed"><svg fill="none" viewbox="0 0 210 80">
-                  <path fill="currentcolor" fill-rule="evenodd" d="M15.06 73V0h1.88v73h-1.88Zm5 0V0h1.88v73h-1.88Zm7.07 0V0h3.74v73h-3.75Zm4.93 0V0h1.88v73h-1.88Zm6.07-11V0h3.74v62h-3.74Zm6.93 0V0h1.88v62h-1.88Zm6 0V0h1.88v62h-1.88Zm6.07 0V0h3.74v62h-3.74Zm5.12 0V0h7.5v62h-7.5Zm8.81 0V0h1.88v62h-1.88Zm5 0V0h1.88v62h-1.88Zm7.07 0V0h3.74v62h-3.75Zm6 0V0h3.74v62h-3.75Zm8.93 0V0h1.88v62h-1.88Zm3 11V0h1.88v73h-1.88Zm5 0V0h1.88v73h-1.88Zm3-11V0h1.88v62h-1.88Zm4 0V0h1.88v62h-1.88Zm9 0V0h1.88v62h-1.88Zm8 0V0h1.88v62h-1.88Zm6 0V0h1.88v62h-1.88Zm5 0V0h1.88v62h-1.88Zm8.13 0V0h5.62v62h-5.62Zm6.87 0V0h1.88v62h-1.88Zm5.13 0V0h5.62v62h-5.62Zm9.87 0V0h1.88v62h-1.88Zm4 11V0h1.88v73h-1.88Zm5.13 0V0h5.62v73h-5.62Zm6.87 0V0h1.88v73h-1.88Zm5 0V0h1.88v73h-1.88Z" clip-rule="evenodd"></path>
-                  <path fill="currentcolor" d="M2.38 74.62c0-1.35.89-2.28 2.2-2.28s2.21.93 2.21 2.28c0 1.37-.91 2.27-2.22 2.27-1.33 0-2.19-.89-2.19-2.27Zm2.33-5.83c1.03 0 1.72.48 1.89 1.38l1.38-.02c-.21-1.26-1.14-2.47-3.12-2.47C1.93 67.68.9 70.36.9 73.2c0 3.07 1.16 4.8 3.68 4.8a3.4 3.4 0 0 0 3.55-3.44c0-1.99-1.38-3.37-3.25-3.37-1.34 0-2.2.6-2.67 1.38.07-2.31.93-3.78 2.49-3.78ZM49.03 78c2.69 0 3.95-2.06 3.95-5.2s-1.26-5.12-3.95-5.12c-2.68 0-3.93 1.98-3.93 5.11 0 3.15 1.25 5.21 3.93 5.21Zm0-1.11c-1.59 0-2.58-1.34-2.58-4.1s1-4 2.58-4c1.6 0 2.6 1.24 2.6 4s-1 4.1-2.6 4.1ZM58.26 78c2.69 0 3.95-2.06 3.95-5.2s-1.26-5.12-3.95-5.12c-2.68 0-3.93 1.98-3.93 5.11 0 3.15 1.25 5.21 3.93 5.21Zm0-1.11c-1.59 0-2.58-1.34-2.58-4.1s.99-4 2.58-4 2.6 1.24 2.6 4-1.01 4.1-2.6 4.1ZM67.49 78c2.68 0 3.94-2.06 3.94-5.2s-1.26-5.12-3.94-5.12c-2.69 0-3.93 1.98-3.93 5.11 0 3.15 1.24 5.21 3.93 5.21Zm0-1.11c-1.6 0-2.58-1.34-2.58-4.1s.99-4 2.58-4 2.6 1.24 2.6 4-1.01 4.1-2.6 4.1ZM76.72 78c2.68 0 3.94-2.06 3.94-5.2s-1.26-5.12-3.94-5.12c-2.69 0-3.93 1.98-3.93 5.11 0 3.15 1.24 5.21 3.93 5.21Zm0-1.11c-1.6 0-2.58-1.34-2.58-4.1s.99-4 2.58-4 2.6 1.24 2.6 4-1.01 4.1-2.6 4.1ZM85.95 78c2.68 0 3.94-2.06 3.94-5.2s-1.26-5.12-3.94-5.12c-2.69 0-3.93 1.98-3.93 5.11 0 3.15 1.24 5.21 3.93 5.21Zm0-1.11c-1.6 0-2.58-1.34-2.58-4.1s.99-4 2.58-4 2.6 1.24 2.6 4-1.01 4.1-2.6 4.1ZM123.03 78c2.69 0 3.95-2.06 3.95-5.2s-1.26-5.12-3.95-5.12c-2.68 0-3.93 1.98-3.93 5.11 0 3.15 1.25 5.21 3.93 5.21Zm0-1.11c-1.59 0-2.58-1.34-2.58-4.1s1-4 2.58-4c1.6 0 2.6 1.24 2.6 4s-1 4.1-2.6 4.1Zm9.23 1.11c2.69 0 3.95-2.06 3.95-5.2s-1.27-5.12-3.95-5.12c-2.69 0-3.93 1.98-3.93 5.11 0 3.15 1.24 5.21 3.93 5.21Zm0-1.11c-1.59 0-2.58-1.34-2.58-4.1s.99-4 2.58-4 2.6 1.24 2.6 4-1.01 4.1-2.6 4.1Zm9.23 1.11c2.68 0 3.94-2.06 3.94-5.2s-1.26-5.12-3.94-5.12c-2.69 0-3.93 1.98-3.93 5.11 0 3.15 1.24 5.21 3.93 5.21Zm0-1.11c-1.6 0-2.58-1.34-2.58-4.1s.99-4 2.58-4 2.6 1.24 2.6 4-1.01 4.1-2.6 4.1Zm9.23 1.11c2.68 0 3.94-2.06 3.94-5.2s-1.26-5.12-3.94-5.12c-2.69 0-3.93 1.98-3.93 5.11 0 3.15 1.24 5.21 3.93 5.21Zm0-1.11c-1.6 0-2.58-1.34-2.58-4.1s.99-4 2.58-4 2.6 1.24 2.6 4-1.01 4.1-2.6 4.1Zm9.23 1.11c2.68 0 3.94-2.06 3.94-5.2s-1.26-5.12-3.94-5.12c-2.69 0-3.93 1.98-3.93 5.11 0 3.15 1.24 5.21 3.93 5.21Zm0-1.11c-1.6 0-2.58-1.34-2.58-4.1s.99-4 2.58-4 2.6 1.24 2.6 4-1.01 4.1-2.6 4.1Zm46.87-5.84c0 1.35-.88 2.28-2.2 2.28-1.3 0-2.2-.93-2.2-2.28 0-1.36.9-2.26 2.21-2.26 1.34 0 2.2.88 2.2 2.26Zm-2.32 5.84c-1.04 0-1.73-.48-1.9-1.38l-1.37.01c.2 1.26 1.17 2.48 3.15 2.48 2.92 0 3.91-2.69 3.91-5.52 0-3.08-1.15-4.8-3.67-4.8a3.4 3.4 0 0 0-3.56 3.43c0 2 1.38 3.38 3.26 3.38 1.33 0 2.2-.6 2.67-1.38-.08 2.31-.93 3.78-2.5 3.78Z"></path>
+              <div class="about__image-qr w-embed"><svg fill="none" viewbox="0 0 145 63">
+                  <path fill="#fff" fill-rule="evenodd" d="M10.09 53.84V1h1.31v52.84h-1.3Zm1.96 0V1h1.31v52.84h-1.3Zm5.23 0V1h2.63v52.84h-2.63Zm4.58 0V1h1.32v52.84h-1.32Zm3.27-4.89V1h2.63v47.95h-2.63Zm5.57 0V1H32v47.95h-1.3Zm3.92 0V1h1.31v47.95h-1.31Zm4.25 0V1h2.62v47.95h-2.62Zm3.59 0V1h5.25v47.95h-5.25Zm6.88 0V1h1.31v47.95h-1.31Zm1.96 0V1h1.31v47.95H51.3Zm5.23 0V1h2.63v47.95h-2.63Zm3.92 0V1h2.63v47.95h-2.63Zm6.55 0V1h1.31v47.95H67Zm2.94 4.89V1h1.31v52.84h-1.3Zm2.95 0V1h1.3v52.84h-1.3Zm2.94-4.89V1h1.31v47.95h-1.31Zm1.97 0V1h1.3v47.95h-1.3Zm6.86 0V1h1.31v47.95h-1.31Zm4.91 0V1h1.3v47.95h-1.3Zm3.92 0V1h1.31v47.95h-1.3Zm3.92 0V1h1.32v47.95H97.4Zm5.56 0V1h3.94v47.95h-3.94Zm5.23 0V1h1.32v47.95h-1.31Zm3.6 0V1h3.94v47.95h-3.94Zm7.2 0V1h1.31v47.95h-1.3Zm1.96 4.89V1h1.32v52.84h-1.32Zm4.58 0V1h3.94v52.84h-3.94Zm5.24 0V1h1.3v52.84h-1.3Zm1.96 0V1h1.31v52.84h-1.31Z" clip-rule="evenodd"></path>
+                  <path fill="#fff" d="M5.43 55.67h1a2.28 2.28 0 0 0-.7-1.57 2.41 2.41 0 0 0-1.66-.55c-.6 0-1.09.12-1.48.37-.4.25-.7.58-.94 1-.24.41-.4.9-.5 1.43a9.49 9.49 0 0 0-.06 3.02c.07.47.21.9.42 1.3.2.38.5.7.87.95s.87.38 1.5.38a3 3 0 0 0 1.31-.26 2.5 2.5 0 0 0 1.33-1.57 3.45 3.45 0 0 0-.03-2.02 2.53 2.53 0 0 0-.51-.86 2.12 2.12 0 0 0-.8-.56 2.6 2.6 0 0 0-1.07-.21c-.46 0-.86.08-1.21.25a2.2 2.2 0 0 0-.88.84L2 57.58a6.5 6.5 0 0 1 .39-2.05c.15-.32.35-.58.61-.79.26-.2.6-.31 1.03-.31.4 0 .72.11.96.34.24.22.39.53.44.9ZM3.92 57.4a1.53 1.53 0 0 1 1.58 1.16 2.44 2.44 0 0 1-.01 1.43c-.07.22-.18.42-.32.59a1.53 1.53 0 0 1-1.25.55c-.27 0-.52-.05-.74-.14-.21-.1-.4-.23-.54-.4A1.78 1.78 0 0 1 2.3 60a2.44 2.44 0 0 1-.01-1.46 1.66 1.66 0 0 1 1.62-1.14Zm25.91.37v-.67a7.64 7.64 0 0 1 .21-1.46 2 2 0 0 1 .3-.61 1.46 1.46 0 0 1 1.21-.6c.28 0 .52.05.72.16.2.11.36.26.48.44.14.17.23.37.3.6.07.24.12.48.15.73a20.68 20.68 0 0 1 .04 2.47c-.02.38-.08.75-.2 1.1-.1.33-.26.61-.5.85-.23.23-.56.35-.99.35-.42 0-.75-.12-.99-.35-.23-.24-.4-.52-.52-.86-.1-.34-.16-.7-.18-1.09l-.03-1.06Zm-1.06.01.03.96a6.46 6.46 0 0 0 .39 1.85 2.21 2.21 0 0 0 1.25 1.23c.3.12.68.18 1.11.18.44 0 .81-.06 1.12-.18a2.21 2.21 0 0 0 1.25-1.23 6.46 6.46 0 0 0 .39-1.86 19.96 19.96 0 0 0 0-1.9 6.46 6.46 0 0 0-.4-1.85 2.19 2.19 0 0 0-1.26-1.24c-.3-.13-.67-.2-1.1-.2-.43 0-.8.07-1.12.2a2.2 2.2 0 0 0-1.24 1.24 4.98 4.98 0 0 0-.39 1.85l-.03.95Zm7.61-.01v-.67a7.64 7.64 0 0 1 .2-1.46 2 2 0 0 1 .3-.61c.14-.18.3-.33.5-.44.2-.1.43-.16.71-.16.29 0 .53.05.72.16a1.7 1.7 0 0 1 .78 1.05c.07.23.12.47.15.72a20.68 20.68 0 0 1 .04 2.47c-.02.38-.08.75-.19 1.1-.1.33-.27.61-.5.85-.24.23-.57.35-1 .35-.42 0-.75-.12-.98-.35a2.1 2.1 0 0 1-.52-.86c-.1-.34-.17-.7-.2-1.09l-.01-1.06Zm-1.06.01c0 .31 0 .63.02.96a6.46 6.46 0 0 0 .39 1.85 2.21 2.21 0 0 0 1.25 1.23c.31.12.68.18 1.11.18.44 0 .82-.06 1.12-.18a2.21 2.21 0 0 0 1.25-1.23 6.46 6.46 0 0 0 .39-1.86 19.96 19.96 0 0 0 0-1.9 6.46 6.46 0 0 0-.39-1.85 2.19 2.19 0 0 0-1.26-1.24c-.3-.13-.67-.2-1.1-.2-.44 0-.81.07-1.12.2a2.2 2.2 0 0 0-1.25 1.24 6.46 6.46 0 0 0-.39 1.86c-.02.32-.02.64-.02.94Zm7.6-.01v-.67a7.64 7.64 0 0 1 .21-1.46 2 2 0 0 1 .3-.61c.13-.18.3-.33.49-.44.2-.1.43-.16.72-.16.28 0 .52.05.72.16a1.88 1.88 0 0 1 .78 1.04c.06.24.11.48.15.73a20.68 20.68 0 0 1 .04 2.47c-.03.38-.09.75-.2 1.1-.1.33-.27.61-.5.85-.24.23-.57.35-1 .35-.42 0-.75-.12-.98-.35a2.1 2.1 0 0 1-.52-.86c-.1-.34-.16-.7-.19-1.09l-.02-1.06Zm-1.06.01c0 .31 0 .63.02.96a6.46 6.46 0 0 0 .39 1.85 2.21 2.21 0 0 0 1.25 1.23c.31.12.69.18 1.12.18.44 0 .8-.06 1.12-.18A2.21 2.21 0 0 0 47 60.6a6.46 6.46 0 0 0 .39-1.86 19.96 19.96 0 0 0 0-1.9 6.46 6.46 0 0 0-.39-1.85 2.19 2.19 0 0 0-1.26-1.24c-.3-.13-.67-.2-1.1-.2-.43 0-.8.07-1.12.2a2.2 2.2 0 0 0-1.25 1.24 6.46 6.46 0 0 0-.39 1.86l-.02.94Zm7.6-.01v-.67a7.6 7.6 0 0 1 .21-1.46c.07-.24.17-.44.3-.61a1.45 1.45 0 0 1 1.21-.6c.28 0 .52.05.72.16a1.88 1.88 0 0 1 .78 1.04c.07.24.12.48.15.73a20.96 20.96 0 0 1 .04 2.47c-.02.38-.09.75-.2 1.1-.1.33-.27.61-.5.85-.24.23-.57.35-1 .35-.41 0-.74-.12-.98-.35-.23-.24-.4-.52-.52-.86-.1-.34-.16-.7-.19-1.09l-.02-1.06Zm-1.06.01c0 .31 0 .63.02.96a6.46 6.46 0 0 0 .4 1.85 2.21 2.21 0 0 0 1.25 1.23c.3.12.68.18 1.1.18.45 0 .82-.06 1.13-.18a2.21 2.21 0 0 0 1.25-1.23 6.46 6.46 0 0 0 .39-1.86 19.96 19.96 0 0 0 0-1.9 6.46 6.46 0 0 0-.4-1.85 2.19 2.19 0 0 0-1.26-1.24c-.3-.13-.67-.2-1.1-.2-.43 0-.8.07-1.12.2a2.2 2.2 0 0 0-1.25 1.24 6.46 6.46 0 0 0-.39 1.86l-.02.94Zm7.6-.01v-.67a7.6 7.6 0 0 1 .21-1.46 2 2 0 0 1 .3-.61 1.45 1.45 0 0 1 1.21-.6c.28 0 .52.05.72.16.2.11.36.26.48.44.14.17.23.37.3.6.07.24.12.48.15.73a20.96 20.96 0 0 1 .04 2.47c-.02.38-.08.75-.2 1.1-.1.33-.26.61-.5.85-.23.23-.56.35-.99.35-.42 0-.75-.12-.99-.35-.23-.24-.4-.52-.52-.86a4.9 4.9 0 0 1-.18-1.09L56 57.77Zm-1.06.01.03.96a6.46 6.46 0 0 0 .39 1.85 2.21 2.21 0 0 0 1.25 1.23c.3.12.68.18 1.11.18.44 0 .81-.06 1.12-.18a2.21 2.21 0 0 0 1.25-1.23 6.46 6.46 0 0 0 .39-1.86 19.96 19.96 0 0 0 0-1.9 6.46 6.46 0 0 0-.4-1.85 2.19 2.19 0 0 0-1.26-1.24c-.3-.13-.67-.2-1.1-.2-.43 0-.8.07-1.12.2a2.2 2.2 0 0 0-1.24 1.24 4.98 4.98 0 0 0-.39 1.85l-.03.95Zm28.52-.01v-.67a7.64 7.64 0 0 1 .21-1.46c.07-.24.17-.44.3-.61a1.45 1.45 0 0 1 1.21-.6c.28 0 .52.05.72.16a1.88 1.88 0 0 1 .78 1.04c.07.24.12.48.15.73a20.68 20.68 0 0 1 .04 2.47c-.02.38-.08.75-.2 1.1-.1.33-.27.61-.5.85-.24.23-.57.35-.99.35-.42 0-.75-.12-.99-.35-.23-.24-.4-.52-.52-.86-.1-.34-.16-.7-.19-1.09l-.02-1.06Zm-1.06.01c0 .31 0 .63.02.96a6.46 6.46 0 0 0 .4 1.85 2.21 2.21 0 0 0 1.25 1.23c.3.12.68.18 1.11.18.44 0 .81-.06 1.12-.18a2.21 2.21 0 0 0 1.25-1.23 6.46 6.46 0 0 0 .39-1.86 19.96 19.96 0 0 0 0-1.9 6.46 6.46 0 0 0-.4-1.85 2.19 2.19 0 0 0-1.26-1.24c-.3-.13-.67-.2-1.1-.2-.43 0-.8.07-1.12.2a2.2 2.2 0 0 0-1.25 1.24 6.46 6.46 0 0 0-.39 1.86l-.02.94Zm7.6-.01v-.67a7.64 7.64 0 0 1 .22-1.46 2 2 0 0 1 .29-.61 1.46 1.46 0 0 1 1.21-.6c.28 0 .52.05.72.16.2.11.36.26.48.44.14.17.23.37.3.6.07.24.12.48.15.73a20.68 20.68 0 0 1 .04 2.47c-.02.38-.08.75-.2 1.1-.1.33-.26.61-.5.85-.23.23-.56.35-.99.35-.42 0-.75-.12-.99-.35-.23-.24-.4-.52-.51-.86-.1-.34-.17-.7-.2-1.09L90 57.77Zm-1.06.01.03.96a6.46 6.46 0 0 0 .39 1.85 2.21 2.21 0 0 0 1.25 1.23c.3.12.68.18 1.11.18.44 0 .81-.06 1.12-.18a2.21 2.21 0 0 0 1.25-1.23 6.46 6.46 0 0 0 .39-1.86 19.96 19.96 0 0 0 0-1.9 6.46 6.46 0 0 0-.4-1.85 2.19 2.19 0 0 0-1.26-1.24c-.3-.13-.67-.2-1.1-.2-.43 0-.8.07-1.12.2a2.2 2.2 0 0 0-1.24 1.24 4.98 4.98 0 0 0-.39 1.85l-.03.95Zm7.61-.01v-.67a7.64 7.64 0 0 1 .2-1.46 2 2 0 0 1 .3-.61c.14-.18.3-.33.5-.44.2-.1.43-.16.71-.16.29 0 .53.05.72.16a1.7 1.7 0 0 1 .78 1.05c.07.23.12.47.15.72a20.68 20.68 0 0 1 .04 2.47c-.02.38-.08.75-.19 1.1-.1.33-.27.61-.5.85-.24.23-.57.35-1 .35-.42 0-.75-.12-.98-.35a2.1 2.1 0 0 1-.52-.86c-.1-.34-.17-.7-.2-1.09l-.01-1.06Zm-1.06.01c0 .31 0 .63.02.96a6.47 6.47 0 0 0 .39 1.85 2.21 2.21 0 0 0 1.25 1.23c.31.12.68.18 1.11.18.44 0 .82-.06 1.12-.18a2.21 2.21 0 0 0 1.25-1.23 6.47 6.47 0 0 0 .39-1.86 19.59 19.59 0 0 0 0-1.9 6.47 6.47 0 0 0-.39-1.85 2.2 2.2 0 0 0-1.26-1.24c-.3-.13-.67-.2-1.1-.2-.44 0-.81.07-1.12.2a2.2 2.2 0 0 0-1.25 1.24 6.47 6.47 0 0 0-.39 1.86c-.02.32-.02.64-.02.94Zm7.6-.01v-.67a7.8 7.8 0 0 1 .21-1.46 2 2 0 0 1 .3-.61c.13-.18.3-.33.49-.44.2-.1.44-.16.72-.16.28 0 .52.05.72.16a1.88 1.88 0 0 1 .78 1.04c.06.24.11.48.15.73.04.25.06.5.06.74a23.46 23.46 0 0 1-.03 1.73c-.02.38-.08.75-.19 1.1a2 2 0 0 1-.5.85c-.24.23-.57.35-1 .35-.42 0-.75-.12-.98-.35a2.1 2.1 0 0 1-.52-.86c-.1-.34-.16-.7-.19-1.09l-.02-1.06Zm-1.06.01c0 .31 0 .63.02.96a6.47 6.47 0 0 0 .4 1.85 2.21 2.21 0 0 0 1.25 1.23c.3.12.68.18 1.1.18.45 0 .82-.06 1.13-.18a2.21 2.21 0 0 0 1.24-1.23 6.47 6.47 0 0 0 .39-1.86 20.91 20.91 0 0 0 0-1.9 6.47 6.47 0 0 0-.39-1.85 2.19 2.19 0 0 0-1.26-1.24c-.3-.13-.67-.2-1.1-.2-.43 0-.8.07-1.12.2a2.2 2.2 0 0 0-1.25 1.24 6.47 6.47 0 0 0-.39 1.86l-.02.94Zm7.6-.01v-.67a7.48 7.48 0 0 1 .21-1.46 2 2 0 0 1 .3-.61 1.45 1.45 0 0 1 1.21-.6c.28 0 .52.05.72.16a1.88 1.88 0 0 1 .78 1.04c.07.24.12.48.15.73a20.43 20.43 0 0 1 .04 2.47c-.02.38-.09.75-.2 1.1-.1.33-.27.61-.5.85-.24.23-.57.35-.99.35-.42 0-.75-.12-.99-.35-.23-.24-.4-.52-.52-.86-.1-.34-.16-.7-.19-1.09l-.02-1.06Zm-1.06.01c0 .31 0 .63.03.96a6.47 6.47 0 0 0 .38 1.85 2.21 2.21 0 0 0 1.25 1.23c.31.12.69.18 1.12.18.44 0 .81-.06 1.12-.18a2.2 2.2 0 0 0 1.25-1.23 6.47 6.47 0 0 0 .39-1.86 19.59 19.59 0 0 0 0-1.9 6.47 6.47 0 0 0-.4-1.85 2.19 2.19 0 0 0-1.26-1.24c-.3-.13-.67-.2-1.1-.2-.43 0-.8.07-1.12.2a2.2 2.2 0 0 0-1.25 1.24 6.47 6.47 0 0 0-.39 1.86l-.02.94Zm31 2.08h-1c.06.72.33 1.26.8 1.61a2.8 2.8 0 0 0 1.73.53c1.02 0 1.75-.38 2.2-1.15.47-.78.7-1.88.7-3.32 0-.8-.08-1.44-.24-1.95a3.2 3.2 0 0 0-.6-1.22 2.3 2.3 0 0 0-.91-.63 3.23 3.23 0 0 0-2.22.02 2.54 2.54 0 0 0-1.43 1.42c-.14.32-.2.69-.2 1.09a2.8 2.8 0 0 0 .66 2.01c.23.24.51.43.84.57a3 3 0 0 0 1.13.2 2.19 2.19 0 0 0 1.93-1.15l.03.02a5.33 5.33 0 0 1-.5 2.43c-.31.53-.77.8-1.39.8-.4 0-.74-.12-1.03-.34a1.27 1.27 0 0 1-.5-.94Zm3.24-3.53a2.06 2.06 0 0 1-.46 1.29c-.15.16-.33.3-.54.4a1.72 1.72 0 0 1-1.38 0 1.84 1.84 0 0 1-.86-.96 1.86 1.86 0 0 1-.11-.66c0-.26.02-.5.08-.74s.16-.44.28-.62c.13-.2.3-.34.5-.45.22-.1.47-.16.77-.16.28 0 .53.05.74.15.21.1.4.24.53.42a2.2 2.2 0 0 1 .45 1.33Z"></path>
                 </svg></div>
             </div>
             <div class="about__text">
-              <p class="p-med">REDIS® AGENCY <span class="p-times">is a creative company rooted in narrative &amp; built on collaboration. We partner with modern brands &amp; individuals by developing holistic solutions through strategy, design &amp; direction.</span></p>
+              <p class="p-med">REDIS® AGENCY <span class="p-times">is about 12 years of design experience, concentrated in its people and divided into departments based on the value we bring to our clients. We add passion to brands and meaningfulness to bold products.</span></p>
             </div>
             <div class="about-wrapper">
               <div class="about__list-container">
-                <div id="w-node-_76be12c6-69f3-e9c1-2a77-1c2dc6c4c140-e0e27a40" class="p-normal">Services:</div>
-                <ul id="w-node-_76be12c6-69f3-e9c1-2a77-1c2dc6c4c142-e0e27a40" role="list" class="list-about__list w-list-unstyled">
-                  <li>
-                    <div class="p-normal">Digital strategy</div>
-                  </li>
+                <div id="w-node-dcf93fb5-2bfd-bf4b-8558-003fc5710737-e0e27a40" class="p-normal">Services:</div>
+                <ul id="w-node-dcf93fb5-2bfd-bf4b-8558-003fc5710739-e0e27a40" role="list" class="list-about__list w-list-unstyled">
                   <li>
                     <div class="p-normal">Branding</div>
                   </li>
                   <li>
-                    <div class="p-normal">Prototyping</div>
+                    <div class="p-normal">Marketing design</div>
                   </li>
                   <li>
-                    <div class="p-normal">UX / UI Design</div>
+                    <div class="p-normal">UX / UI</div>
                   </li>
                   <li>
-                    <div class="p-normal">Python</div>
+                    <a href="https://webflow.redis.agency/" target="_blank" class="p-normal link-hover">Webflow</a>
+                  </li>
+                  <li>
+                    <div class="p-normal">Development</div>
+                  </li>
+                  <li>
+                    <div class="p-normal">NFT</div>
+                  </li>
+                  <li>
+                    <div class="p-normal">Motion</div>
                   </li>
                 </ul>
               </div>
               <div class="about__list-container">
-                <div id="w-node-_76be12c6-69f3-e9c1-2a77-1c2dc6c4c153-e0e27a40" class="p-normal">Featured:</div>
-                <ul id="w-node-_76be12c6-69f3-e9c1-2a77-1c2dc6c4c155-e0e27a40" role="list" class="list-about__list w-list-unstyled">
+                <div id="w-node-dcf93fb5-2bfd-bf4b-8558-003fc5710750-e0e27a40" class="p-normal about-headign">Featured:</div>
+                <ul id="w-node-dcf93fb5-2bfd-bf4b-8558-003fc5710752-e0e27a40" role="list" class="list-about__list w-list-unstyled">
                   <li>
-                    <a href="#" class="p-normal link-hover">Saharov Space</a>
+                    <a href="https://www.sakharov.space/en" target="_blank" class="p-normal link-hover">Saharov Space</a>
                   </li>
                   <li>
-                    <a href="#" class="p-normal link-hover">Redseed</a>
+                    <a href="https://www.behance.net/gallery/131471539/FITIL-APP" target="_blank" class="p-normal link-hover">Fitil App</a>
                   </li>
                   <li>
-                    <a href="#" class="p-normal link-hover">Fitil App</a>
+                    <a href="https://amway-fund-report-2021.webflow.io/" target="_blank" class="p-normal link-hover">Amway for Future</a>
                   </li>
                   <li>
-                    <a href="#" class="p-normal link-hover">Amway for Future</a>
+                    <p class="p-normal">xChange product</p>
                   </li>
                   <li>
-                    <a href="#" class="p-normal link-hover">Finhelp</a>
+                    <p class="p-normal">xChange identity</p>
                   </li>
                   <li>
-                    <a href="#" class="p-normal link-hover">Saharov Space</a>
-                  </li>
-                  <li>
-                    <a href="#" class="p-normal link-hover">Redseed</a>
-                  </li>
-                  <li>
-                    <a href="#" class="p-normal link-hover">Fitil App</a>
-                  </li>
-                  <li>
-                    <a href="#" class="p-normal link-hover">Finhelp</a>
+                    <a href="https://www.behance.net/gallery/70440759/Boris-Ignatovich-Innovator" target="_blank" class="p-normal link-hover">Boris Ignatovich</a>
                   </li>
                 </ul>
               </div>
@@ -316,37 +331,37 @@ color: inherit;
             <div class="contacts__link-mail">
               <a href="mailto:hello@redis.agency?subject=Hello%20Redis!" class="headign-med none-decor">hello@redis<br>.agency</a>
             </div>
-            <div class="about-wrapper">
+            <div class="about-wrapper down">
               <div class="about__list-container">
-                <div id="w-node-_76be12c6-69f3-e9c1-2a77-1c2dc6c4c179-e0e27a40" class="p-normal">Follow us:</div>
-                <ul id="w-node-_76be12c6-69f3-e9c1-2a77-1c2dc6c4c17b-e0e27a40" role="list" class="list-about__list w-list-unstyled">
-                  <li class="about__list mob">
-                    <a href="#" class="p-normal link-hover">Instagram</a>
+                <div id="w-node-f7b26fa8-2430-406c-de43-47fbc0d1cbbf-e0e27a40" class="p-normal about-headign">Follow us:</div>
+                <ul id="w-node-f7b26fa8-2430-406c-de43-47fbc0d1cbc1-e0e27a40" role="list" class="list-about__list w-list-unstyled">
+                  <li class="about__list">
+                    <a href="https://www.instagram.com/redis.agency/" target="_blank" class="p-normal link-hover">Instagram</a>
                   </li>
-                  <li class="about__list mob">
-                    <a href="#" class="p-normal link-hover">Behance</a>
+                  <li class="about__list">
+                    <a href="https://www.behance.net/Redis_CA" target="_blank" class="p-normal link-hover">Behance</a>
                   </li>
-                  <li class="about__list mob">
-                    <a href="#" class="p-normal link-hover">Dribbble</a>
+                  <li class="about__list">
+                    <a href="https://dribbble.com/redis_agency" target="_blank" class="p-normal link-hover">Dribbble</a>
                   </li>
-                  <li class="about__list mob">
-                    <a href="#" class="p-normal link-hover">Twitter</a>
+                  <li class="about__list">
+                    <a href="https://twitter.com/redis_agency" target="_blank" class="p-normal link-hover">Twitter</a>
                   </li>
-                  <li class="about__list mob">
-                    <a href="#" class="p-normal link-hover">Linkedin</a>
+                  <li class="about__list">
+                    <a href="https://www.linkedin.com/company/3358422/" target="_blank" class="p-normal link-hover">Linkedin</a>
                   </li>
-                  <li>
-                    <a href="#" class="p-normal link-hover">Facebook</a>
+                  <li class="about__list">
+                    <a href="https://www.facebook.com/redis.agency.ru/" target="_blank" class="p-normal link-hover">Facebook</a>
                   </li>
                 </ul>
               </div>
             </div>
             <div class="contacts__emails">
-              <div id="w-node-_76be12c6-69f3-e9c1-2a77-1c2dc6c4c18f-e0e27a40" class="contacts__careers">
+              <div id="w-node-dcf93fb5-2bfd-bf4b-8558-003fc5710783-e0e27a40" class="contacts__careers">
                 <div class="p-normal m-mb5">Careers:</div>
                 <a href="mailto:join@redis.agency?subject=Hello%20Redis!" class="p-normal link-hover">join@redis.agency</a>
               </div>
-              <div class="contacts__inquiries">
+              <div id="w-node-dcf93fb5-2bfd-bf4b-8558-003fc5710788-e0e27a40" class="contacts__inquiries">
                 <div class="p-normal m-mb5">Inquiries:</div>
                 <a href="mailto:hello@redis.agency?subject=Hello%20Redis!" class="p-normal link-hover">hello@redis.agency</a>
               </div>
@@ -354,49 +369,56 @@ color: inherit;
           </section>
           <div class="footer">
             <div class="footer__image-comands">
-              <div id="w-node-_76be12c6-69f3-e9c1-2a77-1c2dc6c4c19b-e0e27a40" class="comands__item hover"><img src="images/redis-portret__012.jpg" loading="lazy" width="193" alt="" class="comands__image"><img src="images/redis-portret__01_redis2.jpg" loading="lazy" width="193" alt="" class="comands__image redis"></div>
-              <div class="comands__item hover"><img src="images/redis-portret__082.jpg" loading="lazy" width="193" alt="" class="comands__image"><img src="images/redis-portret__08_redis2.jpg" loading="lazy" width="193" alt="" class="comands__image redis"></div>
+              <div id="w-node-dcf93fb5-2bfd-bf4b-8558-003fc571078f-e0e27a40" class="comands__item hover"><img src="images/redis-command__032.jpg" loading="eager" width="193" alt="Elena Mosina" class="comands__image"><img src="images/redis-command__09-redis2.jpg" loading="eager" width="193" alt="" class="comands__image hover"></div>
+              <div class="comands__item hover"><img src="images/redis-command__082.jpg" loading="eager" width="193" alt="Aleksey Luppov" class="comands__image"><img src="images/redis-command__10-redis2.jpg" loading="eager" width="193" alt="" class="comands__image hover"></div>
             </div>
             <div class="footer__image-comands center">
-              <div class="comands__item hover"><img src="images/redis-portret__022.jpg" loading="lazy" width="193" alt="" class="comands__image"><img src="images/redis-portret__02_redis2.jpg" loading="lazy" width="193" alt="" class="comands__image redis"></div>
-              <div class="comands__item hover"><img src="images/redis-portret__032.jpg" loading="lazy" width="193" alt="" class="comands__image"><img src="images/redis-portret__03_redis2.jpg" loading="lazy" width="193" alt="" class="comands__image redis"></div>
+              <div class="comands__item hover"><img src="images/redis-command__042.jpg" loading="eager" width="193" alt="Pavel Dergachev" class="comands__image"><img src="images/redis-command__08-redis2.jpg" loading="eager" width="193" alt="" class="comands__image hover"></div>
+              <div class="comands__item hover"><img src="images/redis-command__052.jpg" loading="eager" width="193" alt="Aleksandr Balashov" class="comands__image"><img src="images/redis-command__01-redis2.jpg" loading="eager" width="193" alt="" class="comands__image hover"></div>
             </div>
             <div class="footer__image-comands">
-              <div class="comands__item hover"><img src="images/redis-portret__102.jpg" loading="lazy" width="193" alt="" class="comands__image"><img src="images/redis-portret__10_redis2.jpg" loading="lazy" width="193" alt="" class="comands__image redis"></div>
-              <div class="comands__item hover"><img src="images/redis-portret__112.jpg" loading="lazy" width="193" alt="" class="comands__image"><img src="images/redis-portret__11_redis2.jpg" loading="lazy" width="193" alt="" class="comands__image redis"></div>
-              <div class="comands__item hover"><img src="images/redis-portret__092.jpg" loading="lazy" width="193" alt="" class="comands__image"><img src="images/redis-portret__09_redis2.jpg" loading="lazy" width="193" alt="" class="comands__image redis"></div>
+              <div class="comands__item hover"><img src="images/redis-command__112.jpg" loading="eager" width="193" alt="Artem Hertz" class="comands__image"><img src="images/redis-command__07-redis2.jpg" loading="eager" width="193" alt="" class="comands__image hover"></div>
+              <div data-w-id="dcf93fb5-2bfd-bf4b-8558-003fc57107a0" class="comands__item"><img src="images/redis-command__072.jpg" loading="eager" width="193" alt="Cat Ruby" class="comands__image"><img src="images/ruby-hover-2.jpg" loading="eager" width="193" alt="" class="comands__image hover"></div>
+              <div class="comands__item hover"><img src="images/redis-command__102.jpg" loading="eager" width="193" alt="Vyacheslav Sheikin" class="comands__image"><img src="images/redis-command__03-redis2.jpg" loading="eager" width="193" alt="" class="comands__image hover"></div>
             </div>
             <div class="footer__image-comands center">
-              <div class="comands__item hover"><img src="images/redis-portret__052.jpg" loading="lazy" width="193" alt="" class="comands__image"><img src="images/redis-portret__05_redis2.jpg" loading="lazy" width="193" alt="" class="comands__image redis"></div>
-              <div class="comands__item hover"><img src="images/redis-portret__042.jpg" loading="lazy" width="193" alt="" class="comands__image"><img src="images/redis-portret__04_redis2.jpg" loading="lazy" width="193" alt="" class="comands__image redis"></div>
+              <div class="comands__item hover"><img src="images/redis-command__022.jpg" loading="eager" width="193" alt="Alexandr Rastegaev" class="comands__image"><img src="images/redis-command__05-redis2.jpg" loading="eager" width="193" alt="" class="comands__image hover"></div>
+              <div class="comands__item hover"><img src="images/redis-command__062.jpg" loading="eager" width="193" alt="Elena Romanova" class="comands__image"><img src="images/redis-command__04-redis2.jpg" loading="eager" width="193" alt="" class="comands__image hover"></div>
             </div>
             <div class="footer__image-comands">
-              <div class="comands__item hover"><img src="images/redis-portret__062.jpg" loading="lazy" width="193" alt="" class="comands__image"><img src="images/redis-portret__06_redis2.jpg" loading="lazy" width="193" alt="" class="comands__image redis"></div>
+              <div class="comands__item hover"><img src="images/redis-command__012.jpg" loading="eager" width="193" alt="Anna Senekerimyan" class="comands__image"><img src="images/redis-command__06-redis2.jpg" loading="eager" width="193" alt="" class="comands__image hover"></div>
               <div class="footer__year-txt">
                 <div class="footer__image_container">
-                  <div class="footer__image w-embed"><svg width="100%" fill="currentcolor" viewbox="0 0 110 64">
-                      <path fill="currentcolor" fill-rule="evenodd" d="M78.21.01 78.06 0h-.13C68.94 0 60.82 3.7 55 9.65A31.98 31.98 0 0 0 32.07 0 32.04 32.04 0 0 0 0 32c0 17.67 14.36 32 32.07 32 8.99 0 17.11-3.7 22.93-9.65A31.98 31.98 0 0 0 77.93 64 32.04 32.04 0 0 0 110 32 32.03 32.03 0 0 0 78.21.01ZM47.89 33h11.24c.09 4.61.76 8.98 1.9 12.9a18.86 18.86 0 0 0-6.14 5.38 29.89 29.89 0 0 1-7-18.28Zm7.1-20.38a18.97 18.97 0 0 0 6.04 5.23c-1.16 4-1.84 8.45-1.91 13.15H47.89c.23-7 2.86-13.39 7.1-18.38Zm23.94 31.24c5.24.19 9.95 1.47 13.61 3.45a34.69 34.69 0 0 1-2.64 5.89c-2.96 5.08-6.84 8.13-10.97 8.51V43.86Zm0-1.99V33H95c-.1 4.46-.74 8.65-1.83 12.39a33.68 33.68 0 0 0-14.24-3.52Zm0-10.87v-9.12a33.74 33.74 0 0 0 14.23-3.51A47.97 47.97 0 0 1 95 31H78.93Zm0-11.11V2.03c4.13.38 8.01 3.43 10.97 8.51a33.19 33.19 0 0 1 2.64 5.89 31.38 31.38 0 0 1-13.61 3.46Zm-1.99.02a32.21 32.21 0 0 1-13.51-3.04 33.32 33.32 0 0 1 2.8-6.32c2.9-4.98 6.68-8 10.72-8.47l-.01 17.83Zm0 1.99V31H61.12c.07-4.38.69-8.51 1.72-12.21a34.48 34.48 0 0 0 14.1 3.11ZM61.12 33h15.81v8.86a34.51 34.51 0 0 0-14.1 3.1A49.21 49.21 0 0 1 61.12 33Zm15.82 10.84v17.84c-4.04-.48-7.82-3.5-10.72-8.47-1.09-1.87-2.02-4-2.8-6.32a32.26 32.26 0 0 1 13.52-3.05Zm14.69 10.37a36.01 36.01 0 0 0 2.66-5.84 15.16 15.16 0 0 1 4.85 4.9 30.1 30.1 0 0 1-13.25 7.67 22.76 22.76 0 0 0 5.74-6.73Zm3.32-7.8A49.98 49.98 0 0 0 97 33h10.99c-.24 7.18-3 13.73-7.43 18.77a18.06 18.06 0 0 0-5.61-5.36ZM97 31c-.08-4.9-.8-9.54-2.05-13.66a17.97 17.97 0 0 0 5.51-5.22A29.87 29.87 0 0 1 107.99 31H97Zm2.04-20.37a15.45 15.45 0 0 1-4.75 4.75 35.63 35.63 0 0 0-2.66-5.84A23.34 23.34 0 0 0 86.4 3.2c4.83 1.42 9.15 4 12.64 7.43ZM69.87 3.09a23.06 23.06 0 0 0-5.38 6.45 35.77 35.77 0 0 0-2.85 6.37 16.37 16.37 0 0 1-5.27-4.81 30.14 30.14 0 0 1 13.5-8.01Zm-37.8 58.92A30.04 30.04 0 0 1 2 32 30.04 30.04 0 0 1 32.07 1.99a30 30 0 0 1 21.58 9.12 31.8 31.8 0 0 0-7.78 20.88c0 7.98 2.94 15.28 7.78 20.88a29.96 29.96 0 0 1-21.58 9.14Zm24.29-9.12.07-.07-.09-.08a16.23 16.23 0 0 1 5.32-4.89 35.07 35.07 0 0 0 2.85 6.37 22.56 22.56 0 0 0 5.88 6.84 30.1 30.1 0 0 1-14.03-8.17Z" clip-rule="evenodd"></path>
-                      <path fill="currentcolor" fill-rule="evenodd" d="M21.44 24.51h7.99v19.1h2.95v-19.1h7.86v-2.46h-18.8v2.46Z" clip-rule="evenodd"></path>
-                    </svg></div>
+                  <div class="footer__image w-embed">
+                    <!-- svg width="100%" fill="currentcolor" viewBox="0 0 110 64"><path fill="currentcolor" fill-rule="evenodd" d="M78.21.01 78.06 0h-.13C68.94 0 60.82 3.7 55 9.65A31.98 31.98 0 0 0 32.07 0 32.04 32.04 0 0 0 0 32c0 17.67 14.36 32 32.07 32 8.99 0 17.11-3.7 22.93-9.65A31.98 31.98 0 0 0 77.93 64 32.04 32.04 0 0 0 110 32 32.03 32.03 0 0 0 78.21.01ZM47.89 33h11.24c.09 4.61.76 8.98 1.9 12.9a18.86 18.86 0 0 0-6.14 5.38 29.89 29.89 0 0 1-7-18.28Zm7.1-20.38a18.97 18.97 0 0 0 6.04 5.23c-1.16 4-1.84 8.45-1.91 13.15H47.89c.23-7 2.86-13.39 7.1-18.38Zm23.94 31.24c5.24.19 9.95 1.47 13.61 3.45a34.69 34.69 0 0 1-2.64 5.89c-2.96 5.08-6.84 8.13-10.97 8.51V43.86Zm0-1.99V33H95c-.1 4.46-.74 8.65-1.83 12.39a33.68 33.68 0 0 0-14.24-3.52Zm0-10.87v-9.12a33.74 33.74 0 0 0 14.23-3.51A47.97 47.97 0 0 1 95 31H78.93Zm0-11.11V2.03c4.13.38 8.01 3.43 10.97 8.51a33.19 33.19 0 0 1 2.64 5.89 31.38 31.38 0 0 1-13.61 3.46Zm-1.99.02a32.21 32.21 0 0 1-13.51-3.04 33.32 33.32 0 0 1 2.8-6.32c2.9-4.98 6.68-8 10.72-8.47l-.01 17.83Zm0 1.99V31H61.12c.07-4.38.69-8.51 1.72-12.21a34.48 34.48 0 0 0 14.1 3.11ZM61.12 33h15.81v8.86a34.51 34.51 0 0 0-14.1 3.1A49.21 49.21 0 0 1 61.12 33Zm15.82 10.84v17.84c-4.04-.48-7.82-3.5-10.72-8.47-1.09-1.87-2.02-4-2.8-6.32a32.26 32.26 0 0 1 13.52-3.05Zm14.69 10.37a36.01 36.01 0 0 0 2.66-5.84 15.16 15.16 0 0 1 4.85 4.9 30.1 30.1 0 0 1-13.25 7.67 22.76 22.76 0 0 0 5.74-6.73Zm3.32-7.8A49.98 49.98 0 0 0 97 33h10.99c-.24 7.18-3 13.73-7.43 18.77a18.06 18.06 0 0 0-5.61-5.36ZM97 31c-.08-4.9-.8-9.54-2.05-13.66a17.97 17.97 0 0 0 5.51-5.22A29.87 29.87 0 0 1 107.99 31H97Zm2.04-20.37a15.45 15.45 0 0 1-4.75 4.75 35.63 35.63 0 0 0-2.66-5.84A23.34 23.34 0 0 0 86.4 3.2c4.83 1.42 9.15 4 12.64 7.43ZM69.87 3.09a23.06 23.06 0 0 0-5.38 6.45 35.77 35.77 0 0 0-2.85 6.37 16.37 16.37 0 0 1-5.27-4.81 30.14 30.14 0 0 1 13.5-8.01Zm-37.8 58.92A30.04 30.04 0 0 1 2 32 30.04 30.04 0 0 1 32.07 1.99a30 30 0 0 1 21.58 9.12 31.8 31.8 0 0 0-7.78 20.88c0 7.98 2.94 15.28 7.78 20.88a29.96 29.96 0 0 1-21.58 9.14Zm24.29-9.12.07-.07-.09-.08a16.23 16.23 0 0 1 5.32-4.89 35.07 35.07 0 0 0 2.85 6.37 22.56 22.56 0 0 0 5.88 6.84 30.1 30.1 0 0 1-14.03-8.17Z" clip-rule="evenodd"/><path fill="currentcolor" fill-rule="evenodd" d="M21.44 24.51h7.99v19.1h2.95v-19.1h7.86v-2.46h-18.8v2.46Z" clip-rule="evenodd"/></svg -->
+                    <svg fill="none" viewbox="0 0 94 56">
+                      <path fill="#fff" d="M27.34 38.33c-1.87-3.77-7.14-4-7.2-7.98 0-1.6 1-3.69 3.32-3.69h7.76c2.33 0 3.33 2.08 3.33 3.7-.06 3.96-5.34 4.2-7.2 7.97h-.01Z"></path>
+                      <path fill="#fff" fill-rule="evenodd" d="M27.35 38.33h-.01v-.01l-.16-.29c-.86-1.5-2.27-2.42-3.61-3.29-1.77-1.14-3.4-2.2-3.43-4.39 0-1.6 1-3.69 3.32-3.69h7.76c2.33 0 3.33 2.08 3.33 3.7-.04 2.19-1.67 3.24-3.43 4.38-1.34.87-2.76 1.79-3.62 3.3l-.15.28Z" clip-rule="evenodd"></path>
+                      <path fill="#fff" d="M30.3 24.61c-.04-.04-.05-.1-.06-.28-.01-.13-.09-.21-.23-.24a.29.29 0 0 0 .28-.3c0-.22-.16-.36-.46-.36h-.57v1.18h.27v-.42h.24c.14 0 .2.05.2.19.02.12.03.2.06.23h.28Zm-.77-.62v-.36h.24c.17 0 .24.07.24.18 0 .12-.07.18-.24.18h-.24Zm1.36.04c0-.66-.51-1.13-1.15-1.13-.63 0-1.14.47-1.14 1.13 0 .66.51 1.13 1.14 1.13.64 0 1.15-.47 1.15-1.13Zm-.2 0c0 .55-.42.94-.95.94a.92.92 0 0 1-.94-.94c0-.55.42-.94.94-.94.53 0 .94.4.94.94Z"></path>
+                      <path fill="#fff" fill-rule="evenodd" d="M25.99 19.37c-1.53-1.49-3.7-1.62-5.66-1.62h-.14v.48c-.02.56-.03 1.35.1 2.2a5.27 5.27 0 0 0 1.47 3.05c1.53 1.47 3.73 1.54 5.68 1.54h.14v-.49c.03-1.23.07-3.53-1.59-5.16Z" clip-rule="evenodd"></path>
+                      <path fill="#fff" fill-rule="evenodd" d="M47 9.91a26.17 26.17 0 1 1 0 36.51 26.17 26.17 0 1 1 0-36.51Zm7.8 36.44a18.24 18.24 0 0 0 4.94 5.7 24.6 24.6 0 0 1-11.7-6.76l.09-.1-.09-.07c1-1.52 2.5-2.9 4.4-4.03a29.22 29.22 0 0 0 2.35 5.26Zm-1-6a27.9 27.9 0 0 0 2.33 5.22c2.38 4.1 5.5 6.6 8.85 6.98V37.82a26.5 26.5 0 0 0-11.17 2.52Zm11.18-4.07c-4.32.06-8.34 1-11.63 2.57a39.8 39.8 0 0 1-1.41-9.9h13.04v7.33Zm1.54 1.56v14.73c3.41-.3 6.61-2.81 9.05-7a27.61 27.61 0 0 0 2.2-4.87 25.64 25.64 0 0 0-11.25-2.86Zm11.72 1.36a27.47 27.47 0 0 0-11.72-2.9v-7.35h13.23a39.6 39.6 0 0 1-1.51 10.25Zm.88 2.3a28.9 28.9 0 0 1-2.22 4.85 18.3 18.3 0 0 1-4.84 5.62 24.6 24.6 0 0 0 11.12-6.4l-.04.02a12.55 12.55 0 0 0-4.02-4.08Zm5.12 2.93a14.58 14.58 0 0 0-4.63-4.44 40.98 40.98 0 0 0 1.69-11.04h9.06a24.52 24.52 0 0 1-6.12 15.48Zm-32.28-4.85a15.36 15.36 0 0 0-5.05 4.45 24.5 24.5 0 0 1-5.78-15.08h9.26c.08 3.8.63 7.4 1.57 10.63Zm-1.57-12.17h-9.26A24.51 24.51 0 0 1 47 12.2a15.45 15.45 0 0 0 4.97 4.35A41.26 41.26 0 0 0 50.4 27.4Zm-2.34-16.37.07.1.01.01c1 1.47 2.47 2.8 4.3 3.9A29.21 29.21 0 0 1 54.8 9.8a18.64 18.64 0 0 1 4.57-5.42 24.61 24.61 0 0 0-11.3 6.65Zm3.88 16.37c.06-3.63.57-7.05 1.43-10.12a28.1 28.1 0 0 0 11.62 2.57v7.55H51.93Zm1.88-11.61a26.33 26.33 0 0 0 11.17 2.52V3.61c-3.35.37-6.47 2.87-8.85 6.97-.9 1.55-1.68 3.3-2.32 5.22Zm12.7 11.6v-7.55c4.4-.15 8.47-1.2 11.73-2.9a39.68 39.68 0 0 1 1.52 10.46H66.52Zm0-9.1a25.65 25.65 0 0 0 11.25-2.86 27.6 27.6 0 0 0-2.2-4.86c-2.43-4.18-5.63-6.7-9.04-7V18.3Zm14.8 9.1a41.05 41.05 0 0 0-1.7-11.25 14.67 14.67 0 0 0 4.56-4.32c3.7 4.17 6.01 9.6 6.2 15.58H81.3Zm-2.2-12.77a12.66 12.66 0 0 0 3.96-3.96 24.6 24.6 0 0 0-10.63-6.2c1.7 1.34 3.2 3.17 4.46 5.34a28.9 28.9 0 0 1 2.21 4.82Zm-33.16-3.58a24.62 24.62 0 1 0 0 34.23 26.06 26.06 0 0 1-6.37-17.11 26.1 26.1 0 0 1 6.37-17.12Z" clip-rule="evenodd"></path>
+                    </svg>
+                  </div>
                 </div>
-                <div class="p-normal">Redis® Agency <br>All Rights Reserved ©2022</div>
+                <div class="p-normal footer uppercase">Redis® Agency</div>
+                <div class="p-normal footer">All Rights Reserved ©2022</div>
               </div>
-              <div class="comands__item"><img src="images/redis-portret__072.jpg" loading="lazy" width="193" alt="" class="comands__image"></div>
+              <div class="comands__item hover"><img src="images/redis-command__092.jpg" loading="eager" width="193" alt="Yulia Orlova" class="comands__image"><img src="images/redis-command__02-redis2.jpg" loading="eager" width="193" alt="" class="comands__image hover"></div>
             </div>
           </div>
         </div>
       </div>
       <div id="target2" class="scroll-container no-e-pointers botva">
-        <div id="content" class="image__container"><img src="images/botva_left__022.png" loading="lazy" data-speed="0.95" width="273" srcset="images/botva_left__022-p-500.png 500w, images/botva_left__022-p-800.png 800w, images/botva_left__022.png 1178w" sizes="41vw" alt="" class="hero__image-is1"><img src="images/botva_left__032.png" loading="lazy" sizes="36vw" width="525" srcset="images/botva_left__032-p-500.png 500w, images/botva_left__032-p-800.png 800w, images/botva_left__032.png 1050w" alt="" class="about__image"><img class="conatcts__image-is1" src="images/botva_left__012.png" width="400" alt="" data-scroll-speed="1" data-scroll="auto" sizes="36vw" loading="lazy" srcset="images/botva_left__012-p-500.png 500w, images/botva_left__012-p-800.png 800w, images/botva_left__012.png 1034w"></div>
-        <div id="content" class="image__container"><img src="images/botva_left__022.png" loading="lazy" data-speed="0.95" width="273" srcset="images/botva_left__022-p-500.png 500w, images/botva_left__022-p-800.png 800w, images/botva_left__022.png 1178w" sizes="41vw" alt="" class="hero__image-is1"><img src="images/botva_left__032.png" loading="lazy" sizes="36vw" width="525" srcset="images/botva_left__032-p-500.png 500w, images/botva_left__032-p-800.png 800w, images/botva_left__032.png 1050w" alt="" class="about__image"><img class="conatcts__image-is1" src="images/botva_left__012.png" width="400" alt="" data-scroll-speed="1" data-scroll="auto" sizes="36vw" loading="lazy" srcset="images/botva_left__012-p-500.png 500w, images/botva_left__012-p-800.png 800w, images/botva_left__012.png 1034w"></div>
+        <div id="content" class="image__container"><img src="images/botva_left__022.png" loading="eager" data-w-id="9e86b0cd-2d47-5330-d343-23bf6630dff0" width="273" srcset="images/botva_left__022-p-500.png 500w, images/botva_left__022-p-800.png 800w, images/botva_left__022.png 1178w" sizes="(max-width: 479px) 70vw, 50vw" alt="" class="hero__image-is1 animate-left-herb"><img src="images/botva_left__032.png" loading="eager" sizes="(max-width: 479px) 44vw, 36vw" width="525" srcset="images/botva_left__032-p-500.png 500w, images/botva_left__032-p-800.png 800w, images/botva_left__032.png 1050w" alt="" class="about__image"><img src="images/botva_left__012.png" loading="eager" width="400" sizes="(max-width: 479px) 51vw, 36vw" srcset="images/botva_left__012-p-500.png 500w, images/botva_left__012-p-800.png 800w, images/botva_left__012.png 1034w" alt="" class="conatcts__image-is1"><img src="images/botva-mob2.png" loading="eager" width="143" alt="" class="botva-mob__left"></div>
+        <div id="content" class="image__container"><img src="images/botva_left__022.png" loading="eager" sizes="(max-width: 479px) 57vw, 41vw" width="273" srcset="images/botva_left__022-p-500.png 500w, images/botva_left__022-p-800.png 800w, images/botva_left__022.png 1178w" alt="" class="hero__image-is1"><img src="images/botva_left__032.png" loading="eager" sizes="(max-width: 479px) 44vw, 36vw" width="525" srcset="images/botva_left__032-p-500.png 500w, images/botva_left__032-p-800.png 800w, images/botva_left__032.png 1050w" alt="" class="about__image"><img src="images/botva_left__012.png" loading="eager" width="400" sizes="(max-width: 479px) 51vw, 36vw" srcset="images/botva_left__012-p-500.png 500w, images/botva_left__012-p-800.png 800w, images/botva_left__012.png 1034w" alt="" class="conatcts__image-is1"><img src="images/botva-mob2.png" loading="eager" width="143" alt="" class="botva-mob__left"></div>
       </div>
       <div id="target3" class="scroll-container no-e-pointers botva">
-        <div id="content" class="image__container"><img src="images/botva_right__032.png" loading="lazy" data-speed="0.55" width="507" srcset="images/botva_right__032-p-500.png 500w, images/botva_right__032-p-800.png 800w, images/botva_right__032.png 1014w" sizes="35vw" alt="" class="hero__image-is2"><img src="images/botva-right__022.png" loading="lazy" width="339" sizes="33vw" srcset="images/botva-right__022-p-500.png 500w, images/botva-right__022.png 678w" alt="" class="conatcts__image-is2"></div>
-        <div id="content" class="image__container"><img src="images/botva_right__032.png" loading="lazy" data-speed="0.55" width="507" srcset="images/botva_right__032-p-500.png 500w, images/botva_right__032-p-800.png 800w, images/botva_right__032.png 1014w" sizes="35vw" alt="" class="hero__image-is2"><img src="images/botva-right__022.png" loading="lazy" width="339" sizes="33vw" srcset="images/botva-right__022-p-500.png 500w, images/botva-right__022.png 678w" alt="" class="conatcts__image-is2"></div>
+        <div id="content" class="image__container"><img src="images/botva_right__032.png" loading="eager" data-w-id="36fcbeb6-be15-2d8f-c30f-9517118f8912" width="507" srcset="images/botva_right__032-p-500.png 500w, images/botva_right__032-p-800.png 800w, images/botva_right__032.png 1014w" sizes="(max-width: 479px) 72vw, 57vw" alt="" class="hero__image-is2 animate-right-herb"><img src="images/botva_right__022.png" loading="eager" width="339" sizes="(max-width: 479px) 100vw, 33vw" srcset="images/botva_right__022-p-500.png 500w, images/botva_right__022-p-800.png 800w, images/botva_right__022.png 952w" alt="" class="conatcts__image-is2"><img src="images/botva-mob2-1.png" loading="eager" width="143" alt="" class="botva-mob__right"></div>
+        <div id="content" class="image__container"><img src="images/botva_right__032.png" loading="eager" sizes="(max-width: 479px) 44vw, 35vw" width="507" srcset="images/botva_right__032-p-500.png 500w, images/botva_right__032-p-800.png 800w, images/botva_right__032.png 1014w" alt="" class="hero__image-is2"><img src="images/botva_right__022.png" loading="eager" width="339" sizes="(max-width: 479px) 100vw, 33vw" srcset="images/botva_right__022-p-500.png 500w, images/botva_right__022-p-800.png 800w, images/botva_right__022.png 952w" alt="" class="conatcts__image-is2"><img src="images/botva-mob2-1.png" loading="eager" width="143" alt="" class="botva-mob__right"></div>
       </div>
       <div id="target4" class="scroll-container no-e-pointers">
-        <div id="content" class="image__container-redis"><img src="images/redis_bg__012.png" loading="lazy" data-scroll-position="top" width="145.5" data-scroll="auto" data-scroll-speed="3" alt="" class="hero__image-redis"><img src="images/redis_bg__022.png" loading="lazy" data-scroll-position="top" width="140.5" data-scroll="auto" data-scroll-speed="3" alt="" class="hero__image-redis is2"><img src="images/redis_bg__032.png" loading="lazy" data-scroll-position="top" width="145.5" data-scroll="auto" data-scroll-speed="3" alt="" class="hero__image-redis is3"></div>
-        <div id="content" class="image__container-redis"><img src="images/redis_bg__012.png" loading="lazy" data-scroll-position="top" width="145.5" data-scroll="auto" data-scroll-speed="3" alt="" class="hero__image-redis"><img src="images/redis_bg__022.png" loading="lazy" data-scroll-position="top" width="140.5" data-scroll="auto" data-scroll-speed="3" alt="" class="hero__image-redis is2"><img src="images/redis_bg__032.png" loading="lazy" data-scroll-position="top" width="145.5" data-scroll="auto" data-scroll-speed="3" alt="" class="hero__image-redis is3"></div>
+        <div id="content" class="image__container-redis"><img src="images/new-redis-bg-032.png" loading="eager" width="110" alt="" class="hero__image-redis is1"><img src="images/new-redis-bg-032.png" loading="eager" width="110" alt="" class="hero__image-redis is1 mob"><img src="images/new-redis-bg-022.png" loading="eager" width="60" alt="" class="hero__image-redis is2"><img src="images/new-redis-bg-012.png" loading="eager" width="150" alt="" class="hero__image-redis is3"></div>
+        <div id="content" class="image__container-redis"><img src="images/new-redis-bg-032.png" loading="eager" width="110" alt="" class="hero__image-redis is1"><img src="images/new-redis-bg-032.png" loading="eager" width="110" alt="" class="hero__image-redis is1 mob"><img src="images/new-redis-bg-022.png" loading="eager" width="60" alt="" class="hero__image-redis is2"><img src="images/new-redis-bg-012.png" loading="eager" width="150" alt="" class="hero__image-redis is3"></div>
       </div>
     </div>
   </div>
@@ -406,6 +428,6 @@ color: inherit;
   <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.6.6/lottie.min.js"></script>
   <script src="https://unpkg.com/gsap@3/dist/MotionPathPlugin.min.js"></script>
-  <script src="js/script.js" type="text/javascript"></script>
+  <script src="https://redis-agency.vercel.app/js/script.js"></script>
 </body>
 </html>
