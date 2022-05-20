@@ -166,21 +166,18 @@ function onFrame() {
         if (scroll_loop_once == true) {
             scroll_loop_once = false;
 
-
-
-
             for(i=random_start;i<=random_end;i++){
                array.push(i);
             };
 
             for(countCycles=1;countCycles<=allСycles;countCycles++){
-                console.log();
                 rndm_count = array.splice(Math.random()*array.length,1)[0];
                 // console.log("цикл по счету:"+countCycles+" фотка:"+rndm_img[rndm_count-1]);
                 team_img = document.querySelectorAll(".comands__image")[countCycles-1];
                 team_img.setAttribute('src', rndm_img[rndm_count-1]);
-            };
+                console.log("поменялись");
 
+            };
 
             // var el = document.querySelectorAll(".comands__image")[1];
             // bt_save.setAttribute('href', attribute_href_save);
