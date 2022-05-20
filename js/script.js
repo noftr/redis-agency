@@ -7,7 +7,24 @@ let rotate_direction = 1;
 let path_even_loop = false;
 let path_loop = false;
 let path_loop_once = true;
-let scroll_loop_once = false;
+let scroll_loop_once = true;
+
+let rndm_img = [
+'https://klike.net/uploads/posts/2020-06/1593061844_1.jpg',
+'https://klike.net/uploads/posts/2020-06/1593062385_1.jpg',
+'https://klike.net/uploads/posts/2020-06/1593062964_1.jpg',
+'https://klike.net/uploads/posts/2020-06/1593063514_1.jpg',
+'https://klike.net/uploads/posts/2020-06/1593148473_1.jpg',
+'https://klike.net/uploads/posts/2020-06/1593149314_2.jpg',
+];
+
+
+let random_start = 1;
+let random_end = 6;
+let allСycles = 6;
+let array = [];
+let rndm_count = 0;
+let team_img;
 
 gsap.registerPlugin(MotionPathPlugin);
 var path_tween = gsap.to(".lottie-wrapper", {
@@ -145,14 +162,43 @@ function onFrame() {
         scroll_4 = scroll_4 - windowHeight_4;
     };
 
-    if (Math.abs(scroll_1) < 100) {
+    if (Math.abs(scroll_1) < 1000) {
         if (scroll_loop_once == true) {
-            console.log("произошел рандом");
             scroll_loop_once = false;
+
+
+
+
+            for(i=random_start;i<=random_end;i++){
+               array.push(i);
+            };
+
+            for(countCycles=1;countCycles<=allСycles;countCycles++){
+                console.log();
+                rndm_count = array.splice(Math.random()*array.length,1)[0];
+                // console.log("цикл по счету:"+countCycles+" фотка:"+rndm_img[rndm_count-1]);
+                team_img = document.querySelectorAll(".comands__image")[countCycles-1];
+                team_img.setAttribute('src', rndm_img[rndm_count-1]);
+            };
+
+
+            // var el = document.querySelectorAll(".comands__image")[1];
+            // bt_save.setAttribute('href', attribute_href_save);
+            // делаем массив или псевдо массив со значениями фоток
+            // заполняем footer__image-comands контейнеры по порядку значением фоток
+
+
+
+
+
+
+
+
+
         }
     } else {
         scroll_loop_once = true;
-    }
+    };
 
     if (scroll_1 !== newScrollY) {
         TweenLite.set(target_1, { rotate: 0.01, y: scroll_1, force3D: true });
@@ -338,23 +384,3 @@ window.addEventListener('resize', check_device);
 function check_device() {
   document.location.reload();
 };
-
-let random_start = 1;
-let random_end = 6;
-let allСycles = 3;
-
-let array = [];
-
-for(i=random_start;i<=random_end;i++){
-   array.push(i);
-};
-
-for(countCycles=1;countCycles<=allСycles;countCycles++){
-    console.log("цикл по счету "+countCycles);
-    console.log(array.splice(Math.random()*array.length,1)[0]);
-};
-
-// определяем прошел ли цикл скролла
-// определяем случайные числа
-// делаем массив или псевдо массив со значениями фоток
-// заполняем контейнеры по порядку значением фоток
