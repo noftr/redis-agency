@@ -5,26 +5,10 @@ body {
   font-size: 1vw;
   font-weight: 400;
 }
-#target4
-{
-opacity: 0;
-transition: opacity .5s ease-out;
-}
-
-.about__image, .conatcts__image-is2{
-  opacity: 0;
-  transition-delay: 4s !important;
-  transition: opacity .5s ease-out;
-}
 
 a {
   color: #fff;
   text-decoration: underline;
-}
-
-.scroll-view
-{
-  transition: opacity .2s ease-out;
 }
 
 img {
@@ -212,13 +196,13 @@ img {
 
 .hero__image-is1 {
   position: absolute;
-  left: 0%;
-  top: 26.63vw;
+  left: -28.05vw;
+  top: 8.61vw;
   right: auto;
   bottom: auto;
   z-index: 1;
-  width: 40.9em;
-  height: 61.46em;
+  width: 68.61em;
+  height: 101.94em;
 }
 
 .hero__image-is1.animate-left-herb {
@@ -235,21 +219,26 @@ img {
   position: absolute;
   left: auto;
   top: 6.7vw;
-  right: 0%;
+  right: -24.17vw;
   bottom: auto;
   z-index: 1;
-  width: 35.21em;
-  height: 52.1em;
+  width: 58.47em;
+  height: 86.87em;
+  -webkit-transform: rotateX(-180deg) rotateY(-180deg) rotateZ(0deg);
+  transform: rotateX(-180deg) rotateY(-180deg) rotateZ(0deg);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
 }
 
 .hero__image-is2.animate-right-herb {
-  -webkit-transform: translate(0px, 92vh) rotate(31deg);
-  -ms-transform: translate(0px, 92vh) rotate(31deg);
-  transform: translate(0px, 92vh) rotate(31deg);
+  -webkit-transform: translate(0px, 92vh) rotateX(-180deg) rotateY(-180deg) rotateZ(6deg);
+  transform: translate(0px, 92vh) rotateX(-180deg) rotateY(-180deg) rotateZ(6deg);
   -webkit-transition: -webkit-transform 1600ms ease;
   transition: -webkit-transform 1600ms ease;
   transition: transform 1600ms ease;
   transition: transform 1600ms ease, -webkit-transform 1600ms ease;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
 }
 
 .hero__image-redis {
@@ -487,7 +476,6 @@ img {
 }
 
 .redis-lottie {
-  transition: opacity .5s ease-out;
   position: fixed;
   left: 0%;
   top: 0%;
@@ -508,10 +496,17 @@ img {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-transition: opacity 500ms ease-out;
+  transition: opacity 500ms ease-out;
 }
 
 .redis-lottie.edit {
   z-index: 0;
+}
+
+.scroll-view {
+  -webkit-transition: opacity 500ms ease-out;
+  transition: opacity 500ms ease-out;
 }
 
 .scroll-container {
@@ -786,6 +781,40 @@ img {
   transform: translate(0px, -1140px);
 }
 
+.backup {
+  display: none;
+}
+
+.transition {
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0;
+  -webkit-transition: opacity 500ms ease-out;
+  transition: opacity 500ms ease-out;
+}
+
+.comands__image--hover {
+  width: 100%;
+  height: 100%;
+}
+
+.comands__image--hover.hover {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  z-index: -1;
+  opacity: 0;
+}
+
 @media screen and (max-width: 991px) {
   .comands__image.hover {
     display: none;
@@ -798,6 +827,10 @@ img {
 
   .animation {
     background-color: #ff4242;
+  }
+
+  .comands__image--hover.hover {
+    display: none;
   }
 }
 
@@ -949,9 +982,10 @@ img {
   }
 
   .hero__image-is1 {
-    top: 83.33vw;
-    width: 57.5em;
-    height: 86.4em;
+    left: -40.3vw;
+    top: 45.83vw;
+    width: 97.8em;
+    height: 145.55em;
   }
 
   .hero__image-is1.animate-left-herb {
@@ -961,14 +995,15 @@ img {
   }
 
   .hero__image-is2 {
-    width: 44.44em;
-    height: 65.83em;
+    top: 11.11vw;
+    right: -31.11vw;
+    width: 74.44em;
+    height: 110.55em;
   }
 
   .hero__image-is2.animate-right-herb {
-    -webkit-transform: translate(0px, 100vh) rotate(0deg);
-    -ms-transform: translate(0px, 100vh) rotate(0deg);
-    transform: translate(0px, 100vh) rotate(0deg);
+    -webkit-transform: translate(0px, 100vh) rotateX(-180deg) rotateY(-180deg) rotateZ(0deg);
+    transform: translate(0px, 100vh) rotateX(-180deg) rotateY(-180deg) rotateZ(0deg);
     -webkit-transition-duration: 2300ms;
     transition-duration: 2300ms;
   }
@@ -1788,7 +1823,7 @@ img {
   justify-self: start;
 }
 
-#w-node-dcf93fb5-2bfd-bf4b-8558-003fc571078f-e0e27a40 {
+#w-node-_1d817c78-ad0b-e01b-8bb2-24d77a000192-e0e27a40 {
   -ms-grid-column: 1;
   grid-column-start: 1;
   -ms-grid-column-span: 2;
