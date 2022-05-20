@@ -10,15 +10,21 @@ let path_loop_once = true;
 let scroll_loop_once = true;
 
 let rndm_img = [
-'images/redis-command__1.jpg',
-'images/redis-command__2.jpg',
-'images/redis-command__3.jpg',
-'images/redis-command__4.jpg',
-'images/redis-command__5.jpg',
-'images/redis-command__6.jpg',
+'https://klike.net/uploads/posts/2020-06/1593061844_1.jpg',
+'https://klike.net/uploads/posts/2020-06/1593062385_1.jpg',
+'https://klike.net/uploads/posts/2020-06/1593062964_1.jpg',
+'https://klike.net/uploads/posts/2020-06/1593063514_1.jpg',
+'https://klike.net/uploads/posts/2020-06/1593148473_1.jpg',
+'https://klike.net/uploads/posts/2020-06/1593149314_2.jpg',
 ];
 
-console.log(rndm_img.[1]);
+
+let random_start = 1;
+let random_end = 6;
+let allСycles = 6;
+let array = [];
+let rndm_count = 0;
+let team_img;
 
 gsap.registerPlugin(MotionPathPlugin);
 var path_tween = gsap.to(".lottie-wrapper", {
@@ -156,30 +162,30 @@ function onFrame() {
         scroll_4 = scroll_4 - windowHeight_4;
     };
 
-    if (Math.abs(scroll_1) < 100) {
+    if (Math.abs(scroll_1) < 1000) {
         if (scroll_loop_once == true) {
             scroll_loop_once = false;
 
 
 
-            let random_start = 1;
-            let random_end = 6;
-            let allСycles = 3;
-
-            let array = [];
 
             for(i=random_start;i<=random_end;i++){
                array.push(i);
             };
 
             for(countCycles=1;countCycles<=allСycles;countCycles++){
-                console.log("цикл по счету "+countCycles);
-                console.log(array.splice(Math.random()*array.length,1)[0]);
+                console.log();
+                rndm_count = array.splice(Math.random()*array.length,1)[0];
+                // console.log("цикл по счету:"+countCycles+" фотка:"+rndm_img[rndm_count-1]);
+                team_img = document.querySelectorAll(".comands__image")[countCycles-1];
+                team_img.setAttribute('src', rndm_img[rndm_count-1]);
             };
 
 
+            // var el = document.querySelectorAll(".comands__image")[1];
+            // bt_save.setAttribute('href', attribute_href_save);
             // делаем массив или псевдо массив со значениями фоток
-            // заполняем контейнеры по порядку значением фоток
+            // заполняем footer__image-comands контейнеры по порядку значением фоток
 
 
 
