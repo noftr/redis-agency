@@ -256,7 +256,6 @@ pageTransition = document.querySelector(".transition");
 
 bt_anchor_1.addEventListener('click', function (event) {
     // scroll_wrapper_1.style.opacity = "0";
-    pageTransition.style.display = "block";
     pageTransition.style.opacity = "100";
     // scroll_wrapper_2.style.opacity = "0";
     // scroll_wrapper_3.style.opacity = "0";
@@ -284,7 +283,6 @@ bt_anchor_1.addEventListener('click', function (event) {
         // scroll_wrapper_2.style.opacity = "100";
         // scroll_wrapper_3.style.opacity = "100";
         // scroll_wrapper_4.style.opacity = "100"
-        pageTransition.style.display = "none";
         pageTransition.style.opacity = "0";
         // lottie_wrapper.style.opacity = "100";
         gsap.to( lottie_play, {
@@ -298,7 +296,6 @@ bt_anchor_1.addEventListener('click', function (event) {
 
 bt_anchor_2.addEventListener('click', function (event) {
     // scroll_wrapper_1.style.opacity = "0";
-    pageTransition.style.display = "block";
     pageTransition.style.opacity = "100";
     // scroll_wrapper_2.style.opacity = "0";
     // scroll_wrapper_3.style.opacity = "0";
@@ -323,7 +320,6 @@ bt_anchor_2.addEventListener('click', function (event) {
     }
     setTimeout(() => {
         // scroll_wrapper_1.style.opacity = "100";
-        pageTransition.style.display = "none";
         pageTransition.style.opacity = "0";
         // scroll_wrapper_2.style.opacity = "100";
         // scroll_wrapper_3.style.opacity = "100";
