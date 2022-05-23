@@ -16,12 +16,17 @@ let rndm_img = [
 'https://klike.net/uploads/posts/2020-06/1593063514_1.jpg',
 'https://klike.net/uploads/posts/2020-06/1593148473_1.jpg',
 'https://klike.net/uploads/posts/2020-06/1593149314_2.jpg',
+'https://printfiles.ru/files/uploads/raspechatat/tsyfry-formata-a4/7.jpg',
+'https://static5.depositphotos.com/1001696/515/i/600/depositphotos_5154847-stock-photo-burning-and-flame-font-8.jpg',
+'https://trafaretki.ru/wp-content/uploads/2020/12/nine-3.jpg',
+'https://s.pfst.net/2013.07/29333078806bc4e4d384cb8f88c5686c469d3d93948_b.jpg',
+'http://shar-irk.ru/upload/iblock/a45/a45aa9e37c714abfae4723c244928de8.jpg',
 ];
 
 
 let random_start = 1;
-let random_end = 6;
-let allСycles = 6;
+let random_end = 11;
+let allСycles = 11;
 let array = [];
 let rndm_count = 0;
 let team_img;
