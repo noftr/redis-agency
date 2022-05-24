@@ -32,7 +32,7 @@ let rndm_img = [
 'https://uploads-ssl.webflow.com/6266eeaffe48d61a4d9852b0/628ce6a9faa9cd3058197c11_team_member_20-1.jpg',
 'https://uploads-ssl.webflow.com/6266eeaffe48d61a4d9852b0/628ce6a8db13b01c3a3fc083_team_member_21-1.jpg',
 'https://uploads-ssl.webflow.com/6266eeaffe48d61a4d9852b0/628ce6a9cfba19b784982acc_team_member_22-1.jpg',
-'https://uploads-ssl.webflow.com/6266eeaffe48d61a4d9852b0/628ce6a9ec6b182360f8c0d8_team_member_23-1.jpg',
+'https://uploads-ssl.webflow.com/6266eeaffe48d61a4d9852b0/628cf5adc81d78cd6e8efe58_team_member_23-1.jpg',
 ];
 
 let rndm_img_hover = [
