@@ -10,26 +10,60 @@ let path_loop_once = true;
 let scroll_loop_once = true;
 
 let rndm_img = [
-'https://klike.net/uploads/posts/2020-06/1593061844_1.jpg',
-'https://klike.net/uploads/posts/2020-06/1593062385_1.jpg',
-'https://klike.net/uploads/posts/2020-06/1593062964_1.jpg',
-'https://klike.net/uploads/posts/2020-06/1593063514_1.jpg',
-'https://klike.net/uploads/posts/2020-06/1593148473_1.jpg',
-'https://klike.net/uploads/posts/2020-06/1593149314_2.jpg',
-'https://printfiles.ru/files/uploads/raspechatat/tsyfry-formata-a4/7.jpg',
-'https://static5.depositphotos.com/1001696/515/i/600/depositphotos_5154847-stock-photo-burning-and-flame-font-8.jpg',
-'https://trafaretki.ru/wp-content/uploads/2020/12/nine-3.jpg',
-'https://s.pfst.net/2013.07/29333078806bc4e4d384cb8f88c5686c469d3d93948_b.jpg',
-'http://shar-irk.ru/upload/iblock/a45/a45aa9e37c714abfae4723c244928de8.jpg',
+'https://uploads-ssl.webflow.com/6266eeaffe48d61a4d9852b0/628ce6a35802afe704ad26e9_team_member_01-1.jpg',
+'https://uploads-ssl.webflow.com/6266eeaffe48d61a4d9852b0/628ce6a3e6af713a60f0b492_team_member_02-1.jpg',
+'https://uploads-ssl.webflow.com/6266eeaffe48d61a4d9852b0/628ce6a3b00865a656998834_team_member_03-1.jpg',
+'https://uploads-ssl.webflow.com/6266eeaffe48d61a4d9852b0/628ce6a37ca03e0ffabc01f5_team_member_04-1.jpg',
+'https://uploads-ssl.webflow.com/6266eeaffe48d61a4d9852b0/628ce6a45b930676ad5f093c_team_member_05-1.jpg',
+'https://uploads-ssl.webflow.com/6266eeaffe48d61a4d9852b0/628ce6a39c51396f4bfdc471_team_member_06-1.jpg',
+'https://uploads-ssl.webflow.com/6266eeaffe48d61a4d9852b0/628ce6a433ecaf980a4dba7b_team_member_07-1.jpg',
+'https://uploads-ssl.webflow.com/6266eeaffe48d61a4d9852b0/628ce6a68aa1e43cecfd412c_team_member_08-1.jpg',
+'https://uploads-ssl.webflow.com/6266eeaffe48d61a4d9852b0/628ce6a59b69bf3695901ef1_team_member_09-1.jpg',
+'https://uploads-ssl.webflow.com/6266eeaffe48d61a4d9852b0/628ce6a532f62285018930b1_team_member_10-1.jpg',
+'https://uploads-ssl.webflow.com/6266eeaffe48d61a4d9852b0/628ce6a73566644413876b72_team_member_11-1.jpg',
+'https://uploads-ssl.webflow.com/6266eeaffe48d61a4d9852b0/628ce6a5ec165b1d46d430c4_team_member_12-1.jpg',
+'https://uploads-ssl.webflow.com/6266eeaffe48d61a4d9852b0/628ce6a5906c4eff021be76b_team_member_13-1.jpg',
+'https://uploads-ssl.webflow.com/6266eeaffe48d61a4d9852b0/628ce6a714925ccb8d352178_team_member_14-1.jpg',
+'https://uploads-ssl.webflow.com/6266eeaffe48d61a4d9852b0/628ce6a65b930647b55f093e_team_member_15-1.jpg',
+'https://uploads-ssl.webflow.com/6266eeaffe48d61a4d9852b0/628ce6a7622e51cb5e3d2851_team_member_16-1.jpg',
+'https://uploads-ssl.webflow.com/6266eeaffe48d61a4d9852b0/628ce6a8aedc0d0ad4a7cbac_team_member_17-1.jpg',
+'https://uploads-ssl.webflow.com/6266eeaffe48d61a4d9852b0/628ce6a7992d2e39450ddebd_team_member_18-1.jpg',
+'https://uploads-ssl.webflow.com/6266eeaffe48d61a4d9852b0/628ce6a733250761c093a97e_team_member_19-1.jpg',
+'https://uploads-ssl.webflow.com/6266eeaffe48d61a4d9852b0/628ce6a9faa9cd3058197c11_team_member_20-1.jpg',
+'https://uploads-ssl.webflow.com/6266eeaffe48d61a4d9852b0/628ce6a8db13b01c3a3fc083_team_member_21-1.jpg',
+'https://uploads-ssl.webflow.com/6266eeaffe48d61a4d9852b0/628ce6a9cfba19b784982acc_team_member_22-1.jpg',
+'https://uploads-ssl.webflow.com/6266eeaffe48d61a4d9852b0/628ce6a9ec6b182360f8c0d8_team_member_23-1.jpg',
+];
+
+let rndm_img_hover = [
+'https://uploads-ssl.webflow.com/6266eeaffe48d61a4d9852b0/628ce6a3919a8b0caecf7bc6_team_member_01-2.jpg',
+'https://uploads-ssl.webflow.com/6266eeaffe48d61a4d9852b0/628ce6a3dde2d5293e1249cf_team_member_02-2.jpg',
+'https://uploads-ssl.webflow.com/6266eeaffe48d61a4d9852b0/628ce6a3b0086584d1998833_team_member_03-2.jpg',
+'https://uploads-ssl.webflow.com/6266eeaffe48d61a4d9852b0/628ce6a4695788ac926e4513_team_member_04-2.jpg',
+'https://uploads-ssl.webflow.com/6266eeaffe48d61a4d9852b0/628ce6a4ec165bbd06d430bf_team_member_05-2.jpg',
+'https://uploads-ssl.webflow.com/6266eeaffe48d61a4d9852b0/628ce6a5faa9cd44a7197bd6_team_member_06-2.jpg',
+'https://uploads-ssl.webflow.com/6266eeaffe48d61a4d9852b0/628ce6a4b008659cd7998835_team_member_07-2.jpg',
+'https://uploads-ssl.webflow.com/6266eeaffe48d61a4d9852b0/628ce6a4aac4d7f736e21a48_team_member_08-2.jpg',
+'https://uploads-ssl.webflow.com/6266eeaffe48d61a4d9852b0/628ce6a4a2de32048726a2ec_team_member_09-2.jpg',
+'https://uploads-ssl.webflow.com/6266eeaffe48d61a4d9852b0/628ce6a75e581b61e2c60135_team_member_10-2.jpg',
+'https://uploads-ssl.webflow.com/6266eeaffe48d61a4d9852b0/628ce6a66b2c228a207f6131_team_member_11-2.jpg',
+'https://uploads-ssl.webflow.com/6266eeaffe48d61a4d9852b0/628ce6a69b29d6578d5a0f02_team_member_12-2.jpg',
+'https://uploads-ssl.webflow.com/6266eeaffe48d61a4d9852b0/628ce6a5968444eddf72d131_team_member_13-2.jpg',
+'https://uploads-ssl.webflow.com/6266eeaffe48d61a4d9852b0/628ce6a76b2c2229097f614c_team_member_14-2.jpg',
+'https://uploads-ssl.webflow.com/6266eeaffe48d61a4d9852b0/628ce6a79cce2384f1be7839_team_member_15-2.jpg',
+'https://uploads-ssl.webflow.com/6266eeaffe48d61a4d9852b0/628ce6a73c696c5c4f22df09_team_member_16-2.jpg',
+'https://uploads-ssl.webflow.com/6266eeaffe48d61a4d9852b0/628ce6a71e3f462253cb6836_team_member_17-2.jpg',
+'https://uploads-ssl.webflow.com/6266eeaffe48d61a4d9852b0/628ce6a765b6761896d3f2cc_team_member_18-2.jpg',
+'https://uploads-ssl.webflow.com/6266eeaffe48d61a4d9852b0/628ce6a85b93063ce75f0945_team_member_19-2.jpg',
+'https://uploads-ssl.webflow.com/6266eeaffe48d61a4d9852b0/628ce6a8e880888b5d1b8f72_team_member_20-2.jpg',
+'https://uploads-ssl.webflow.com/6266eeaffe48d61a4d9852b0/628ce6a966f3111269ef3d38_team_member_21-2.jpg',
+'https://uploads-ssl.webflow.com/6266eeaffe48d61a4d9852b0/628ce6a99b69bfee54901ef6_team_member_22-2.jpg',
+'https://uploads-ssl.webflow.com/6266eeaffe48d61a4d9852b0/628cf3e4e01b2e53d12d36ca_team_member_23-2.jpg',
 ];
 
 
-let random_start = 1;
-let random_end = 11;
-let allСycles = 11;
-let array = [];
 let rndm_count = 0;
-let team_img;
+let team_img, team_img_hover;
 
 gsap.registerPlugin(MotionPathPlugin);
 var path_tween = gsap.to(".lottie-wrapper", {
@@ -171,32 +205,24 @@ function onFrame() {
         if (scroll_loop_once == true) {
             scroll_loop_once = false;
 
+            let random_start = 1;
+            let random_end = 23;
+            let allСycles = 11;
+            let array = [];
+
             for(i=random_start;i<=random_end;i++){
                array.push(i);
             };
 
             for(countCycles=1;countCycles<=allСycles;countCycles++){
                 rndm_count = array.splice(Math.random()*array.length,1)[0];
-                // console.log("цикл по счету:"+countCycles+" фотка:"+rndm_img[rndm_count-1]);
+
                 team_img = document.querySelectorAll(".comands__image")[countCycles-1];
                 team_img.setAttribute('src', rndm_img[rndm_count-1]);
-                console.log("поменялись");
 
+                team_img_hover = document.querySelectorAll(".comands__image--hover")[countCycles-1];
+                team_img_hover.setAttribute('src', rndm_img_hover[rndm_count-1]);
             };
-
-            // var el = document.querySelectorAll(".comands__image")[1];
-            // bt_save.setAttribute('href', attribute_href_save);
-            // делаем массив или псевдо массив со значениями фоток
-            // заполняем footer__image-comands контейнеры по порядку значением фоток
-
-
-
-
-
-
-
-
-
         }
     } else {
         scroll_loop_once = true;
@@ -218,7 +244,6 @@ function onFrame() {
         TweenLite.set(target_4, { rotate: 0.01, y: scroll_4, force3D: true });
         scroll_4 = scroller_4.y;
     };
-
 
     lottie.setSpeed(lottie_play.speed+(scroller_1.speed * 0.3));
     let progress_path = Math.abs(scroller_4.y % lottie_sensivity / lottie_sensivity);
@@ -303,12 +328,8 @@ bt_anchor_2 = document.querySelector(".bt-anchor-2");
 pageTransition = document.querySelector(".transition");
 
 bt_anchor_1.addEventListener('click', function (event) {
-    // scroll_wrapper_1.style.opacity = "0";
+
     pageTransition.style.opacity = "100";
-    // scroll_wrapper_2.style.opacity = "0";
-    // scroll_wrapper_3.style.opacity = "0";
-    // scroll_wrapper_4.style.opacity = "0";
-    // lottie_wrapper.style.opacity = "0";
     lottie_play = { speed: -4, };
 
     if (window.screen.width > 479) {
@@ -327,12 +348,7 @@ bt_anchor_1.addEventListener('click', function (event) {
         }, 400);
     };
     setTimeout(() => {
-        // scroll_wrapper_1.style.opacity = "100";
-        // scroll_wrapper_2.style.opacity = "100";
-        // scroll_wrapper_3.style.opacity = "100";
-        // scroll_wrapper_4.style.opacity = "100"
         pageTransition.style.opacity = "0";
-        // lottie_wrapper.style.opacity = "100";
         gsap.to( lottie_play, {
             duration: 1,
             speed: 0,
@@ -343,12 +359,7 @@ bt_anchor_1.addEventListener('click', function (event) {
 });
 
 bt_anchor_2.addEventListener('click', function (event) {
-    // scroll_wrapper_1.style.opacity = "0";
     pageTransition.style.opacity = "100";
-    // scroll_wrapper_2.style.opacity = "0";
-    // scroll_wrapper_3.style.opacity = "0";
-    // scroll_wrapper_4.style.opacity = "0";
-    // lottie_wrapper.style.opacity = "0";
     lottie_play = { speed: -4, };
 
     if (window.screen.width > 479) {
@@ -367,12 +378,7 @@ bt_anchor_2.addEventListener('click', function (event) {
         }, 400);
     }
     setTimeout(() => {
-        // scroll_wrapper_1.style.opacity = "100";
         pageTransition.style.opacity = "0";
-        // scroll_wrapper_2.style.opacity = "100";
-        // scroll_wrapper_3.style.opacity = "100";
-        // scroll_wrapper_4.style.opacity = "100";
-        // lottie_wrapper.style.opacity = "100";
         gsap.to( lottie_play, {
             duration: 1,
             speed: 0,
