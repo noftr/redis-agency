@@ -53,7 +53,7 @@ let rndm_img_hover = [
 'https://uploads-ssl.webflow.com/6266eeaffe48d61a4d9852b0/628ce6a79cce2384f1be7839_team_member_15-2.jpg',
 'https://uploads-ssl.webflow.com/6266eeaffe48d61a4d9852b0/628ce6a73c696c5c4f22df09_team_member_16-2.jpg',
 'https://uploads-ssl.webflow.com/6266eeaffe48d61a4d9852b0/628ce6a71e3f462253cb6836_team_member_17-2.jpg',
-'https://uploads-ssl.webflow.com/6266eeaffe48d61a4d9852b0/628ce6a765b6761896d3f2cc_team_member_18-2.jpg',
+'https://uploads-ssl.webflow.com/6266eeaffe48d61a4d9852b0/628dfdb846000d6d93f55c7f_team_member_18-2.jpg',
 'https://uploads-ssl.webflow.com/6266eeaffe48d61a4d9852b0/628ce6a85b93063ce75f0945_team_member_19-2.jpg',
 'https://uploads-ssl.webflow.com/6266eeaffe48d61a4d9852b0/628ce6a8e880888b5d1b8f72_team_member_20-2.jpg',
 'https://uploads-ssl.webflow.com/6266eeaffe48d61a4d9852b0/628ce6a966f3111269ef3d38_team_member_21-2.jpg',
